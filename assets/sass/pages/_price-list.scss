@@ -1,0 +1,59 @@
+.price-list-page {
+    padding: 0;
+    background-image: linear-gradient(to right, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), url(../img/prices-bg-img.jpg);
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+
+    &__list-background-container {
+        padding: 0;
+    }
+
+    &__list-container {
+        margin: 100px auto;
+        background-color: rgba($color-light-green, 0.7);
+        width: 50vw;
+        border: 1px solid $color-dark-green;
+    }
+
+    &__table {
+        width: 80%;
+        margin: 0 27%;
+
+    }
+}
+
+.heading-secondary-price-list {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: $color-dark-green;
+    padding-top: 5vh;
+
+    &:not(:first-child) {
+        padding-top: 5vh;
+    }
+}
+
+.heading-tertiary-price-list {
+    font-size: 22px;
+    color: $color-contrast-blue;
+    margin-bottom: 10px;
+}
+
+
+table {
+    border-collapse: separate;
+    border-spacing: 9px;
+}
+
+.table {
+    margin-bottom: 30px;
+}
+
+th ~ .border-left, th ~ .border-none, td ~ .border-left {
+    padding-left: 150px;
+}
+
+tr {
+    height: 20px;
+}

@@ -1,0 +1,41 @@
+/*___________________________________________________________________________________________________________________________________________________________ Header Section */
+.therapies-page {
+    padding: 0;
+    background-image: linear-gradient(to right, rgba($color-white, 0.2) 0%, rgba($color-white, 0.5) 50%,  rgba($color-white, 0.1)), url(../img/therapies-bg-img.jpg);
+    background-size: 150%;
+    background-position: top center;
+    position: absolute;
+
+    &__list-background-container {
+        padding: 0;
+    }
+
+    &__list-container {
+        margin: 100px auto;
+        background-color: rgba($color-light-green, 0.7);
+        border: 1px solid $color-dark-green;
+        padding: 20px 50px;
+    }
+
+    &__content, &__table {
+        font-size: 1.3rem;
+    }
+
+    &__table {
+        width: 80%;
+        margin: 0 20%;
+    }
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 9px;
+}
+
+th ~ .border-left, td ~ .border-left {
+    padding-left: 150px;
+}
+
+tr {
+    height: 20px;
+}

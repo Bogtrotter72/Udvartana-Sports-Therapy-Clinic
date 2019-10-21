@@ -1,0 +1,73 @@
+/* MASSAGE THERAPIES SECTION */
+
+.therapies {
+    background-color: $color-light-green;
+    margin-top: 60px;
+    padding: 5rem 0;
+    box-shadow: 0px -10px 60px rgba($color-contrast-blue, 0.25), 0px 10px 60px rgba($color-contrast-blue, 0.25);
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+
+    &-img {
+        width: 100%;
+        margin: auto;
+    }
+
+    &-body {
+        padding: 20px;
+        // height: 400px;
+        background-color: rgba($color-white, 0.7);
+        box-shadow: 9px 8px 20px rgba($color-contrast-blue, 0.5);
+        border-radius: 20px;
+        overflow: auto;
+    }
+}
+
+.therapies-box {
+
+    &__image {
+        box-shadow: 0 6px 23px rgba($color-contrast-blue, 0.5);
+    }
+
+    &__content {
+        overflow: auto;
+        height: 300px;
+    }
+
+}
+
+.therapies_row2 {
+    padding-top: 40px;
+}
+
+.horizontal-rule {
+    width: 60%;
+    margin: 40px auto;
+    border-top: 1px solid $color-contrast-blue;
+}
+
+.customer-feedback {
+    background-color: $color-white;
+    margin-top: 60px;
+    padding: 5rem 0;
+    // box-shadow: 0px -10px 60px rgba($color-contrast-blue, 0.25), 0px 10px 60px rgba($color-contrast-blue, 0.25);
+
+    &__username {
+        color: darken($color-contrast-blue, 15%);
+    }
+
+    &__date {
+        color: $color-contrast-blue;
+    }
+}
+
+.rating {
+    float: right;
+}
+
+.gold-star {
+    color: gold;
+}

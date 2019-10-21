@@ -1,0 +1,54 @@
+/*___________________________________________________________________________________________________________________________________________________________ Header Section */
+.homepage__header {
+    height: 850px;
+    height: 90vh;
+    background-image: -webkit-linear-gradient(left, rgba($color-dark-green,0.7) 10%, 
+                                                 rgba($color-dark-green,0.1) 67%, 
+                                                 rgba($color-light-green,0) 100%),   
+                                                   url(../img/header-image_570x265.png);
+
+    background-image: linear-gradient(to right, rgba($color-dark-green,0.7) 10%, 
+                                                 rgba($color-dark-green,0.1) 67%, 
+                                                 rgba($color-light-green,0) 100%),   
+                                                   url(../img/header-image_570x265.jpg);
+    
+    background-size: cover;
+    background-position: center right;
+    position: relative;
+    box-shadow: -1000px -12px 40px rgba(53, 82, 74, 0.7), 0px 9px 18px rgba(53, 82, 74, 0.8);
+    backface-visibility: hidden;
+}
+
+
+/*___________________________________________________________________________________________________________________________________________________________ HEADING*/
+.heading-primary {
+    color: $color-white;
+    font-size:  80px;
+    font-weight: 300;
+    letter-spacing: 20px;
+    text-shadow: 5px 4px 5px $color-dark-green;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0%;
+    left: 21%;
+    -webkit-transform: translate(0%, 50%);
+    transform: translate(-19%, 52%);
+}
+
+.heading-primary__main {
+    display: block;
+    padding-bottom: 70px;
+    -webkit-animation: slideUp 1.2s linear;
+    animation: slideUp 1.2s linear;
+}
+.heading-primary__sub1 {
+    display: block;
+    padding-bottom: 70px;
+    -webkit-animation: slideUp 1.2s linear 0.65s backwards;
+    animation: slideUp 1.2s linear 0.65s backwards;
+}
+.heading-primary__sub2 {
+    display: block;
+    -webkit-animation: slideUp 1.2s linear 1.3s backwards;
+    animation: slideUp 1.2s linear 1.3s backwards;
+}

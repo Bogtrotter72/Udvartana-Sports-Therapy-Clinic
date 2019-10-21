@@ -1,0 +1,44 @@
+
+.footer{
+    background: rgba($color-dark-green, 0.9);
+    color:$color-white;
+
+    .opening-hours{
+      i{font-size: 25px;}
+      a{
+        color:white;
+        transition: color .2s;
+        &:hover{color:#4180CB}
+      }
+    }
+
+    &-heading {
+      color: $color-white;
+      font-weight: 900;
+      padding-bottom: 5px;
+      border-bottom: 1px solid rgba($color-light-gray, 0.5);
+      border-width: thin;
+    }
+
+    &__navigation{
+      ul {list-style-type: none;}
+      li a{
+        color: $color-white;
+        transition: color .2s;
+      }
+    }
+    
+    &__location{
+      i{font-size: 14px;}
+    }
+    .copyright p {border-top:1px solid rgba($color-light-gray, 0.5);
+    } 
+  }
+
+  .fab {
+    color: $color-white;
+  }
+
+  .fa-linkedin-in {
+    margin-left: 10px;
+  }

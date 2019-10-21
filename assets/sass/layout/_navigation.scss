@@ -1,0 +1,163 @@
+/* NAVIGATION */
+.navigation__checkbox {
+    display: none;
+}
+.navigation__button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgba($color-white,.75);
+    box-shadow: 2px 4.7px 10px rgba(53, 82, 74, 0.3);
+    position: fixed;
+    top: 20px;
+    right: 79px;
+    z-index: 1000;
+    cursor: pointer;
+    -webkit-transition: transform 0.2s;
+    transition: transform 0.2s;
+    backface-visibility: hidden;
+}
+
+.navigation__nav {
+    position: fixed;
+    height: 850px;
+    height: 100vh;
+    background-color: rgba($color-medium-green, 0.95);
+    top: 0;
+    right: 0;
+    z-index: 750;
+    opacity: 0;
+    width: 0;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.7s cubic-bezier(0.68, -0.55, 0, 1.5);
+}
+.navigation__list{
+    @include center-screen;
+    list-style: none;
+    text-align: center;
+}
+.navigation__item-header {
+    margin: 30px;
+}
+.navigation__link,
+.navigation__link:link,
+.navigation__link:visited {
+    display: inline-block;
+    backface-visibility: hidden;
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: -webkit-linear-gradient(left, transparent 0%, transparent 50%, $color-white 50%);
+    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, $color-white 50%);
+    border-radius: 14px;
+    background-size: 220%;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.navigation__link-header,
+.navigation__link-header:link,
+.navigation__link-header:visited {
+    font-size: 30px;
+    font-weight: 300;
+    padding: 5px 9px;
+}
+.navigation__link-footer,
+.navigation__link-footer:link,
+.navigation__link-footer:visited {
+    padding: 4px 4px;
+    margin-left: -4px;
+}
+.navigation__link:hover {
+    color: $color-medium-green;
+    background-position: 100%;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba($color-dark-green, 0.5);
+}
+.navigation__link:active {
+    color: $color-medium-green;
+    background-position: 100%;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 7px rgba($color-dark-green, 0.9);
+}
+.navigation__link-footer:hover {
+    color: $color-medium-green;
+    background-position: 100%;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba($color-black, 0.5);
+}
+.navigation__link-footer:active {
+    color: $color-medium-green;
+    background-position: 100%;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 7px rgba($color-black, 0.9);
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 100%;
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+    opacity: 1;
+    width: 100%;
+}
+
+
+
+/* ICON */
+.navigation__icon {
+    position: relative;
+    top: 28.8%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+    display: inline-block;
+    width: 40px;
+    height: 2.7px;
+    background-color: rgba($color-dark-green,0.8);
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+    content: "";
+    position: absolute;
+    -webkit-transition: top 0.2s;
+    transition: top 0.2s;
+    -webkit-transition: -webkit-transform  0.7s ease-in-out;
+    transition: transform  0.7s cubic-bezier(0.65, 0.9, 0.3, 1.25);
+}
+
+.navigation__icon::before {
+    top: -10px;
+}
+.navigation__icon::after {
+    top: 10px;
+}
+
+.navigation__button:hover .navigation__icon::before {
+    top: -12px;
+}
+.navigation__button:hover .navigation__icon::after {
+    top: 12px;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent;
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
