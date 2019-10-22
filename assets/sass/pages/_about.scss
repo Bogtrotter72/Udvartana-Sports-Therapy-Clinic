@@ -1,35 +1,38 @@
 .about-page {
-    padding: 0;
-    background-image: linear-gradient(to right, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), url(../img/about-bg-img.jpg);
-    background-size: cover;
-    background-position: right;
-    position: relative;
 
-    &__contents-container {
-       margin-top: 10vh;
-       padding: 10vh 0;
-       border-radius: 30px;
-       background-color: rgba($color-light-green, 0.7);
-       box-shadow: 9px 8px 20px rgba($color-contrast-blue, 0.5);
+    &__container {
+        padding: 0;
+        background-image: linear-gradient(to right, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), url(../img/about-bg-img.jpg);
+        background-size: cover;
+        background-position: right;
+        position: relative;
+    }
+
+    &__card-container {
+        margin-top: 10vh;
+        padding: 10vh 0;
+        border-radius: 30px;
+        background-color: rgba($color-light-green, 0.7);
+        box-shadow: 9px 8px 20px rgba($color-contrast-blue, 0.5);
     }
 
     &__content {
         color: $color-dark-green;
     }
-
-
+    
+    
 }
 
-.card .about-card__img {
+.card .about-page__card-img {
     width: 80%;
 }
 
-.card .about-card__body {
+.card .about-page__card-body {
     height: 70vh;
+}
 
-    &-title {
-        text-transform: uppercase;
-        font-size: 3rem;
-        color: $color-contrast-blue;
-    }
+.card .about-page__card-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: $color-contrast-blue;
 }

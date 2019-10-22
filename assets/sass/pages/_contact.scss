@@ -1,0 +1,15 @@
+.contact-page__map {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.contact-page__location {
+    @include center-screen;
+    top: 12%;
+}
+
+.address {
+    @include center-screen;
+    top: 100%;
+}

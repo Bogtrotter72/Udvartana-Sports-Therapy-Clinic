@@ -428,30 +428,33 @@ body {
   color: #FFFFFF;
   text-transform: uppercase; }
 
-.about-page {
+.about-page__container {
   padding: 0;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.8)), url(../img/about-bg-img.jpg);
   background-size: cover;
   background-position: right;
   position: relative; }
-  .about-page__contents-container {
-    margin-top: 10vh;
-    padding: 10vh 0;
-    border-radius: 30px;
-    background-color: rgba(216, 223, 215, 0.7);
-    box-shadow: 9px 8px 20px rgba(74, 78, 105, 0.5); }
-  .about-page__content {
-    color: #35524A; }
 
-.card .about-card__img {
+.about-page__card-container {
+  margin-top: 10vh;
+  padding: 10vh 0;
+  border-radius: 30px;
+  background-color: rgba(216, 223, 215, 0.7);
+  box-shadow: 9px 8px 20px rgba(74, 78, 105, 0.5); }
+
+.about-page__content {
+  color: #35524A; }
+
+.card .about-page__card-img {
   width: 80%; }
 
-.card .about-card__body {
+.card .about-page__card-body {
   height: 70vh; }
-  .card .about-card__body-title {
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: #4A4E69; }
+
+.card .about-page__card-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #4A4E69; }
 
 .form-group {
   width: 50%;
@@ -603,6 +606,25 @@ body {
       top: 55%;
       left: 15%;
       transform: translateX(-6%); }
+
+.contact-page__map {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh; }
+
+.contact-page__location {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 12%; }
+
+.address {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 100%; }
 
 /* MASSAGE THERAPIES SECTION */
 .therapies {
