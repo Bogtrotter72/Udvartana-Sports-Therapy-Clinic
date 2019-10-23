@@ -1,27 +1,38 @@
-/* MASSAGE THERAPIES SECTION */
-
+// Start of Therapies Section //
 .therapies {
     background-color: $color-light-green;
-    margin-top: 60px;
+    margin-top: 6rem;
     padding: 5rem 0;
-    box-shadow: 0px -10px 60px rgba($color-contrast-blue, 0.25), 0px 10px 60px rgba($color-contrast-blue, 0.25);
+    box-shadow: 0px -1rem 6rem rgba($color-contrast-blue, 0.25), 0px 10px 60px rgba($color-contrast-blue, 0.25);
+
+    @media only screen and (max-width: 767px) {
+        background-color: $color-light-green;
+        margin-top: 6rem;
+        padding: 5rem 0;
+        box-shadow: 0 -1rem 6rem rgba(53, 82, 74, 0.25), 0 1rem 6rem rgba(53, 82, 74, 0.25);
+    }
 }
 
 .card {
     background-color: transparent;
     border: none;
 
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 3rem;
+    }
+
     &-img {
         width: 100%;
         margin: auto;
+        border-radius: 3rem;
     }
 
     &-body {
-        padding: 20px;
+        padding: 2rem;
         // height: 400px;
         background-color: rgba($color-white, 0.7);
-        box-shadow: 9px 8px 20px rgba($color-contrast-blue, 0.5);
-        border-radius: 20px;
+        box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
+        border-radius: 2rem;
         overflow: auto;
     }
 }
@@ -29,33 +40,46 @@
 .therapies-box {
 
     &__image {
-        box-shadow: 0 6px 23px rgba($color-contrast-blue, 0.5);
+        border: 0.3rem solid rgba($color-contrast-blue, 0.25);
+        box-shadow: 0 0.6rem 2.3rem rgba($color-contrast-blue, 0.5);
     }
 
     &__content {
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: $color-contrast-blue;
         overflow: auto;
-        height: 300px;
+        height: 30rem;
     }
-
 }
 
 .therapies_row2 {
-    padding-top: 40px;
-}
+    padding-top: 4rem;
 
-.horizontal-rule {
-    width: 60%;
-    margin: 40px auto;
-    border-top: 1px solid $color-contrast-blue;
+    @media only screen and (max-width: 767px) {
+        padding-top: 0;
+    }
 }
+// End of Therapies Section //
 
+
+// Start of Customer Feedback Section //
 .customer-feedback {
     background-color: $color-white;
-    margin-top: 60px;
+    margin-top: 6rem;
     padding: 5rem 0;
-    // box-shadow: 0px -10px 60px rgba($color-contrast-blue, 0.25), 0px 10px 60px rgba($color-contrast-blue, 0.25);
+
+    &__image {
+        width: 90%;
+        margin: auto;
+    }
+
+    &__content {
+        font-size: 1.7rem;
+    }
 
     &__username {
+        font-size: 1.4rem;
         color: darken($color-contrast-blue, 15%);
     }
 
@@ -71,3 +95,4 @@
 .gold-star {
     color: gold;
 }
+// End of Customer Feedback Section //
