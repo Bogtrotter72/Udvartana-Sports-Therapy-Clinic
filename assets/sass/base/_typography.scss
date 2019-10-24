@@ -1,34 +1,33 @@
 .heading-primary {
     color: $color-white;
-    font-size:  80px;
+    font-size:  3.4rem;
     font-weight: 300;
-    letter-spacing: 20px;
-    text-shadow: 5px 4px 5px $color-dark-green;
+    letter-spacing: 1.2rem;
+    text-shadow: 0.5rem 0.4rem 0.5rem $color-dark-green;
     text-transform: uppercase;
     position: absolute;
-    top: 0%;
-    left: 21%;
+    top: 6%;
+    left: 22%;
     -webkit-transform: translate(0%, 50%);
     transform: translate(-19%, 52%);
 
-    @media only screen and (max-width: 767px) {
-        font-size:  34px;
-        letter-spacing: 12px;
-        top: 6%;
-        left: 22%;
+    @media only screen and (min-width: 768px) {
+        font-size:  8rem;
+        letter-spacing: 2rem;
+        top: 0;
+        left: 21%;
     }
 
-    @media only screen and (orientation: landscape) and (max-width: 767px) {
-        font-size:  32px;
-        letter-spacing: 12px;
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+        font-size:  3.2rem;
         top: -9%;
         left: 22%;
     }
 
     /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
-        font-size:  32px;
-        letter-spacing: 12px;
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+        font-size:  3.2rem;
+        letter-spacing: 1.2rem;
         top: 0;
         left: 22%;
     }
@@ -36,33 +35,33 @@
 
 .heading-primary__main {
     display: block;
-    padding-bottom: 70px;
+    padding-bottom: 5rem;
     -webkit-animation: slideUp 1.2s linear;
     animation: slideUp 1.2s linear;
     
-    @media only screen and (max-width: 767px) {
-        padding-bottom: 50px;
+    @media only screen and (min-width: 768px) {
+        padding-bottom: 7rem;
     }
 
     /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
-        padding-bottom: 50px;
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+        padding-bottom: 5rem;
     }
     
 }
 .heading-primary__sub1 {
     display: block;
-    padding-bottom: 70px;
+    padding-bottom: 5rem;
     -webkit-animation: slideUp 1.2s linear 0.65s backwards;
     animation: slideUp 1.2s linear 0.65s backwards;
 
-    @media only screen and (max-width: 767px) {
-        padding-bottom: 50px;
+    @media only screen and (min-width: 768px) {
+        padding-bottom: 7rem;
     }
 
     /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
-        padding-bottom: 50px;
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+        padding-bottom: 5rem;
     }
 
 }
@@ -74,42 +73,46 @@
 
 
 .heading-secondary {
-    font-size: 60px;
+    font-size: 3rem;
     color: $color-dark-green;
     font-weight: 400;
-    letter-spacing: 16px;
+    letter-spacing: 0.5rem;
+    padding-top: 2rem;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 4rem;
 
-    @media only screen and (max-width: 767px) {
-        font-size: 30px;
-        letter-spacing: 5px;
+    @media only screen and (min-width: 768px) {
+        font-size: 6rem;
+        letter-spacing: 1.6rem;
+        margin-bottom: 8rem;
     }
 }
 
 .heading-tertiary {
-    font-size: 40px;
+    font-size: 2.4rem;
     color: $color-contrast-blue;
     font-weight: 400;
-    letter-spacing: 12px;
+    letter-spacing: 0.8rem;
+    padding: 1rem;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 
-    @media only screen and (max-width: 767px) {
-        font-size:  25px;
-        letter-spacing: 8px;
+    @media only screen and (min-width: 768px) {
+        font-size:  4rem;
+        letter-spacing: 1.2rem;
     }
 
-    @media only screen and (orientation: landscape) and (max-width: 767px) {
-        font-size:  25px;
-        letter-spacing: 8px;
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+        font-size: 3rem;
     }
 
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
-        font-size:  25px;
-        letter-spacing: 8px;
+
+    &__line-1 {
+
+        @media only screen and (min-width: 768px) {
+            display: block;
+        }
     }
 }

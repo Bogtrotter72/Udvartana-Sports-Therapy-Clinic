@@ -43,61 +43,60 @@ body {
 
 .heading-primary {
   color: #FFFFFF;
-  font-size: 80px;
+  font-size: 3.4rem;
   font-weight: 300;
-  letter-spacing: 20px;
-  text-shadow: 5px 4px 5px #35524A;
+  letter-spacing: 1.2rem;
+  text-shadow: 0.5rem 0.4rem 0.5rem #35524A;
   text-transform: uppercase;
   position: absolute;
-  top: 0%;
-  left: 21%;
+  top: 6%;
+  left: 22%;
   -webkit-transform: translate(0%, 50%);
   transform: translate(-19%, 52%);
   /* iPhone X */ }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 768px) {
     .heading-primary {
-      font-size: 34px;
-      letter-spacing: 12px;
-      top: 6%;
-      left: 22%; } }
-  @media only screen and (orientation: landscape) and (max-width: 767px) {
+      font-size: 8rem;
+      letter-spacing: 2rem;
+      top: 0;
+      left: 21%; } }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
     .heading-primary {
-      font-size: 32px;
-      letter-spacing: 12px;
+      font-size: 3.2rem;
       top: -9%;
       left: 22%; } }
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     .heading-primary {
-      font-size: 32px;
-      letter-spacing: 12px;
+      font-size: 3.2rem;
+      letter-spacing: 1.2rem;
       top: 0;
       left: 22%; } }
 
 .heading-primary__main {
   display: block;
-  padding-bottom: 70px;
+  padding-bottom: 5rem;
   -webkit-animation: slideUp 1.2s linear;
   animation: slideUp 1.2s linear;
   /* iPhone X */ }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 768px) {
     .heading-primary__main {
-      padding-bottom: 50px; } }
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+      padding-bottom: 7rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     .heading-primary__main {
-      padding-bottom: 50px; } }
+      padding-bottom: 5rem; } }
 
 .heading-primary__sub1 {
   display: block;
-  padding-bottom: 70px;
+  padding-bottom: 5rem;
   -webkit-animation: slideUp 1.2s linear 0.65s backwards;
   animation: slideUp 1.2s linear 0.65s backwards;
   /* iPhone X */ }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 768px) {
     .heading-primary__sub1 {
-      padding-bottom: 50px; } }
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+      padding-bottom: 7rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     .heading-primary__sub1 {
-      padding-bottom: 50px; } }
+      padding-bottom: 5rem; } }
 
 .heading-primary__sub2 {
   display: block;
@@ -105,39 +104,39 @@ body {
   animation: slideUp 1.2s linear 1.3s backwards; }
 
 .heading-secondary {
-  font-size: 60px;
+  font-size: 3rem;
   color: #35524A;
   font-weight: 400;
-  letter-spacing: 16px;
+  letter-spacing: 0.5rem;
+  padding-top: 2rem;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 80px; }
-  @media only screen and (max-width: 767px) {
+  margin-bottom: 4rem; }
+  @media only screen and (min-width: 768px) {
     .heading-secondary {
-      font-size: 30px;
-      letter-spacing: 5px; } }
+      font-size: 6rem;
+      letter-spacing: 1.6rem;
+      margin-bottom: 8rem; } }
 
 .heading-tertiary {
-  font-size: 40px;
+  font-size: 2.4rem;
   color: #4A4E69;
   font-weight: 400;
-  letter-spacing: 12px;
+  letter-spacing: 0.8rem;
+  padding: 1rem;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
-  /* iPhone X */ }
-  @media only screen and (max-width: 767px) {
+  margin-bottom: 3rem; }
+  @media only screen and (min-width: 768px) {
     .heading-tertiary {
-      font-size: 25px;
-      letter-spacing: 8px; } }
-  @media only screen and (orientation: landscape) and (max-width: 767px) {
+      font-size: 4rem;
+      letter-spacing: 1.2rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     .heading-tertiary {
-      font-size: 25px;
-      letter-spacing: 8px; } }
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
-    .heading-tertiary {
-      font-size: 25px;
-      letter-spacing: 8px; } }
+      font-size: 3rem; } }
+  @media only screen and (min-width: 768px) {
+    .heading-tertiary__line-1 {
+      display: block; } }
 
 .btn-text:link, .btn-text:visited {
   position: absolute;
@@ -179,14 +178,9 @@ body {
 
 .footer {
   background: rgba(53, 82, 74, 0.9);
-  color: #FFFFFF; }
-  .footer .opening-hours i {
-    font-size: 25px; }
-  .footer .opening-hours a {
-    color: white;
-    transition: color .2s; }
-    .footer .opening-hours a:hover {
-      color: #4180CB; }
+  color: #FFFFFF;
+  margin-top: 1rem;
+  padding-top: 3rem; }
   .footer__heading {
     color: #FFFFFF;
     font-weight: 700;
@@ -194,23 +188,27 @@ body {
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(121, 123, 132, 0.5);
     border-width: thin; }
+    .footer__heading--margin {
+      margin-top: 3rem; }
+      @media only screen and (min-width: 768px) {
+        .footer__heading--margin {
+          margin-top: 0; } }
   .footer__text {
     font-weight: 400;
     font-size: 1.4rem; }
-  .footer__navigation ul {
-    list-style-type: none; }
-  .footer__navigation li a {
-    color: #FFFFFF;
-    transition: color .2s; }
-  .footer__location i {
-    font-size: 1.4rem; }
-  .footer .copyright p {
-    border-top: 1px solid rgba(121, 123, 132, 0.5); }
+  .footer .footer__text a {
+    color: #558B6E;
+    text-decoration: none;
+    font-size: 1.7rem; }
 
-.footer__text a {
-  color: #558B6E;
-  text-decoration: none;
-  font-size: 1.7rem; }
+.footer__location i {
+  font-size: 1.4rem; }
+
+.navigation__item-footer {
+  list-style-type: none; }
+
+.copyright p {
+  border-top: 1px solid rgba(121, 123, 132, 0.5); }
 
 .fab {
   color: #FFFFFF; }
@@ -220,25 +218,27 @@ body {
 
 /*___________________________________________________________________________________________________________________________________________________________ Header Section */
 .homepage__header {
-  height: 850px;
   height: 90vh;
-  background-image: -webkit-linear-gradient(left, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.png);
-  background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg);
+  background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
+  background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
   background-size: cover;
   background-position: center right;
   position: relative;
-  box-shadow: -1000px -12px 40px rgba(53, 82, 74, 0.7), 0px 9px 18px rgba(53, 82, 74, 0.8);
+  box-shadow: -100rem -1.2rem 4rem rgba(53, 82, 74, 0.7), 0 0.9rem 1.8rem rgba(53, 82, 74, 0.8);
   backface-visibility: hidden;
   /* MEDIA QUERIES (Landscape) */
   /* iPhone X */ }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 991px) {
     .homepage__header {
-      background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
-      background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg); } }
-  @media only screen and (orientation: landscape) and (max-width: 767px) {
+      background-image: -webkit-linear-gradient(left, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.png);
+      background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg); } }
+  @media only screen and (min-width: 375px) and (max-width: 1199px) {
+    .homepage__header {
+      height: 75vh; } }
+  @media only screen and (orientation: landscape) {
     .homepage__header {
       background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg); } }
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+  @media only screen and (orientation: landscape) and (min-width: 767px) {
     .homepage__header {
       background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_812x338.jpg); } }
 
@@ -800,26 +800,34 @@ body {
 
 .therapies {
   background-color: #D8DfD7;
-  margin-top: 6rem;
-  padding: 5rem 0;
-  box-shadow: 0px -1rem 6rem rgba(74, 78, 105, 0.25), 0px 10px 60px rgba(74, 78, 105, 0.25); }
-  @media only screen and (max-width: 767px) {
+  margin-top: 3rem;
+  padding: 2rem 0 0 0;
+  box-shadow: 0 -1rem 6rem rgba(53, 82, 74, 0.25), 0 1rem 6rem rgba(53, 82, 74, 0.25); }
+  @media only screen and (min-width: 768px) {
     .therapies {
       background-color: #D8DfD7;
       margin-top: 6rem;
       padding: 5rem 0;
-      box-shadow: 0 -1rem 6rem rgba(53, 82, 74, 0.25), 0 1rem 6rem rgba(53, 82, 74, 0.25); } }
+      box-shadow: 0 -1rem 6rem rgba(74, 78, 105, 0.25), 0 1rem 6rem rgba(74, 78, 105, 0.25); } }
 
 .card {
   background-color: transparent;
-  border: none; }
-  @media only screen and (max-width: 767px) {
+  border: none;
+  margin-bottom: 3rem; }
+  @media only screen and (min-width: 1200px) {
     .card {
-      margin-bottom: 3rem; } }
+      margin-bottom: 0; } }
   .card-img {
     width: 100%;
-    margin: auto;
     border-radius: 3rem; }
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 1199px) {
+      .card-img {
+        width: 80%;
+        margin-left: 10%; } }
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      .card-img {
+        width: 80%;
+        margin-left: 10%; } }
   .card-body {
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.7);
@@ -839,18 +847,29 @@ body {
   height: 30rem; }
 
 .therapies_row2 {
-  padding-top: 4rem; }
-  @media only screen and (max-width: 767px) {
+  padding-top: 0; }
+  @media only screen and (min-width: 768px) {
     .therapies_row2 {
-      padding-top: 0; } }
+      padding-top: 4rem; } }
 
 .customer-feedback {
   background-color: #FFFFFF;
-  margin-top: 6rem;
-  padding: 5rem 0; }
+  margin-top: 3rem; }
+  @media only screen and (min-width: 768px) {
+    .customer-feedback {
+      margin-top: 6rem;
+      padding: 5rem 0; } }
   .customer-feedback__image {
     width: 90%;
     margin: auto; }
+    @media only screen and (orientation: landscape) {
+      .customer-feedback__image {
+        width: 80%;
+        margin-left: 10%; } }
+    @media only screen and (min-width: 768px) {
+      .customer-feedback__image {
+        width: 100%;
+        margin: 0; } }
   .customer-feedback__content {
     font-size: 1.7rem; }
   .customer-feedback__username {
