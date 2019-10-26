@@ -3,45 +3,52 @@
 }
 
 .navigation__button {
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 50%;
     background-color: rgba($color-white,.75);
     box-shadow: 0.2rem 0.47rem 1rem rgba(53, 82, 74, 0.3);
     position: fixed;
-    top: 1.9rem;
-    right: 3rem;
+    top: 1.2rem;
+    right: 2.5rem;
     z-index: 1000;
     cursor: pointer;
     -webkit-transition: transform 0.2s;
     transition: transform 0.2s;
     backface-visibility: hidden;
 
-
-    /* Improved alignment for iPad */
-    @media only screen and (min-width: 670px) and (max-width: 899px) {
-        height: 6rem;
-        width: 6rem;
-        top: 2.5rem;
-        right: 5rem;
+    @media only screen and (min-width: 768px) {
+        height: 5rem;
+        width: 5rem;
+        top: 2rem;
+        right: 2.5rem;
     }
 
-    @media only screen and (min-width: 900px) {
-        height: 7rem;
-        width: 7rem;
-        right: 8rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-        right: 5rem;
-    }
-
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
         height: 4rem;
         width: 4rem;
-        right: 7rem;
+        top: 1.5rem;
+        right: 5rem;
     }
+
+    @media only screen and (min-width: 1024px) {
+        right: 5rem;
+    }
+
+    @media only screen and(orientation: landscape) and (min-width: 1024px) {
+        height: 7rem;
+        width: 7rem;
+        top: 3rem;
+        right: 5rem;
+    }
+
+    @media only screen and(orientation: landscape) and (min-width: 1200px) {
+        height: 8rem;
+        width: 8rem;
+        top: 4rem;
+        right: 10rem;
+    }
+
 }
 
 .navigation__nav {
@@ -86,32 +93,28 @@
     background-size: 220%;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
-
-    @media only screen and (max-width: 767px) {
-        font-size: 2.4rem;
-    }
 }
 
 .navigation__link-header,
 .navigation__link-header:link,
 .navigation__link-header:visited {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
     padding: 0.5rem 0.9rem;
 
-    @media only screen and (max-width: 767px) {
-        font-size: 2rem;
+    @media only screen and (min-width: 768px) {
+        font-size: 3rem;
     }
 
     /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
         font-size: 2rem;
     }
 }
 .navigation__link-footer,
 .navigation__link-footer:link,
 .navigation__link-footer:visited {
-    font-size: 1.4rem;
+    font-size: $mobile-font-size__portrait;
     padding: 0.4rem 0.4rem;
     margin-left: -0.4rem;
 }
@@ -119,12 +122,12 @@
 .navigation__link:hover {
     color: $color-medium-green;
     background-position: 100%;
-    -webkit-transform: translateY(-0.3rme);
-    transform: translateY(-0.3rem);
+    -webkit-transform: translateY(-0.3rem);
+    transform: translateY(-0.1rem);
     box-shadow: 0 1rem 2rem rgba($color-dark-green, 0.5);
 
-    @media only screen and (max-width: 767px) {
-        transform: translateY(-1px);
+    @media only screen and (min-width: 768px) {
+        transform: translateY(-0.3rem);
     }    
 }
 
@@ -159,44 +162,49 @@
 /* ICON */
 .navigation__icon {
     position: relative;
-    top: 27%;
+    top: 24%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
-    @media only screen and (min-width: 670px) and (max-width: 899px) {
-        top: 37%;
-    }
-
-    @media only screen and (min-width: 900px) {
-        top: 38%;
-    }
-
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (min-width: 768px) {
         top: 31%;
     }
+
+    @media only screen and (min-width: 1024px) {
+        top: 35%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        top: 40%;
+    }
+
 }
 
 .navigation__icon,
 .navigation__icon::before,
 .navigation__icon::after {
     display: inline-block;
-    width: 2.5rem;
-    height: 0.2rem;
+    width: 1.8rem;
+    height: 0.1rem;
     background-color: rgba($color-dark-green,0.8);
 
-    @media only screen and (min-width: 670px) {
-        width: 4rem;
-        height: 0.27rem;
-    }
-
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+    @media only screen and (min-width: 768px) {
         width: 2.5rem;
         height: 0.2rem;
     }
 
+    @media only screen and (min-width: 1024px) {
+        width: 2.7rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        width: 4rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1200px) {
+        width: 5rem;
+    }
 }
 
 .navigation__icon::before,
@@ -210,54 +218,51 @@
 }
 
 .navigation__icon::before {
-    top: -0.6rem;
+    top: -0.5rem;
 
-    @media only screen and (min-width: 670px) and (max-width: 899px) {
+    @media only screen and (min-width: 768px) {
         top: -0.8rem;
     }
 
-
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-        top: -0.6rem;
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        top: -1.2rem;
     }
+
 }
 
 .navigation__icon::after {
-    top: 0.6rem;
+    top: 0.5rem;
 
-    @media only screen and (min-width: 670px) and (max-width: 899px) {
+    @media only screen and (min-width: 768px) {
         top: 0.8rem;
     }
 
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-        top: 0.6rem;
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        top: 1.2rem;
     }
 }
 
 .navigation__button:hover .navigation__icon::before {
-    top: -1.2rem;
+    top: -0.6rem;
 
-    @media only screen and (max-width: 767px) {
-        top: -0.8rem;
+    @media only screen and (min-width: 768px) {
+        top: -0.9rem;
     }
 
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
-        top: -1rem;
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        top: -1.3rem;
     }
 }
 
 .navigation__button:hover .navigation__icon::after {
-    top: 1.2rem;
+    top: 0.6rem;
 
-    @media only screen and (max-width: 767px) {
-        top: 0.8rem;
+    @media only screen and (min-width: 768px) {
+        top: 0.9rem;
     }
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
-        top: 1rem;
+
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        top: 1.3rem;
     }
 }
 

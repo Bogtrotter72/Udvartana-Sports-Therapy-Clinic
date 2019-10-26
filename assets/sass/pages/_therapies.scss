@@ -24,7 +24,7 @@
     }
 
     &__content, &__table {
-        font-size: 1.4rem;
+        font-size: $mobile-font-size__portrait;
 
         @media only screen and (min-width: 992px) {
             font-size: 2rem;
