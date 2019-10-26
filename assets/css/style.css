@@ -269,7 +269,7 @@ body {
   left: 2rem; }
   @media only screen and (orientation: landscape) {
     .logo-box {
-      top: 2rem; } }
+      top: 1.5rem; } }
   @media only screen and (min-width: 768px) {
     .logo-box {
       top: 2rem; } }
@@ -281,7 +281,7 @@ body {
       top: 4rem; } }
   @media only screen and (min-width: 1200px) {
     .logo-box {
-      top: 5rem;
+      top: 4rem;
       left: 4rem; } }
 
 .logo {

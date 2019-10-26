@@ -4,7 +4,7 @@
     left: 2rem;
 
     @media only screen and (orientation: landscape) {
-        top: 2rem;
+        top: 1.5rem;
     }
 
     @media only screen and (min-width: 768px) {
@@ -20,7 +20,7 @@
     }
 
     @media only screen and (min-width: 1200px) {
-        top: 5rem;
+        top: 4rem;
         left: 4rem;
     }
 }
