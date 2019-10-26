@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/338bed3efb.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/338bed3efb.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="libraries/bootstrap.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="libraries/bootstrap.css" />
 
-    <!-- Lato Font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet" />
+        <!-- Lato Font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet" />
 
-    <!-- Additional styling -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+        <!-- Additional styling -->
+        <link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>Udvartana Clinic - Therapies</title>
-  </head>
+        <title>Udvartana Clinic - Therapies</title>
+    </head>
   
   
-  <body>
+    <body>
 
-<!--Start of Header Section -->
         <div class="container-fluid therapies-page">
             
+            <!--Start of Header Section -->
             <header class="container-fluid page-header">
                 <div class="logo-box">
                     <a href="index.html"><img class="logo" src="assets/img/logo-white.png" alt="Logo" /></a>
                 </div>
 
-                <div class="page-title heading-primary">Therapies</div>
+                <div class="page-title page-title__heading">Therapies</div>
 
                 <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
                 <label for="nav-toggle" class="navigation__button">
@@ -60,29 +60,63 @@
                     </ul>
                 </nav>
             </header>
-<!--End of Header Section -->
+            <!--End of Header Section -->
 
 
-<!--Start of Main Body Section -->
-            <section class="container-fluid therapies-page__list-background-container">
-                <div class="container therapies-page__list-container">
-                    <div class="heading-secondary" id="massage-therapies">Massage Therapies</div>
-                    <div class="heading-tertiary">Holistic Massage</div>
-                    <p class="therapies-page__content">
-                        Massage has been practised for centuries. It can be used as a therapeutic, healing
-                        treatment, as well as for <em>revitalizing</em>, <em>repairing</em> and <em>relaxing</em> the body.
-                    </p>
-                    <p class="therapies-page__content">
-                        Modern massage techniques have evolved mainly from a system developed by the Swedish
-                        physiologist, Per Henrik Ling.
-                    </p>
-                    <p class="therapies-page__content">
-                        Holistic massage therapies are designed to help you relax both your mind and body, and are
-                        based on the classical <em>Swedish</em> massage.
-                    </p>
+            <!--Start of Main Body Section -->
+            <section class="container-fluid therapies-page__container">
+                <div class="container therapies-page__inner-container">
+                    <div class="heading-secondary heading-secondary__therapies">Massage Therapies</div>
+                    <div class="heading-tertiary heading-tertiary__therapies">Holistic Massage</div>
+                    <div class="therapies-page__content">
+                        <p>
+                            Massage has been practised for centuries. It can be used as a therapeutic, healing
+                            treatment, as well as for <em>revitalizing</em>, <em>repairing</em> and <em>relaxing</em> the body.
+                        </p>
+                        <p>
+                            Modern massage techniques have evolved mainly from a system developed by the Swedish
+                            physiologist, Per Henrik Ling.
+                        </p>
+                        <p>
+                            Holistic massage therapies are designed to help you relax both your mind and body, and are
+                            based on the classical <em>Swedish</em> massage.
+                        </p>
+                    </div>
+                        <table class="table therapies-page__table table-borderless">
+                            <col width="70">
+                            <col width="100">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Duration</th>
+                                    <th scope="col" class="border-none">Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>30 mins</td>
+                                    <td class="border-left border-dark">€15</td>
+                                </tr>
+                                <tr>
+                                    <td>60 mins</td>
+                                    <td class="border-left border-dark">€25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    <div class="heading-tertiary mt-5 heading-tertiary__therapies">Deep-Tissue Massage</div>
+                    <div class="therapies-page__content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Saepe iusto incidunt, non, debitis illo totam perspiciatis, 
+                            deserunt aliquam eius veniam explicabo recusandae consequuntur 
+                            inventore eos quis labore et facere molestias magnam. 
+                            Esse ad laboriosam rem sit quibusdam officia aspernatur pariatur 
+                            omnis totam animi amet fugit modi fuga consequuntur, accusantium rerum.
+                        </p>
+                    </div>
                     <table class="table therapies-page__table table-borderless">
                         <col width="70">
-                        <col width="80">
+                        <col width="100">
                         <thead>
                             <tr>
                                 <th scope="col">Duration</th>
@@ -101,81 +135,20 @@
                         </tbody>
                     </table>
 
-                    <div class="heading-tertiary mt-5">Deep-Tissue Massage</div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Saepe iusto incidunt, non, debitis illo totam perspiciatis, 
-                        deserunt aliquam eius veniam explicabo recusandae consequuntur 
-                        inventore eos quis labore et facere molestias magnam. 
-                        Esse ad laboriosam rem sit quibusdam officia aspernatur pariatur 
-                        omnis totam animi amet fugit modi fuga consequuntur, accusantium rerum.
-                    </p>
+                    <div class="heading-tertiary mt-5 heading-tertiary__therapies">Sports Massage</div>
+                    <div class="therapies-page__content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Saepe iusto incidunt, non, debitis illo totam perspiciatis, 
+                            deserunt aliquam eius veniam explicabo recusandae consequuntur 
+                            inventore eos quis labore et facere molestias magnam. 
+                            Esse ad laboriosam rem sit quibusdam officia aspernatur pariatur 
+                            omnis totam animi amet fugit modi fuga consequuntur, accusantium rerum.
+                        </p>
+                    </div>
                     <table class="table therapies-page__table table-borderless">
                         <col width="70">
-                        <col width="80">
-                        <thead>
-                            <tr>
-                                <th scope="col">Duration</th>
-                                <th scope="col" class="border-none">Cost</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>30 mins</td>
-                                <td class="border-left border-dark">€15</td>
-                            </tr>
-                            <tr>
-                                <td>60 mins</td>
-                                <td class="border-left border-dark">€25</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="heading-tertiary mt-5">Sports Massage</div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Saepe iusto incidunt, non, debitis illo totam perspiciatis, 
-                        deserunt aliquam eius veniam explicabo recusandae consequuntur 
-                        inventore eos quis labore et facere molestias magnam. 
-                        Esse ad laboriosam rem sit quibusdam officia aspernatur pariatur 
-                        omnis totam animi amet fugit modi fuga consequuntur, accusantium rerum.
-                    </p>
-                    <table class="table therapies-page__table table-borderless">
-                        <col width="70">
-                        <col width="80">
-                        <thead>
-                            <tr>
-                                <th scope="col">Duration</th>
-                                <th scope="col" class="border-none">Cost</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>30 mins</td>
-                                <td class="border-left border-dark">€15</td>
-                            </tr>
-                            <tr>
-                                <td>60 mins</td>
-                                <td class="border-left border-dark">€25</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="container therapies-page__list-container">
-                    <div class="heading-secondary" id="detox-therapies">Detox Therapies</div>
-                    <div class="heading-tertiary">Honey Massage</div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Saepe iusto incidunt, non, debitis illo totam perspiciatis, 
-                        deserunt aliquam eius veniam explicabo recusandae consequuntur 
-                        inventore eos quis labore et facere molestias magnam. 
-                        Esse ad laboriosam rem sit quibusdam officia aspernatur pariatur 
-                        omnis totam animi amet fugit modi fuga consequuntur, accusantium rerum.
-                    </p>
-                    <table class="table therapies-page__table table-borderless">
-                        <col width="70">
-                        <col width="80">
+                        <col width="100">
                         <thead>
                             <tr>
                                 <th scope="col">Duration</th>
@@ -195,20 +168,22 @@
                     </table>
                 </div>
 
-                <div class="container therapies-page__list-container">
-                    <div class="heading-secondary" id="anti-cellulite">Anti-Cellulite Treatment</div>
-                    <div class="heading-tertiary">Anti-Cellulite Wrap</div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Saepe iusto incidunt, non, debitis illo totam perspiciatis, 
-                        deserunt aliquam eius veniam explicabo recusandae consequuntur 
-                        inventore eos quis labore et facere molestias magnam. 
-                        Esse ad laboriosam rem sit quibusdam officia aspernatur pariatur 
-                        omnis totam animi amet fugit modi fuga consequuntur, accusantium rerum.
-                    </p>
+                <div class="container therapies-page__inner-container">
+                    <div class="heading-secondary heading-secondary__therapies">Detox Therapies</div>
+                    <div class="heading-tertiary heading-tertiary__therapies">Honey Massage</div>
+                    <div class="therapies-page__content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Saepe iusto incidunt, non, debitis illo totam perspiciatis, 
+                            deserunt aliquam eius veniam explicabo recusandae consequuntur 
+                            inventore eos quis labore et facere molestias magnam. 
+                            Esse ad laboriosam rem sit quibusdam officia aspernatur pariatur 
+                            omnis totam animi amet fugit modi fuga consequuntur, accusantium rerum.
+                        </p>
+                    </div>
                     <table class="table therapies-page__table table-borderless">
                         <col width="70">
-                        <col width="80">
+                        <col width="100">
                         <thead>
                             <tr>
                                 <th scope="col">Duration</th>
@@ -227,57 +202,90 @@
                         </tbody>
                     </table>
                 </div>
-<!--End of Main Body Section -->
 
+                <div class="container therapies-page__inner-container">
+                    <div class="heading-secondary heading-secondary__therapies">Anti-Cellulite Treatment</div>
+                    <div class="heading-tertiary heading-tertiary__therapies">Anti-Cellulite Wrap</div>
+                    <div class="therapies-page__content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Saepe iusto incidunt, non, debitis illo totam perspiciatis, 
+                            deserunt aliquam eius veniam explicabo recusandae consequuntur 
+                            inventore eos quis labore et facere molestias magnam. 
+                            Esse ad laboriosam rem sit quibusdam officia aspernatur pariatur 
+                            omnis totam animi amet fugit modi fuga consequuntur, accusantium rerum.
+                        </p>
+                    </div>
+                    <table class="table therapies-page__table table-borderless">
+                        <col width="70">
+                        <col width="100">
+                        <thead>
+                            <tr>
+                                <th scope="col">Duration</th>
+                                <th scope="col" class="border-none">Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>30 mins</td>
+                                <td class="border-left border-dark">€15</td>
+                            </tr>
+                            <tr>
+                                <td>60 mins</td>
+                                <td class="border-left border-dark">€25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--End of Main Body Section -->
+            </section>
 
-                <!--Start of Footer Section -->
-    <div class="footer">
-            <div class="row mx-5">
-                <div class="col-lg-5 col-xs-12 footer__opening-hours">
-                    <h4 class="footer__heading">Opening hours</h4>
-                    <p class="footer__text pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
-    
+            <!--Start of Footer Section -->
+            <div class="footer">
+                <div class="row mx-5">
+                    <div class="col-lg-5 col-xs-12 footer__opening-hours">
+                        <h4 class="footer__heading">Opening hours</h4>
+                        <p class="footer__text pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+
+                    </div>
+                    <div class="col-lg-3 col-12 footer__navigation">
+                        <h4 class="footer__heading footer__heading--margin">Navigation</h4>
+                        <ul class="m-0 p-0">
+                        <li class="navigation__item navigation__item-footer">
+                            <a href="index.html" class="navigation__link navigation__link-footer">Home</a></li>
+                        <li class="navigation__item navigation__item-footer">
+                            <a href="therapies.html" class="navigation__link navigation__link-footer">Therapies</a></li>
+                        <li class="navigation__item navigation__item-footer">
+                            <a href="price-list.html" class="navigation__link navigation__link-footer">Price List</a></li>
+                        <li class="navigation__item navigation__item-footer">
+                            <a href="bookings.html" class="navigation__link navigation__link-footer">Bookings</a></li>
+                        <li class="navigation__item navigation__item-footer">
+                            <a href="about.html" class="navigation__link navigation__link-footer">About Us</a></li>
+                        <li class="navigation__item navigation__item-footer">
+                            <a href="contact.html" class="navigation__link navigation__link-footer">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 footer__location">
+                        <h4 class="footer__heading footer__heading--margin">Location</h4>
+                        <p class="footer__text">123 Mayor's Walk, Waterford,<br>Co. Waterford,<br>Ireland</p>
+                        <p class="footer__text mb-0"><i class="fas fa-mobile-alt"></i>&nbsp; 086-5437891</p>
+                        <p class="footer__text"><i class="fas fa-envelope"></i>&nbsp;info@udvartana.ie</p>
+                        <p>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-12 footer__navigation">
-                    <h4 class="footer__heading footer__heading--margin">Navigation</h4>
-                    <ul class="m-0 p-0">
-                    <li class="navigation__item navigation__item-footer">
-                        <a href="index.html" class="navigation__link navigation__link-footer">Home</a></li>
-                    <li class="navigation__item navigation__item-footer">
-                        <a href="therapies.html" class="navigation__link navigation__link-footer">Therapies</a></li>
-                    <li class="navigation__item navigation__item-footer">
-                        <a href="price-list.html" class="navigation__link navigation__link-footer">Price List</a></li>
-                    <li class="navigation__item navigation__item-footer">
-                        <a href="bookings.html" class="navigation__link navigation__link-footer">Bookings</a></li>
-                    <li class="navigation__item navigation__item-footer">
-                        <a href="about.html" class="navigation__link navigation__link-footer">About Us</a></li>
-                    <li class="navigation__item navigation__item-footer">
-                        <a href="contact.html" class="navigation__link navigation__link-footer">Contact</a></li>
-                    </ul>
-                </div>
-    
-                <div class="col-lg-4 footer__location">
-                    <h4 class="footer__heading footer__heading--margin">Location</h4>
-                    <p class="footer__text">123 Mayor's Walk, Waterford,<br>Co. Waterford,<br>Ireland</p>
-                    <p class="footer__text mb-0"><i class="fas fa-mobile-alt"></i>&nbsp; 086-5437891</p>
-                    <p class="footer__text"><i class="fas fa-envelope"></i>&nbsp;info@udvartana.ie</p>
-                    <p>
-                      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </p>
+                <div class="row mt-5 mx-5">
+                    <div class="col copyright">
+                    <p class="footer__text"><small>© 2019 &nbsp; Website Design by <a href="https://d3dzines.wordpress.com/" target="_blank">
+                    <span class=" ml-3 navigation__link navigation__link-footer">D3DZINES</span></a></small></p>
+                    </div>
                 </div>
             </div>
-            <div class="row mt-5 mx-5">
-                <div class="col copyright">
-                <p class="footer__text"><small>© 2019 &nbsp; Website Design by <a href="https://d3dzines.wordpress.com/" target="_blank">
-                  <span class=" ml-3 navigation__link navigation__link-footer">D3DZINES</span></a></small></p>
-                </div>
-            </div>
+            <!--End of Footer Section -->
+
         </div>
-        <!--End of Footer Section -->
-        </section>
-    </div>
-    
-
     </body>
 </html>

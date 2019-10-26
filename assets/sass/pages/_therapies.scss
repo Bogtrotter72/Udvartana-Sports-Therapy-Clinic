@@ -5,24 +5,35 @@
     background-position: top center;
     position: absolute;
 
-    &__list-background-container {
+    &__container {
+        width: 90%;
+        margin: 0 5%;
         padding: 0;
     }
 
-    &__list-container {
-        margin: 100px auto;
+    &__inner-container {
+        margin: 7rem auto;
         background-color: rgba($color-light-green, 0.7);
         border: 1px solid $color-dark-green;
-        padding: 20px 50px;
+        padding: 2rem 2rem;
+
+        @media only screen and (min-width: 768px) {
+            margin: 10rem auto;
+            padding: 2rem 5rem;
+        }
     }
 
     &__content, &__table {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+
+        @media only screen and (min-width: 992px) {
+            font-size: 2rem;
+        }
     }
 
     &__table {
-        width: 80%;
-        margin: 0 20%;
+        display: table;
+        text-align: center;
     }
 }
 
@@ -31,10 +42,11 @@ table {
     border-spacing: 9px;
 }
 
-th ~ .border-left, td ~ .border-left {
-    padding-left: 150px;
+th ~ .border-left, th ~ .border-none, td ~ .border-left {
+    padding-left: 0;
+
 }
 
 tr {
-    height: 20px;
+    height: 2rem;
 }

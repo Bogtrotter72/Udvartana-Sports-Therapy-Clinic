@@ -1,15 +1,17 @@
 .page-header {
-    height: 850px;
     height: 15vh;
     background-image: linear-gradient(to bottom, rgba($color-dark-green, 0.9), rgba($color-dark-green, 0.5));    
     background-size: cover;
     background-position: center right;
     position: relative;
     backface-visibility: hidden;
-}
 
-.page-title {
-    @include center-screen;
-    color: $color-white;
-    text-transform: uppercase;
+    @media only screen and (min-width: 350px) and (max-width: 900px) {
+        height: 13vh;
+    }
+
+
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 900px) {
+        height: 25vh;
+    }
 }

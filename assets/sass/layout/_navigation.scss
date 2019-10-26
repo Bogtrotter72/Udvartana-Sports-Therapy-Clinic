@@ -17,7 +17,16 @@
     transition: transform 0.2s;
     backface-visibility: hidden;
 
-    @media only screen and (min-width: 768px) {
+
+    /* Improved alignment for iPad */
+    @media only screen and (min-width: 670px) and (max-width: 899px) {
+        height: 6rem;
+        width: 6rem;
+        top: 2.5rem;
+        right: 5rem;
+    }
+
+    @media only screen and (min-width: 900px) {
         height: 7rem;
         width: 7rem;
         right: 8rem;
@@ -155,7 +164,11 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 670px) and (max-width: 899px) {
+        top: 37%;
+    }
+
+    @media only screen and (min-width: 900px) {
         top: 38%;
     }
 
@@ -173,7 +186,7 @@
     height: 0.2rem;
     background-color: rgba($color-dark-green,0.8);
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 670px) {
         width: 4rem;
         height: 0.27rem;
     }
@@ -197,11 +210,12 @@
 }
 
 .navigation__icon::before {
-    top: -1rem;
+    top: -0.6rem;
 
-    @media only screen and (max-width: 767px) {
-        top: -0.6rem;
+    @media only screen and (min-width: 670px) and (max-width: 899px) {
+        top: -0.8rem;
     }
+
 
     /* iPhone X */
     @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
@@ -210,10 +224,10 @@
 }
 
 .navigation__icon::after {
-    top: 1rem;
+    top: 0.6rem;
 
-    @media only screen and (max-width: 767px) {
-        top: 0.6rem;
+    @media only screen and (min-width: 670px) and (max-width: 899px) {
+        top: 0.8rem;
     }
 
     /* iPhone X */

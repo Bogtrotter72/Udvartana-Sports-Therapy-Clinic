@@ -157,7 +157,7 @@ body {
   animation: slideUp 1.5s linear 4s backwards; }
 
 .heading-secondary {
-  font-size: 2.7rem;
+  font-size: 3rem;
   color: #35524A;
   font-weight: 400;
   letter-spacing: 0.5rem;
@@ -165,31 +165,75 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 4rem; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 899px) {
+    .heading-secondary {
+      letter-spacing: 1.4rem; } }
+  @media only screen and (min-width: 900px) {
     .heading-secondary {
       font-size: 6rem;
       letter-spacing: 1.6rem;
       margin-bottom: 8rem; } }
+  @media only screen and (min-width: 320px) and (max-width: 900px) {
+    .heading-secondary__therapies {
+      font-size: 2.3rem;
+      margin-bottom: 2rem; } }
 
 .heading-tertiary {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #4A4E69;
   font-weight: 400;
   letter-spacing: 0.8rem;
   padding: 1rem;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 3rem; }
-  @media only screen and (min-width: 768px) {
-    .heading-tertiary {
-      font-size: 3rem;
-      letter-spacing: 1.2rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+  margin-bottom: 2rem; }
+  .heading-tertiary__therapies {
+    font-size: 1.6rem;
+    letter-spacing: 0.6rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    border-bottom: 1px solid rgba(74, 78, 105, 0.5); }
+    @media only screen and (min-width: 992px) {
+      .heading-tertiary__therapies {
+        font-size: 2.2rem;
+        letter-spacing: 0.8rem;
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 3rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 992px) {
     .heading-tertiary {
       font-size: 3rem; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 900px) {
     .heading-tertiary__line-1 {
       display: block; } }
+
+.page-title__heading {
+  font-size: 2.5rem;
+  color: #35384b;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  @media only screen and (min-width: 768px) and (max-width: 899px) {
+    .page-title__heading {
+      font-size: 6rem;
+      letter-spacing: 2rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 400px) and (max-width: 767px) {
+    .page-title__heading {
+      font-size: 3.5rem;
+      letter-spacing: 1.5rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 899px) {
+    .page-title__heading {
+      font-size: 6rem;
+      letter-spacing: 2rem; } }
+  @media only screen and (min-width: 900px) {
+    .page-title__heading {
+      font-size: 8rem;
+      letter-spacing: 2rem; } }
 
 .btn-text:link, .btn-text:visited {
   position: absolute;
@@ -214,6 +258,37 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
   transform: translateY(0px); }
+
+.card {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 3rem; }
+  @media only screen and (min-width: 1200px) {
+    .card {
+      margin-bottom: 0; } }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 1199px) {
+    .card {
+      margin: 0 3rem 3rem 3rem; } }
+  .card-img {
+    width: 100%;
+    border-radius: 3rem; }
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      .card-img {
+        width: 80%;
+        margin-left: 10%; } }
+  .card-body {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5);
+    border-radius: 2rem;
+    overflow: auto; }
+  .card__customer-feedback {
+    width: 90%;
+    margin: 2rem auto; }
+    @media only screen and (min-width: 900px) {
+      .card__customer-feedback {
+        width: 100%;
+        margin: 0; } }
 
 .logo-box {
   position: absolute;
@@ -314,8 +389,15 @@ body {
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
   backface-visibility: hidden;
+  /* Improved alignment for iPad */
   /* iPhone X */ }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 670px) and (max-width: 899px) {
+    .navigation__button {
+      height: 6rem;
+      width: 6rem;
+      top: 2.5rem;
+      right: 5rem; } }
+  @media only screen and (min-width: 900px) {
     .navigation__button {
       height: 7rem;
       width: 7rem;
@@ -444,7 +526,10 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   /* iPhone X */ }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 670px) and (max-width: 899px) {
+    .navigation__icon {
+      top: 37%; } }
+  @media only screen and (min-width: 900px) {
     .navigation__icon {
       top: 38%; } }
   @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
@@ -459,7 +544,7 @@ body {
   height: 0.2rem;
   background-color: rgba(53, 82, 74, 0.8);
   /* iPhone X */ }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 670px) {
     .navigation__icon,
     .navigation__icon::before,
     .navigation__icon::after {
@@ -482,21 +567,21 @@ body {
   transition: transform 0.7s cubic-bezier(0.65, 0.9, 0.3, 1.25); }
 
 .navigation__icon::before {
-  top: -1rem;
+  top: -0.6rem;
   /* iPhone X */ }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 670px) and (max-width: 899px) {
     .navigation__icon::before {
-      top: -0.6rem; } }
+      top: -0.8rem; } }
   @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     .navigation__icon::before {
       top: -0.6rem; } }
 
 .navigation__icon::after {
-  top: 1rem;
+  top: 0.6rem;
   /* iPhone X */ }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 670px) and (max-width: 899px) {
     .navigation__icon::after {
-      top: 0.6rem; } }
+      top: 0.8rem; } }
   @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     .navigation__icon::after {
       top: 0.6rem; } }
@@ -547,21 +632,18 @@ body {
       transform: rotate(-45deg); } }
 
 .page-header {
-  height: 850px;
   height: 15vh;
   background-image: linear-gradient(to bottom, rgba(53, 82, 74, 0.9), rgba(53, 82, 74, 0.5));
   background-size: cover;
   background-position: center right;
   position: relative;
   backface-visibility: hidden; }
-
-.page-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #FFFFFF;
-  text-transform: uppercase; }
+  @media only screen and (min-width: 350px) and (max-width: 900px) {
+    .page-header {
+      height: 13vh; } }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 900px) {
+    .page-header {
+      height: 25vh; } }
 
 .about-page__container {
   padding: 0;
@@ -776,30 +858,6 @@ body {
 .no-margin {
   margin: 0; }
 
-.card {
-  background-color: transparent;
-  border: none;
-  margin-bottom: 3rem; }
-  @media only screen and (min-width: 1200px) {
-    .card {
-      margin-bottom: 0; } }
-  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 1199px) {
-    .card {
-      margin: 0 3rem 3rem 3rem; } }
-  .card-img {
-    width: 100%;
-    border-radius: 3rem; }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      .card-img {
-        width: 80%;
-        margin-left: 10%; } }
-  .card-body {
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5);
-    border-radius: 2rem;
-    overflow: auto; }
-
 .therapies-box__image {
   border: 0.3rem solid rgba(74, 78, 105, 0.25);
   box-shadow: 0 0.6rem 2.3rem rgba(74, 78, 105, 0.5); }
@@ -836,7 +894,7 @@ body {
       .customer-feedback__image {
         width: 60%;
         margin-left: 20%; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 900px) {
       .customer-feedback__image {
         width: 100%;
         margin: 0; } }
@@ -906,25 +964,34 @@ tr {
   background-size: 150%;
   background-position: top center;
   position: absolute; }
-  .therapies-page__list-background-container {
+  .therapies-page__container {
+    width: 90%;
+    margin: 0 5%;
     padding: 0; }
-  .therapies-page__list-container {
-    margin: 100px auto;
+  .therapies-page__inner-container {
+    margin: 7rem auto;
     background-color: rgba(216, 223, 215, 0.7);
     border: 1px solid #35524A;
-    padding: 20px 50px; }
+    padding: 2rem 2rem; }
+    @media only screen and (min-width: 768px) {
+      .therapies-page__inner-container {
+        margin: 10rem auto;
+        padding: 2rem 5rem; } }
   .therapies-page__content, .therapies-page__table {
-    font-size: 1.3rem; }
+    font-size: 1.4rem; }
+    @media only screen and (min-width: 992px) {
+      .therapies-page__content, .therapies-page__table {
+        font-size: 2rem; } }
   .therapies-page__table {
-    width: 80%;
-    margin: 0 20%; }
+    display: table;
+    text-align: center; }
 
 table {
   border-collapse: separate;
   border-spacing: 9px; }
 
-th ~ .border-left, td ~ .border-left {
-  padding-left: 150px; }
+th ~ .border-left, th ~ .border-none, td ~ .border-left {
+  padding-left: 0; }
 
 tr {
-  height: 20px; }
+  height: 2rem; }
