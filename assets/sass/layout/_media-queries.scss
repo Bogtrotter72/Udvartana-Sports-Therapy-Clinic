@@ -1,139 +1,139 @@
-/* MEDIA QUERIES (Portrait) */
+// /* MEDIA QUERIES (Portrait) */
 
-@media only screen and (max-width: 767px) {
-    .header {
-        background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
-        background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
-    }
-    .logo-box {
-        left: 22px; }
+// @media only screen and (max-width: 767px) {
+//     .header {
+//         background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
+//         background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
+//     }
+//     .logo-box {
+//         left: 22px; }
       
-      .logo {
-        height: 50px; }
+//       .logo {
+//         height: 50px; }
 
-    .heading-primary {
-        font-size:  34px;
-        letter-spacing: 12px;
-        text-transform: uppercase;
-        top: 6%;
-        left: 22%;
-    }
-    .heading-primary__main {
-        padding-bottom: 50px;
-    }
-    .heading-primary__sub1 {
-        padding-bottom: 50px;
-    }
+//     .heading-primary {
+//         font-size:  34px;
+//         letter-spacing: 12px;
+//         text-transform: uppercase;
+//         top: 6%;
+//         left: 22%;
+//     }
+//     .heading-primary__main {
+//         padding-bottom: 50px;
+//     }
+//     .heading-primary__sub1 {
+//         padding-bottom: 50px;
+//     }
 
-    .navigation__button {
-        height: 50px;
-        width: 50px;
-        right: 30px;
-    }
+//     .navigation__button {
+//         height: 50px;
+//         width: 50px;
+//         right: 30px;
+//     }
 
-    .navigation__list {  //iPhone 6/7/8 compatible
-        top: 10%;
-        left: 24%;
-    }
+//     .navigation__list {  //iPhone 6/7/8 compatible
+//         top: 10%;
+//         left: 24%;
+//     }
 
-    .navigation__link,
-    .navigation__link:link,
-    .navigation__link:visited {
-      font-size: 24px;
-    }
+//     .navigation__link,
+//     .navigation__link:link,
+//     .navigation__link:visited {
+//       font-size: 24px;
+//     }
 
-    .navigation__link:hover {
-        transform: translateY(-1px);
-    }
+//     .navigation__link:hover {
+//         transform: translateY(-1px);
+//     }
 
-    .navigation__icon {
-        top: 20%;
-        &::before {
-            top: -6px;
-        }
+//     .navigation__icon {
+//         top: 20%;
+//         &::before {
+//             top: -6px;
+//         }
 
-        &::after {
-            top: 6px;
-        }
-    }
+//         &::after {
+//             top: 6px;
+//         }
+//     }
 
-    .navigation__icon,
-    .navigation__icon::before,
-    .navigation__icon::after {
-    width: 30px;
-    height: 2px;
-    }
+//     .navigation__icon,
+//     .navigation__icon::before,
+//     .navigation__icon::after {
+//     width: 30px;
+//     height: 2px;
+//     }
 
-    .navigation__button:hover .navigation__icon::before {
-        top: -8px; }
+//     .navigation__button:hover .navigation__icon::before {
+//         top: -8px; }
       
-      .navigation__button:hover .navigation__icon::after {
-        top: 8px; }
+//       .navigation__button:hover .navigation__icon::after {
+//         top: 8px; }
       
-      .navigation__checkbox:checked + .navigation__button .navigation__icon {
-        background-color: transparent; }
+//       .navigation__checkbox:checked + .navigation__button .navigation__icon {
+//         background-color: transparent; }
       
-      .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-        top: 0;
-        transform: rotate(45deg); }
+//       .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+//         top: 0;
+//         transform: rotate(45deg); }
       
-      .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-        top: 0;
-        transform: rotate(-45deg); }
+//       .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+//         top: 0;
+//         transform: rotate(-45deg); }
 
 
-//_________________________________________________________________________________________________________________________________________________________THERAPIES SECTION
+// //_________________________________________________________________________________________________________________________________________________________THERAPIES SECTION
 
-        .heading-secondary {
-          font-size: 30px;
-          letter-spacing: 5px;
-        }
+//         .heading-secondary {
+//           font-size: 30px;
+//           letter-spacing: 5px;
+//         }
 
 
-        .therapies {
-          background-color: $color-light-green;
-          margin-top: 60px;
-          padding: 5rem 0;
-          box-shadow: 0px -10px 60px rgba(53, 82, 74, 0.25), 0px 10px 60px rgba(53, 82, 74, 0.25);
-      }
+//         .therapies {
+//           background-color: $color-light-green;
+//           margin-top: 60px;
+//           padding: 5rem 0;
+//           box-shadow: 0px -10px 60px rgba(53, 82, 74, 0.25), 0px 10px 60px rgba(53, 82, 74, 0.25);
+//       }
       
-      #therapies__container {
-          width: 80vw;
-          padding: 0;
-          margin: 0 auto;
-          position: relative;
-      }
+//       #therapies__container {
+//           width: 80vw;
+//           padding: 0;
+//           margin: 0 auto;
+//           position: relative;
+//       }
 
 
-}
+// }
 
-@media only screen and (min-width: 320px) and (max-width: 325px) {
-    .navigation__list { //iPhone 5 compatible
-        top: 10%;
-        left: 19%;
-    }
-}
+// @media only screen and (min-width: 320px) and (max-width: 325px) {
+//     .navigation__list { //iPhone 5 compatible
+//         top: 10%;
+//         left: 19%;
+//     }
+// }
 
-/* MEDIA QUERIES (Landscape) */
+// /* MEDIA QUERIES (Landscape) */
   
-  @media only screen and (orientation: landscape) and (max-width: 767px) {
-    .header {
-        background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg);
-    }
+//   @media only screen and (orientation: landscape) and (max-width: 767px) {
+//     .header {
+//         background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg);
+//     }
 
-    .heading-primary {
-      font-size:  32px;
-      letter-spacing: 12px;
-      text-transform: uppercase;
-      top: -9%;
-      left: 22%;
-      }
-  }
+//     .heading-primary {
+//       font-size:  32px;
+//       letter-spacing: 12px;
+//       text-transform: uppercase;
+//       top: -9%;
+//       left: 22%;
+//       }
+//   }
   
   
-  /* iPhone X */
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
-    .header {
-        background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_812x338.jpg);
-    }
-  }
+//   /* iPhone X */
+//   @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+//     .header {
+//         background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_812x338.jpg);
+//     }
+//   }

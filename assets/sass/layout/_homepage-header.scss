@@ -1,38 +1,42 @@
 /*___________________________________________________________________________________________________________________________________________________________ Header Section */
 .homepage__header {
-    height: 90vh;
+    height: 89vh;
     background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
     background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg); 
     background-size: cover;
     background-position: center right;
     position: relative;
-    box-shadow: -100rem -1.2rem 4rem rgba(53, 82, 74, 0.7), 0 0.9rem 1.8rem rgba(53, 82, 74, 0.8);
+    box-shadow: 0rem -1.2rem 4rem rgba(53, 82, 74, 0.4), 0 1rem 1rem rgba(53, 82, 74, 0.5);
     backface-visibility: hidden;
 
-    @media only screen and (min-width: 991px) {
-        background-image: -webkit-linear-gradient(left, rgba($color-dark-green,0.7) 10%, 
-                                                 rgba($color-dark-green,0.1) 67%, 
-                                                 rgba($color-light-green,0) 100%),   
-                                                   url(../img/header-image_570x265.png);
+    // @media only screen and (min-width: 991px) {
+    //     background-image: -webkit-linear-gradient(left, rgba($color-dark-green,0.7) 10%, 
+    //                                              rgba($color-dark-green,0.1) 67%, 
+    //                                              rgba($color-light-green,0) 100%),   
+    //                                                url(../img/header-image_570x265.png);
 
-        background-image: linear-gradient(to right, rgba($color-dark-green,0.7) 10%, 
-                                                 rgba($color-dark-green,0.1) 67%, 
-                                                 rgba($color-light-green,0) 100%),   
-                                                   url(../img/header-image_570x265.jpg);
+    //     background-image: linear-gradient(to right, rgba($color-dark-green,0.7) 10%, 
+    //                                              rgba($color-dark-green,0.1) 67%, 
+    //                                              rgba($color-light-green,0) 100%),   
+    //                                                url(../img/header-image_570x265.jpg);
+    // }
+
+    @media only screen and (min-width: 375px) and (max-width: 767px) {
+        height: 85vh;
     }
 
-    @media only screen and (min-width: 375px) and (max-width: 1199px) {
-        height: 75vh;
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+        background-position: bottom right;
     }
 
-    /* MEDIA QUERIES (Landscape) */
     @media only screen and (orientation: landscape) {
             background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg);
         }
   
   
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 767px) {
-        background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_812x338.jpg);
+    /* iPad */
+    @media only screen and (orientation: landscape) and (min-width: 991px) and (max-width: 1199px) {
+        height: 75vh;
+        background-position: left;
     }
 }

@@ -1,10 +1,16 @@
 /* Homepage Hero Text */
+@keyframes inAndOut {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.75; }
+  100% {
+    opacity: 0; } }
+
 @-webkit-keyframes slideUp {
   0% {
     opacity: 0;
     -webkit-transform: translateY(100px); }
-  60% {
-    -webkit-transform: translateY(-20px); }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0px); } }
@@ -41,70 +47,117 @@ body {
   line-height: 1.7;
   color: #000000; }
 
+.heading-open {
+  color: #35524A;
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: 0.95rem;
+  text-shadow: 0.5rem 0.4rem 0.5rem #FFFFFF;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 52%;
+  opacity: 0;
+  animation: inAndOut 3s linear;
+  /* iPad */ }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+    .heading-open {
+      font-size: 3rem;
+      top: 57%;
+      left: 34%; } }
+  @media only screen and (min-width: 768px) {
+    .heading-open {
+      font-size: 8.5rem;
+      letter-spacing: 2rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+    .heading-open {
+      font-size: 3.4rem;
+      letter-spacing: 1.2rem;
+      top: 55%;
+      left: 37%; } }
+  @media only screen and (orientation: landscape) and (min-width: 992px) and (max-width: 1199px) {
+    .heading-open {
+      font-size: 8rem;
+      letter-spacing: 2rem;
+      top: 59%;
+      left: 47%; } }
+  @media only screen and (min-width: 1200px) {
+    .heading-open {
+      top: 35%;
+      left: 32%; } }
+
 .heading-primary {
   color: #FFFFFF;
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: 300;
   letter-spacing: 1.2rem;
   text-shadow: 0.5rem 0.4rem 0.5rem #35524A;
   text-transform: uppercase;
   position: absolute;
-  top: 6%;
-  left: 22%;
-  -webkit-transform: translate(0%, 50%);
-  transform: translate(-19%, 52%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  /* mixin adjusted to better accommodate the iPhone X */
   /* iPhone X */ }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+    .heading-primary {
+      top: 57%;
+      left: 35%; } }
   @media only screen and (min-width: 768px) {
     .heading-primary {
       font-size: 8rem;
-      letter-spacing: 2rem;
-      top: 0;
-      left: 21%; } }
-  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-    .heading-primary {
-      font-size: 3.2rem;
-      top: -9%;
-      left: 22%; } }
-  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+      letter-spacing: 2rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 814px) {
     .heading-primary {
       font-size: 3.2rem;
       letter-spacing: 1.2rem;
-      top: 0;
-      left: 22%; } }
+      top: 60%;
+      left: 35%; } }
+  @media only screen and (orientation: landscape) and (min-width: 815px) and (max-width: 1199px) {
+    .heading-primary {
+      font-size: 6rem;
+      letter-spacing: 3rem;
+      top: 60%;
+      left: 45%; } }
+  @media only screen and (min-width: 1200px) {
+    .heading-primary {
+      left: 30%; } }
 
 .heading-primary__main {
   display: block;
-  padding-bottom: 5rem;
-  -webkit-animation: slideUp 1.2s linear;
-  animation: slideUp 1.2s linear;
-  /* iPhone X */ }
-  @media only screen and (min-width: 768px) {
-    .heading-primary__main {
-      padding-bottom: 7rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-    .heading-primary__main {
-      padding-bottom: 5rem; } }
+  padding-bottom: 4.9rem;
+  opacity: 0;
+  -webkit-animation: slideUp 1.5s linear 2.6s forwards;
+  animation: slideUp 1.5s linear 2.6s forwards; }
 
 .heading-primary__sub1 {
   display: block;
-  padding-bottom: 5rem;
-  -webkit-animation: slideUp 1.2s linear 0.65s backwards;
-  animation: slideUp 1.2s linear 0.65s backwards;
+  padding-bottom: 4.9rem;
+  -webkit-animation: slideUp 1.5s linear 3.2s backwards;
+  animation: slideUp 1.5s linear 3.2s backwards; }
+
+.heading-primary__main, .heading-primary__sub1 {
   /* iPhone X */ }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+    .heading-primary__main, .heading-primary__sub1 {
+      padding-bottom: 2rem; } }
   @media only screen and (min-width: 768px) {
-    .heading-primary__sub1 {
+    .heading-primary__main, .heading-primary__sub1 {
       padding-bottom: 7rem; } }
   @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-    .heading-primary__sub1 {
-      padding-bottom: 5rem; } }
+    .heading-primary__main, .heading-primary__sub1 {
+      padding-bottom: 4.9rem; } }
 
 .heading-primary__sub2 {
   display: block;
-  -webkit-animation: slideUp 1.2s linear 1.3s backwards;
-  animation: slideUp 1.2s linear 1.3s backwards; }
+  -webkit-animation: slideUp 1.5s linear 4s backwards;
+  animation: slideUp 1.5s linear 4s backwards; }
 
 .heading-secondary {
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: #35524A;
   font-weight: 400;
   letter-spacing: 0.5rem;
@@ -119,7 +172,7 @@ body {
       margin-bottom: 8rem; } }
 
 .heading-tertiary {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: #4A4E69;
   font-weight: 400;
   letter-spacing: 0.8rem;
@@ -129,7 +182,7 @@ body {
   margin-bottom: 3rem; }
   @media only screen and (min-width: 768px) {
     .heading-tertiary {
-      font-size: 4rem;
+      font-size: 3rem;
       letter-spacing: 1.2rem; } }
   @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     .heading-tertiary {
@@ -142,7 +195,7 @@ body {
   position: absolute;
   left: 1rem;
   bottom: 0;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #558B6E;
   text-decoration: none;
@@ -164,17 +217,20 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 20px;
-  left: 40px; }
-  @media only screen and (max-width: 767px) {
+  top: 22px;
+  left: 20px; }
+  @media only screen and (min-width: 768px) {
     .logo-box {
-      left: 22px; } }
+      left: 20px; } }
 
 .logo {
-  height: 70px; }
-  @media only screen and (max-width: 767px) {
+  height: 4rem; }
+  @media only screen and (min-width: 768px) {
     .logo {
-      height: 50px; } }
+      height: 7rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+    .logo {
+      height: 4rem; } }
 
 .footer {
   background: rgba(53, 82, 74, 0.9);
@@ -195,7 +251,7 @@ body {
           margin-top: 0; } }
   .footer__text {
     font-weight: 400;
-    font-size: 1.4rem; }
+    font-size: 1.2rem; }
   .footer .footer__text a {
     color: #558B6E;
     text-decoration: none;
@@ -218,152 +274,63 @@ body {
 
 /*___________________________________________________________________________________________________________________________________________________________ Header Section */
 .homepage__header {
-  height: 90vh;
+  height: 89vh;
   background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
   background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
   background-size: cover;
   background-position: center right;
   position: relative;
-  box-shadow: -100rem -1.2rem 4rem rgba(53, 82, 74, 0.7), 0 0.9rem 1.8rem rgba(53, 82, 74, 0.8);
+  box-shadow: 0rem -1.2rem 4rem rgba(53, 82, 74, 0.4), 0 1rem 1rem rgba(53, 82, 74, 0.5);
   backface-visibility: hidden;
-  /* MEDIA QUERIES (Landscape) */
-  /* iPhone X */ }
-  @media only screen and (min-width: 991px) {
+  /* iPad */ }
+  @media only screen and (min-width: 375px) and (max-width: 767px) {
     .homepage__header {
-      background-image: -webkit-linear-gradient(left, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.png);
-      background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg); } }
-  @media only screen and (min-width: 375px) and (max-width: 1199px) {
+      height: 85vh; } }
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .homepage__header {
-      height: 75vh; } }
+      background-position: bottom right; } }
   @media only screen and (orientation: landscape) {
     .homepage__header {
       background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg); } }
-  @media only screen and (orientation: landscape) and (min-width: 767px) {
+  @media only screen and (orientation: landscape) and (min-width: 991px) and (max-width: 1199px) {
     .homepage__header {
-      background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_812x338.jpg); } }
-
-/* MEDIA QUERIES (Portrait) */
-@media only screen and (max-width: 767px) {
-  .header {
-    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
-    background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg); }
-  .logo-box {
-    left: 22px; }
-  .logo {
-    height: 50px; }
-  .heading-primary {
-    font-size: 34px;
-    letter-spacing: 12px;
-    text-transform: uppercase;
-    top: 6%;
-    left: 22%; }
-  .heading-primary__main {
-    padding-bottom: 50px; }
-  .heading-primary__sub1 {
-    padding-bottom: 50px; }
-  .navigation__button {
-    height: 50px;
-    width: 50px;
-    right: 30px; }
-  .navigation__list {
-    top: 10%;
-    left: 24%; }
-  .navigation__link,
-  .navigation__link:link,
-  .navigation__link:visited {
-    font-size: 24px; }
-  .navigation__link:hover {
-    transform: translateY(-1px); }
-  .navigation__icon {
-    top: 20%; }
-    .navigation__icon::before {
-      top: -6px; }
-    .navigation__icon::after {
-      top: 6px; }
-  .navigation__icon,
-  .navigation__icon::before,
-  .navigation__icon::after {
-    width: 30px;
-    height: 2px; }
-  .navigation__button:hover .navigation__icon::before {
-    top: -8px; }
-  .navigation__button:hover .navigation__icon::after {
-    top: 8px; }
-  .navigation__checkbox:checked + .navigation__button .navigation__icon {
-    background-color: transparent; }
-  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-    top: 0;
-    transform: rotate(45deg); }
-  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-    top: 0;
-    transform: rotate(-45deg); }
-  .heading-secondary {
-    font-size: 30px;
-    letter-spacing: 5px; }
-  .therapies {
-    background-color: #D8DfD7;
-    margin-top: 60px;
-    padding: 5rem 0;
-    box-shadow: 0px -10px 60px rgba(53, 82, 74, 0.25), 0px 10px 60px rgba(53, 82, 74, 0.25); }
-  #therapies__container {
-    width: 80vw;
-    padding: 0;
-    margin: 0 auto;
-    position: relative; } }
-
-@media only screen and (min-width: 320px) and (max-width: 325px) {
-  .navigation__list {
-    top: 10%;
-    left: 19%; } }
-
-/* MEDIA QUERIES (Landscape) */
-@media only screen and (orientation: landscape) and (max-width: 767px) {
-  .header {
-    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg); }
-  .heading-primary {
-    font-size: 32px;
-    letter-spacing: 12px;
-    text-transform: uppercase;
-    top: -9%;
-    left: 22%; } }
-
-/* iPhone X */
-@media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
-  .header {
-    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_812x338.jpg); } }
+      height: 75vh;
+      background-position: left; } }
 
 .navigation__checkbox {
   display: none; }
 
 .navigation__button {
-  height: 7rem;
-  width: 7rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.75);
   box-shadow: 0.2rem 0.47rem 1rem rgba(53, 82, 74, 0.3);
   position: fixed;
-  top: 2rem;
-  right: 8rem;
+  top: 1.9rem;
+  right: 3rem;
   z-index: 1000;
   cursor: pointer;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
   backface-visibility: hidden;
   /* iPhone X */ }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 768px) {
     .navigation__button {
-      height: 5rem;
-      width: 5rem;
-      right: 3rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+      height: 7rem;
+      width: 7rem;
+      right: 8rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
     .navigation__button {
-      height: 5rem;
-      width: 5rem;
-      right: 4rem; } }
+      right: 5rem; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+    .navigation__button {
+      height: 4rem;
+      width: 4rem;
+      right: 7rem; } }
 
 .navigation__nav {
   position: fixed;
-  height: 85rem;
   height: 100vh;
   background-color: rgba(85, 139, 110, 0.95);
   top: 0;
@@ -385,9 +352,9 @@ body {
 .navigation__item-header {
   margin: 3rem;
   /* iPhone X */ }
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 991px) {
     .navigation__item-header {
-      margin: 1rem; } }
+      margin: 0.5rem; } }
 
 .navigation__link,
 .navigation__link:link,
@@ -469,22 +436,18 @@ body {
   opacity: 1;
   width: 100%; }
 
-.navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
-  width: 100%; }
-
 /* ICON */
 .navigation__icon {
   position: relative;
-  top: 38%;
+  top: 27%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   /* iPhone X */ }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 768px) {
     .navigation__icon {
-      top: 31%; } }
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+      top: 38%; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     .navigation__icon {
       top: 31%; } }
 
@@ -492,21 +455,21 @@ body {
 .navigation__icon::before,
 .navigation__icon::after {
   display: inline-block;
-  width: 4rem;
-  height: 0.27rem;
+  width: 2.5rem;
+  height: 0.2rem;
   background-color: rgba(53, 82, 74, 0.8);
   /* iPhone X */ }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (min-width: 768px) {
     .navigation__icon,
     .navigation__icon::before,
     .navigation__icon::after {
-      width: 3rem;
-      height: 0.2rem; } }
+      width: 4rem;
+      height: 0.27rem; } }
   @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
     .navigation__icon,
     .navigation__icon::before,
     .navigation__icon::after {
-      width: 3rem;
+      width: 2.5rem;
       height: 0.2rem; } }
 
 .navigation__icon::before,
@@ -524,9 +487,9 @@ body {
   @media only screen and (max-width: 767px) {
     .navigation__icon::before {
       top: -0.6rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     .navigation__icon::before {
-      top: -0.8rem; } }
+      top: -0.6rem; } }
 
 .navigation__icon::after {
   top: 1rem;
@@ -534,9 +497,9 @@ body {
   @media only screen and (max-width: 767px) {
     .navigation__icon::after {
       top: 0.6rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 767px) and (max-width: 991px) {
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
     .navigation__icon::after {
-      top: 0.8rem; } }
+      top: 0.6rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1.2rem;
@@ -810,6 +773,9 @@ body {
       padding: 5rem 0;
       box-shadow: 0 -1rem 6rem rgba(74, 78, 105, 0.25), 0 1rem 6rem rgba(74, 78, 105, 0.25); } }
 
+.no-margin {
+  margin: 0; }
+
 .card {
   background-color: transparent;
   border: none;
@@ -817,13 +783,12 @@ body {
   @media only screen and (min-width: 1200px) {
     .card {
       margin-bottom: 0; } }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 1199px) {
+    .card {
+      margin: 0 3rem 3rem 3rem; } }
   .card-img {
     width: 100%;
     border-radius: 3rem; }
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 1199px) {
-      .card-img {
-        width: 80%;
-        margin-left: 10%; } }
     @media only screen and (min-width: 768px) and (max-width: 992px) {
       .card-img {
         width: 80%;
@@ -838,9 +803,13 @@ body {
 .therapies-box__image {
   border: 0.3rem solid rgba(74, 78, 105, 0.25);
   box-shadow: 0 0.6rem 2.3rem rgba(74, 78, 105, 0.5); }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 1199px) {
+    .therapies-box__image {
+      width: 80%;
+      margin-left: 10%; } }
 
 .therapies-box__content {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #4A4E69;
   overflow: auto;
@@ -854,7 +823,8 @@ body {
 
 .customer-feedback {
   background-color: #FFFFFF;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  box-shadow: 0 -1.1rem 1.1rem rgba(74, 78, 105, 0.1); }
   @media only screen and (min-width: 768px) {
     .customer-feedback {
       margin-top: 6rem;
@@ -864,14 +834,17 @@ body {
     margin: auto; }
     @media only screen and (orientation: landscape) {
       .customer-feedback__image {
-        width: 80%;
-        margin-left: 10%; } }
+        width: 60%;
+        margin-left: 20%; } }
     @media only screen and (min-width: 768px) {
       .customer-feedback__image {
         width: 100%;
         margin: 0; } }
   .customer-feedback__content {
-    font-size: 1.7rem; }
+    font-size: 1.5rem; }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 1199px) {
+    .customer-feedback__card-body {
+      margin: 0 6rem; } }
   .customer-feedback__username {
     font-size: 1.4rem;
     color: #2a2d3c; }

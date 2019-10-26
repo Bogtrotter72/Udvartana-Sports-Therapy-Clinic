@@ -1,6 +1,25 @@
 <h1>UDVARTANA SPORTS THERAPY & MASSAGE CLINIC</h1>
+<p>
+    This website has been developed as both a potential platform for acquiring customers for a future business venture
+    (namely a Sports Massage and Complementary Therapy Clinic) and also as the first entry into a website portfolio, to
+    attract potential customers in similar fields.
+</p>
+
 
 <h2>UX</h2>
+<p>
+    A number of members of the general public were canvassed and asked to select 3 words from a list of 10
+    and order them according to how they felt that these words described sports massage therapy.
+    I used alliteration to provide an immediate sense of ease and continuity.
+</p>
+<p>
+    The overall green colour scheme and use of plant imagery reinforce these ideas of vitality, health,
+    and relaxation.  In addition, the <a href="https://www.amazon.com/Color-Design-Workbook-World-Graphic/dp/1592534333">Color Design Workbook</a> by Sean Adams, et. al.
+    (2008, p.28) suggest that the positive symbolism attached to the colour include healing, growth, success and youth.
+</p>
+<p>
+    The lack of navbar and collapsed menu were chosen to provide a feeling of space and freedom.
+</p>
 
 <h2>Features</h2>
 
@@ -9,10 +28,45 @@
 <h3>Planned Features</h3>
 
 <h2>Technologies Used</h2>
+
+Languages used:
+1.  HTML
+2.  CSS & SCSS
+3.  BOOTSTRAP
+
 <a href="https://tinyjpg.com/" target="_blank">tinyjpg.com</a> and
 <a href="https://tinypng.com/" target="_blank">tinypng.com</a> to compress images // Faster loading time
 
 <h2>Testing</h2>
+<h3>Cross-Device Compatability</h3>
+<p>The website was tested in the device toolbar of Google's Devtools, on:
+    <ul>
+        <li>Galaxy S5</li>
+        <li>iPhone5/SE</li>
+        <li>iPhone 6/7/8</li>
+        <li>iPhone X</li>
+        <li>iPad</li>
+        <li>Nokia Lumia 520</li>
+    </ul>
+    and live tested on desktop, laptop and mobile environments.
+</p>
+
+<h3>Cross-Browser Compatability</h3>
+<p>The website was tested in the following browsers:
+    <ul>
+        <li>Google Chrome</li>
+        <li>Firefox</li>
+        <li>Opera</li>
+    </ul>
+</p>
+
+<p>The website was also tested in Lunascape 6, using the following engines:
+    <ul>
+        <li>Gecko</li>
+        <li>Trident</li>
+        <li>Webkit</li>
+    </ul>
+</p>
 
 <h2>Deployment</h2>
 
@@ -21,6 +75,33 @@
 <h2>Credits</h2>
 
 <h3>Content</h3>
+<p>
+    I owe a great deal to Jonas Schmedtmann and his Advanced CSS Course on Udemy.
+    By following his course, I have learned how to compile Sass, and use variables and mixins.</br>
+    I am particularly indebted to him for my website's navigation menu and icon, my use of the 
+    checkbox hack and pseudo-classes, as well as the 'center-screen' mixin.
+</p>
+<p>
+    Where possible, I have endeavoured to adapt the code to satisfy my own particular tastes, or the requirements of the project,
+    rather than blindly copy it.  In some instances, however, I found no better way of realizing my vision
+    in code; the 'center-screen' mixin, for example, is 100% Schmedtmann.
+</p>
+<p>
+    Other resources that have proven exceedingly useful, include:
+    <ul>
+        <li>w3schools</li>
+        <li>Mozilla Developer Network</li>
+        <li>Stack Overflow</li>
+        <li>freecodecamp</li>
+        <li>Get BEM</li>
+        <li>Code Institute (of course)</li>
+        <li>Fellow students and the Slack channels</li>
+    </ul>
+</p>
+<p>
+    In all instances, where I have sought solutions to problems, I have read how others have approached the problem,
+    taken inspiration and attempted to find my own way.  In so doing, I hoped to learn something.
+</p>
 
 <h3>Media</h3>
 

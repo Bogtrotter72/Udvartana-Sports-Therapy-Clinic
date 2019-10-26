@@ -1,59 +1,108 @@
+.heading-open {
+    color: $color-dark-green;
+    font-size: 3.4rem;  // 4rem;
+    font-weight: 700;
+    letter-spacing: 0.95rem;
+    text-shadow: 0.5rem 0.4rem 0.5rem $color-white;
+    text-transform: uppercase;
+    @include center-screen;
+    left: 52%;
+    opacity: 0;
+    animation: inAndOut 3s linear;
+
+
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+        font-size:  3rem;
+        top: 57%;
+        left: 34%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size:  8.5rem;
+        letter-spacing: 2rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+        font-size:  3.4rem;
+        letter-spacing: 1.2rem;
+        top: 55%;
+        left: 37%;
+    }
+
+    /* iPad */
+    @media only screen and (orientation: landscape) and (min-width: 992px) and (max-width: 1199px) {
+        font-size:  8rem;
+        letter-spacing: 2rem;
+        top: 59%;
+        left: 47%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        top: 35%;
+        left: 32%;
+    }
+
+}
+
 .heading-primary {
     color: $color-white;
-    font-size:  3.4rem;
+    font-size:  3rem;
     font-weight: 300;
     letter-spacing: 1.2rem;
     text-shadow: 0.5rem 0.4rem 0.5rem $color-dark-green;
     text-transform: uppercase;
-    position: absolute;
-    top: 6%;
-    left: 22%;
-    -webkit-transform: translate(0%, 50%);
-    transform: translate(-19%, 52%);
+    @include center-screen;
+    top: 45%;  /* mixin adjusted to better accommodate the iPhone X */
+
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+        top: 57%;
+        left: 35%;
+    }
 
     @media only screen and (min-width: 768px) {
         font-size:  8rem;
         letter-spacing: 2rem;
-        top: 0;
-        left: 21%;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-        font-size:  3.2rem;
-        top: -9%;
-        left: 22%;
     }
 
     /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 814px) {
         font-size:  3.2rem;
         letter-spacing: 1.2rem;
-        top: 0;
-        left: 22%;
+        top: 60%;
+        left: 35%;
     }
+
+    @media only screen and (orientation: landscape) and (min-width: 815px) and (max-width: 1199px) {
+        font-size:  6rem;
+        letter-spacing: 3rem;
+        top: 60%;
+        left: 45%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        left: 30%;
+    }
+
 }
 
 .heading-primary__main {
     display: block;
-    padding-bottom: 5rem;
-    -webkit-animation: slideUp 1.2s linear;
-    animation: slideUp 1.2s linear;
-    
-    @media only screen and (min-width: 768px) {
-        padding-bottom: 7rem;
-    }
-
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-        padding-bottom: 5rem;
-    }
-    
+    padding-bottom: 4.9rem;
+    opacity: 0;
+    -webkit-animation: slideUp 1.5s linear 2.6s forwards;
+    animation: slideUp 1.5s linear 2.6s forwards;
 }
 .heading-primary__sub1 {
     display: block;
-    padding-bottom: 5rem;
-    -webkit-animation: slideUp 1.2s linear 0.65s backwards;
-    animation: slideUp 1.2s linear 0.65s backwards;
+    padding-bottom: 4.9rem;
+    -webkit-animation: slideUp 1.5s linear 3.2s backwards;
+    animation: slideUp 1.5s linear 3.2s backwards;
+}
+
+.heading-primary__main, .heading-primary__sub1 {
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+        padding-bottom: 2rem;
+    }
 
     @media only screen and (min-width: 768px) {
         padding-bottom: 7rem;
@@ -61,19 +110,20 @@
 
     /* iPhone X */
     @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-        padding-bottom: 5rem;
+        padding-bottom: 4.9rem;
     }
-
 }
+
+
 .heading-primary__sub2 {
     display: block;
-    -webkit-animation: slideUp 1.2s linear 1.3s backwards;
-    animation: slideUp 1.2s linear 1.3s backwards;
+    -webkit-animation: slideUp 1.5s linear 4s backwards;
+    animation: slideUp 1.5s linear 4s backwards;
 }
 
 
 .heading-secondary {
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: $color-dark-green;
     font-weight: 400;
     letter-spacing: 0.5rem;
@@ -90,7 +140,7 @@
 }
 
 .heading-tertiary {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: $color-contrast-blue;
     font-weight: 400;
     letter-spacing: 0.8rem;
@@ -100,7 +150,7 @@
     margin-bottom: 3rem;
 
     @media only screen and (min-width: 768px) {
-        font-size:  4rem;
+        font-size:  3rem;
         letter-spacing: 1.2rem;
     }
 
