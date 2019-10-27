@@ -1,20 +1,24 @@
-.form-group {
-    width: 50%;
-    margin: auto;
-    padding-bottom: 30px;
-}
-
-.label {
-    text-transform: uppercase;
-}
-
-
 .bookings-page {
     padding: 0;
     background-image: linear-gradient(to right, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), url(../img/bookings-bg-img.jpg);
     background-size: cover;
     background-position: left;
     position: relative;
+
+    &__container {
+        margin: 10rem auto;
+        background-color: rgba($color-light-green, 0.7);
+        width: 90vw;
+        border: 0.1rem solid $color-dark-green;
+
+        @media only screen and (min-width: 768px) {
+            width: 80vw;
+        }
+        
+        @media only screen and (min-width: 1200px) {
+            width: 70vw;
+        }
+    }
 
     &__list-background-container {
         padding: 0;
@@ -28,44 +32,108 @@
     }
 
     &__table {
-        width: 80%;
+        width: 85%;
         margin: 0 27%;
     }
 }
 
-.heading-secondary-bookings {
-    font-size: 35px;
-    margin-bottom: 20px;
-    color: $color-dark-green;
-    padding-top: 5vh;
+.form-group {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    @media only screen and (min-width: 768px) {
+        width: 75%;
+    }
+
+    &:first-child {
+        margin-top: 3rem;
+
+        @media only screen and (min-width: 1200px) {
+            margin-top: 5rem;
+        }
+    }
 }
 
+.label {
+    text-transform: uppercase;
+    font-size: $mobile-font-size__portrait;
+
+    @media only screen and (orientation: landscape) {
+        font-size: $main-font-size;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+.form-control {
+    font-size: $mobile-font-size__portrait;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 2rem;
+    }
+}
 
 .calendar {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 7px auto 100px auto;
-    width: 50%;
+    width: 90%;
+    margin: 1rem auto 5rem auto;
     height: auto;
     background-color: $color-white;
 
+    @media only screen and (min-width: 768px) {
+        width: 75%;
+    }
+
     &-label {
-        display: inline-block;
-        width: 50%;
-        margin-top: 95px;
-        padding-left: 25%;
+        width: 100%;
+        margin: 3rem auto 1rem;
+        text-align: center;
     }
 }
 
 .date {
-    padding: 20px;
+    padding: 2.5rem;
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
-    grid-template-rows: 25px auto 25px;
-    column-gap: 10px;
-    row-gap: 15px;
+    grid-template-columns: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
+    grid-template-rows: 3.5rem auto 2rem;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+    font-size: $mobile-font-size__portrait;
+
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
+        font-size: $main-font-size;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
+    }
+
+    @media only screen and (orientation: landscape) {
+        padding: 4.5rem;
+        grid-template-columns: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        padding: 4.5rem;
+        grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        grid-template-columns: 8rem 8rem 8rem 8rem 8rem 8rem 8rem;
+    }
+
+    @media only screen and (min-width: 1800px) {
+        grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
+        grid-template-rows: 6rem auto 2rem;
+    }
 }
+
 
 .day, .number {
     text-align: center;
@@ -83,70 +151,21 @@
     cursor: pointer;
 }
 
-.btn-booking {
-    @include center-screen;
-    top: 68%;
-    padding: 9px 25px;
-    font-size: 20px;
-    text-transform: uppercase;
-    background-color: $color-dark-green;
-    color: $color-white;
-    border: 1px solid transparent;
-    border-radius: 500px;
-    backface-visibility: hidden;
-    transition: all 0.2s;
-
-    &:focus {
-        -webkit-animation: blink 5s ease-in-out;
-        animation: blink 0.5s ease-in-out 3;
-    }
-
-    &:hover {
-        background-color: $color-medium-green;
-        color: $color-white;
-        top: 67.8%;
-        box-shadow: 0 10px 20px rgba($color-dark-green, 0.5);
-    }
-
-    &:active {
-        top: 68%;
-        background-color: $color-dark-green;
-        color: $color-white;
-        box-shadow: 0 5px 7px rgba($color-dark-green, 0.9);
-    }
-
-    &-popup {
-        top: 90%;
-
-        &:hover,
-        &:active {
-            top: 89.5%;
-        }
-
-        &:focus {
-            animation: none;
-            top: 90%;
-        }
-    }
-}
-
 .popup {
     background-color: rgba($color-black, 0.8);
     height: 100vh;
-    width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 5000;
-
     opacity: 0;
     visibility: hidden;
-
     transition: all 0.5s ease-in;
 
     &:target {
         opacity: 1;
         visibility: visible;
+        width: 100%;
     }
 
     &__close {
@@ -163,23 +182,37 @@
     }
 
     &__content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-image: linear-gradient(rgba($color-contrast-blue, 0.8), rgba($color-contrast-blue, 0.2)), url(../img/header-image_570x265.jpg);
+        @include center-screen;
+        background-image: linear-gradient(to bottom right, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), url(../img/header-image_330x535.jpg);
         background-size: cover;
-        height: 60vh;
-        width: 50%;
-        border-radius: 30px;
-        box-shadow: 5px 4px 10px rgba($color-light-green, 0.5);
+        background-position: bottom;
+        height: 40vh;
+        width: 90%;
+        border-radius: 3rem;
+        box-shadow: 0.2rem 0.2rem 1.5rem rgba($color-white, 0.2);
+
+        @media only screen and (orientation: landscape) {
+            background-image: linear-gradient(to bottom right, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), url(../img/header-image_570x265.jpg);
+            height: 75vh;
+            width: 65%;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 1024px) {
+            height: 55vh;
+            width: 60%;
+        }
+
+        @media only screen and (min-width: 1500px) {
+            height: 60vh;
+            width: 50%;
+        }
     }
 
     &__text {
         color: $color-white;
         text-shadow: 2px 2px rgba($color-dark-green, 0.8) ;
         position: absolute;
-        top: 40%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
         
@@ -188,7 +221,7 @@
             color: $color-white;
             text-shadow: 2px 2px rgba($color-dark-green, 0.8) ;
             position: absolute;
-            top: 55%;
+            top: 40%;
             left: 15%;
             transform: translateX(-6%);
         }

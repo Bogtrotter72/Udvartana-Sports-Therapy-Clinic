@@ -64,10 +64,12 @@
     transition: all 0.7s cubic-bezier(0.68, -0.55, 0, 1.5);
 }
 
-.navigation__list{
+.navigation__list {
     @include center-screen;
     list-style: none;
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .navigation__item-header {
@@ -155,6 +157,11 @@
 .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav > .navigation__list {
+    opacity: 1;
+    visibility: visible;
 }
 
 

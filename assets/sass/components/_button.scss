@@ -19,12 +19,209 @@
         background-color: $color-medium-green;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-        border-radius: 20px;
-        transform: translateY(-3px);
+        border-radius: 2rem;
+        transform: translateY(-0.3rem);
     }
 
     &:active {
         box-shadow: 0 0.5rem 1rem rgba($color-black, 0.25);
-        transform: translateY(0px);
+        transform: translateY(0rem);
     }
+}
+
+
+.btn-booking {
+    @include center-screen;
+    
+    padding: 0.6rem 1.2rem;
+    font-size: $main-font-size;
+    text-transform: uppercase;
+    background-color: $color-dark-green;
+    color: $color-white;
+    border: 0.1rem solid transparent;
+    border-radius: 50rem;
+    backface-visibility: hidden;
+    transition: all 0.2s;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 2rem;
+    }
+
+    &:hover {
+        background-color: $color-medium-green;
+        color: $color-white;
+        // top: 67.8%;
+        box-shadow: 0 1rem 2rem rgba($color-dark-green, 0.5);
+    }
+
+    &:active {
+        background-color: $color-dark-green;
+        color: $color-white;
+        box-shadow: 0 0.5rem 0.7rem rgba($color-dark-green, 0.9);
+    }
+
+    // Positioning for the price list page
+    &__prices {
+        top: 65%;
+
+        &:hover {
+            top: 64.8%;
+        }
+
+        &:active {
+            top: 65%;
+        }
+    }
+
+    // Positioning for the bookings page
+    &__bookings {
+        top: 56%;
+
+        @media only screen and (min-width: 375px) {
+            top: 57%;
+        }
+
+        @media only screen and (orientation: landscape) {
+            top: 59%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            top: 61.5%;
+        }
+
+        @media only screen and(orientation: landscape) and (min-width: 768px) {
+            top: 61%;
+        }  
+
+        @media only screen and (min-width: 1024px) {
+            top: 75%;
+        }
+
+        @media only screen and(orientation: landscape) and (min-width: 1024px) {
+            top: 76%;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            top: 78%;
+            font-size: 3rem;
+        }
+
+        &:focus {
+            -webkit-animation: blink 5s ease-in-out;
+            animation: blink 0.5s ease-in-out 3;
+        }
+    
+        &:hover {
+            top: 55.8%;
+
+            @media only screen and (min-width: 375px) {
+                top: 56.8%;
+            }
+
+            @media only screen and (orientation: landscape) {
+                top: 58.8%;
+            }
+    
+            @media only screen and (min-width: 768px) {
+                top: 61.3%;
+            }
+    
+            @media only screen and(orientation: landscape) and (min-width: 768px) {
+                top: 60.8%;
+            }  
+    
+            @media only screen and (min-width: 1024px) {
+                top: 74.8%;
+            }
+    
+            @media only screen and(orientation: landscape) and (min-width: 1024px) {
+                top: 76%;
+            }
+    
+            @media only screen and (min-width: 1200px) {
+                top: 77.8%;
+            }
+        }
+
+        &:active {
+            top: 56%;
+    
+            @media only screen and (min-width: 375px) {
+                top: 57%;
+            }
+    
+            @media only screen and (orientation: landscape) {
+                top: 59%;
+            }
+    
+            @media only screen and (min-width: 768px) {
+                top: 61.5%;
+            }
+    
+            @media only screen and(orientation: landscape) and (min-width: 768px) {
+                top: 61%;
+            }  
+    
+            @media only screen and (min-width: 1024px) {
+                top: 75%;
+            }
+    
+            @media only screen and(orientation: landscape) and (min-width: 1024px) {
+                top: 76%;
+            }
+    
+            @media only screen and (min-width: 1200px) {
+                top: 78%;
+            }
+    
+        }
+    }
+
+    &__popup {
+        font-size: $mobile-font-size__portrait;
+        top: 80%;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 2.6rem;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            font-size: $main-font-size;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 2.6rem;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (min-width: 1500px) {
+            top: 85%;
+        }
+
+        &:hover {
+            top: 79.5%;
+
+            @media only screen and (min-width: 1500px) {
+                top: 84.5%;
+            }
+        }
+
+        &:active,
+        &:focus {
+            animation: none;
+            top: 80%;
+
+            @media only screen and (min-width: 1500px) {
+                top: 85%;
+            }
+        }
+    }
+
 }

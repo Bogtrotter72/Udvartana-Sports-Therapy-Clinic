@@ -72,6 +72,9 @@ Languages used:
 
 <h2>Testing</h2>
 
+All hover items, buttons, etc. were thoroughly tested using the *forced element state* tool in
+Chrome's developer tools.
+
 <h2>Credits</h2>
 
 <h3>Content</h3>
