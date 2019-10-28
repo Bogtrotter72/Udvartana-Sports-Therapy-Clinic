@@ -9,30 +9,40 @@
     }
 
     &__card-container {
-        margin-top: 10vh;
+        margin: 10vh auto;
         padding: 10vh 0;
         border-radius: 30px;
         background-color: rgba($color-light-green, 0.7);
         box-shadow: 9px 8px 20px rgba($color-contrast-blue, 0.5);
     }
 
-    &__content {
-        color: $color-dark-green;
+    &__inner-container {
+        width: 90%;
+        margin: 5rem 5%;
+
+        padding: 2rem;
+        background-color: rgba($color-light-green, 0.5);
+        border-radius: 2rem;
+        box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
+
+        @media only screen and (min-width: 768px) {
+            width: 80%;
+            margin: 5rem 10%;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            width: 90%;
+            margin: 5rem 5%;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            width: 110%;
+            margin: 5rem -5%;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 100%;
+            margin: 5rem 0%;
+        }
     }
-    
-    
-}
-
-.card .about-page__card-img {
-    width: 80%;
-}
-
-.card .about-page__card-body {
-    height: 70vh;
-}
-
-.card .about-page__card-title {
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: $color-contrast-blue;
 }

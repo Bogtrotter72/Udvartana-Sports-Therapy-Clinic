@@ -18,7 +18,7 @@
     }
 
     @media only screen and (min-width: 768px) {
-        font-size:  8.5rem;
+        font-size:  7.5rem;
         letter-spacing: 2rem;
     }
 
@@ -29,8 +29,7 @@
         left: 37%;
     }
 
-    /* iPad */
-    @media only screen and (orientation: landscape) and (min-width: 992px) and (max-width: 1199px) {
+    @media only screen and (min-width: 992px) {
         font-size:  8rem;
         letter-spacing: 2rem;
         top: 59%;
@@ -62,11 +61,10 @@
     }
 
     @media only screen and (min-width: 768px) {
-        font-size:  8rem;
+        font-size:  6rem;
         letter-spacing: 2rem;
     }
 
-    /* iPhone X */
     @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 814px) {
         font-size:  3.2rem;
         letter-spacing: 1.2rem;
@@ -82,6 +80,8 @@
     }
 
     @media only screen and (min-width: 1200px) {
+        font-size:  8rem;
+        letter-spacing: 2rem;
         left: 30%;
     }
 }
@@ -134,16 +134,21 @@
     padding-top: 2rem;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 
-    @media only screen and (min-width: 768px) and (max-width: 899px){
-        letter-spacing: 1.4rem;
+    @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+        letter-spacing: 1rem;
     }
 
-    @media only screen and (min-width: 900px) {
-        font-size: 6rem;
-        letter-spacing: 1.6rem;
-        margin-bottom: 8rem;
+    @media only screen and (min-width: 1024px) {
+        font-size: 5rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 6.5rem;
+        letter-spacing: 1.5rem;
+        margin-bottom: 6.5rem;
     }
 
 
@@ -188,20 +193,44 @@
         }
     }
 }
-// End of heading primary
+// End of heading secondary
 
 
 
 // Start of heading tertiary
 .heading-tertiary {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: $color-contrast-blue;
     font-weight: 400;
-    letter-spacing: 0.8rem;
-    padding: 1rem;
+    letter-spacing: 0.5rem;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 2rem;
+    padding-top: 1rem;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 2.7rem;
+        letter-spacing: 1rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1200px) {
+        font-size: 2rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1500px) {
+        font-size: 4rem;
+    }
+
+    &__line-1 {
+
+        @media only screen and (min-width: 1500px) {
+            display: block;
+        }
+    }
 
     &__therapies {
         font-size: $mobile-font-size__portrait;
@@ -218,11 +247,6 @@
             margin-bottom: 3rem;
         }
     }
-
-    @media only screen and (orientation: landscape) and (min-width: 992px) {
-        font-size: 3rem;
-    }
-
 
     &__popup {
         font-size: $main-font-size;
@@ -253,13 +277,6 @@
 
         @media only screen and (min-width: 1500px) {
             font-size: 5rem;
-        }
-    }
-
-    &__line-1 {
-
-        @media only screen and (min-width: 900px) {
-            display: block;
         }
     }
 }

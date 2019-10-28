@@ -18,7 +18,8 @@
     (2008, p.28) suggest that the positive symbolism attached to the colour include healing, growth, success and youth.
 </p>
 <p>
-    The lack of navbar and collapsed menu were chosen to provide a feeling of space and freedom.
+    The lack of navbar and collapsed menu were chosen to provide a feeling of space and freedom.  The cards on the landing page do not dominate but also create a sense
+    of space. This is counterated by the use of box-shadows to break up, what would otherwise be a large amount of whitespace.
 </p>
 
 <h2>Features</h2>
@@ -46,7 +47,7 @@ Languages used:
         <li>iPhone 6/7/8</li>
         <li>iPhone X</li>
         <li>iPad</li>
-        <li>Nokia Lumia 520</li>
+        <li>iPad Pro</li>
     </ul>
     and live tested on desktop, laptop and mobile environments.
 </p>
