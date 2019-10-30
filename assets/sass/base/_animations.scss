@@ -45,19 +45,3 @@
         transform: translateY(0px);
     }
 }
-
-
-/* Book Now Button */
-@keyframes blink {
-    0% {
-       border: 1px solid transparent;
-    }
-
-    50% {
-       border: 1px solid $color-light-green;
-    }
-
-    100% {
-       border: 1px solid transparent;
-    };
-}

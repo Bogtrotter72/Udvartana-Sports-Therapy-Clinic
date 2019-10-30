@@ -9,38 +9,6 @@
     left: 52%;
     opacity: 0;
     animation: inAndOut 3s linear;
-
-
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-        font-size:  3rem;
-        top: 57%;
-        left: 34%;
-    }
-
-    @media only screen and (min-width: 768px) {
-        font-size:  7.5rem;
-        letter-spacing: 2rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-        font-size:  3.4rem;
-        letter-spacing: 1.2rem;
-        top: 55%;
-        left: 37%;
-    }
-
-    @media only screen and (min-width: 992px) {
-        font-size:  8rem;
-        letter-spacing: 2rem;
-        top: 59%;
-        left: 47%;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        top: 35%;
-        left: 32%;
-    }
-
 }
 
 
@@ -54,36 +22,6 @@
     text-transform: uppercase;
     @include center-screen;
     top: 45%;  /* mixin adjusted to better accommodate the iPhone X */
-
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-        top: 57%;
-        left: 35%;
-    }
-
-    @media only screen and (min-width: 768px) {
-        font-size:  6rem;
-        letter-spacing: 2rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 814px) {
-        font-size:  3.2rem;
-        letter-spacing: 1.2rem;
-        top: 60%;
-        left: 35%;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 815px) and (max-width: 1199px) {
-        font-size:  6rem;
-        letter-spacing: 3rem;
-        top: 60%;
-        left: 45%;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        font-size:  8rem;
-        letter-spacing: 2rem;
-        left: 30%;
-    }
 }
 
 .heading-primary__main {
@@ -99,21 +37,6 @@
     padding-bottom: 4.9rem;
     -webkit-animation: slideUp 1.5s linear 3.2s backwards;
     animation: slideUp 1.5s linear 3.2s backwards;
-}
-
-.heading-primary__main, .heading-primary__sub1 {
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-        padding-bottom: 2rem;
-    }
-
-    @media only screen and (min-width: 768px) {
-        padding-bottom: 7rem;
-    }
-
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-        padding-bottom: 4.9rem;
-    }
 }
 
 .heading-primary__sub2 {
@@ -136,61 +59,12 @@
     text-align: center;
     margin-bottom: 2rem;
 
-    @media only screen and (min-width: 768px) {
-        font-size: 3rem;
-        letter-spacing: 1rem;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        font-size: 5rem;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        font-size: 6.5rem;
-        letter-spacing: 1.5rem;
-        margin-bottom: 6.5rem;
-    }
-
-
-    &__therapies {
-    
-        @media only screen and (min-width: 320px) and (max-width: 900px) {
-            font-size: 2.3rem;
-            margin-bottom: 2rem;
-        }
-    }
-
-
-    &__bookings {
-
-        @media only screen and (min-width: 900px) {
-            margin-bottom: 4rem;
-        }
-    }
-
-
     &__popup {
         font-size: 2.5rem;
         color: $color-white;
         text-shadow: 2px 2px rgba($color-dark-green, 0.8) ;
         @include center-screen;
         top: 25%;
-
-        @media only screen and (min-width: 768px) {
-            font-size: 4.5rem;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 768px) {
-            font-size: 3.5rem;
-        }
-
-        @media only screen and (min-width: 1024px) {
-            font-size: 6rem;
-        }
-
-        @media only screen and (min-width: 1500px) {
-            font-size: 8rem;
-        }
     }
 }
 // End of heading secondary
@@ -208,76 +82,21 @@
     margin-bottom: 2rem;
     padding-top: 1rem;
 
-    @media only screen and (min-width: 768px) {
-        font-size: 2.7rem;
-        letter-spacing: 1rem;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        font-size: 3.5rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1200px) {
-        font-size: 2rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1500px) {
-        font-size: 4rem;
-    }
-
-    &__line-1 {
-
-        @media only screen and (min-width: 1500px) {
-            display: block;
-        }
-    }
-
     &__therapies {
         font-size: $mobile-font-size__portrait;
         letter-spacing: 0.5rem;
         margin-bottom: 0.5rem;
         padding: 0;
         border-bottom: 1px solid rgba($color-contrast-blue, 0.5);
-    
-        @media only screen and (min-width: 992px) {
-            font-size: 2.2rem;
-            letter-spacing: 0.8rem;
-            padding: 1rem;
-            text-align: center;
-            margin-bottom: 3rem;
-        }
     }
 
     &__popup {
+        @include center-screen;
+        top: 52%;
         font-size: $main-font-size;
         color: $color-white;
         text-shadow: 2px 2px rgba($color-dark-green, 0.8);
-        position: absolute;
-        top: 40%;
-
-        @media only screen and (min-width: 768px) {
-            font-size: 3.2rem;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 768px) {
-            font-size: 2.1rem;
-        }
-
-        @media only screen and (min-width: 1024px) {
-            font-size: 4.2rem;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 1024px) {
-            font-size: 3.2rem;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 1200px) {
-            font-size: 4.2rem;
-        }
-
-        @media only screen and (min-width: 1500px) {
-            font-size: 5rem;
-        }
+        width: 100%;
     }
 }
 // End of heading primary

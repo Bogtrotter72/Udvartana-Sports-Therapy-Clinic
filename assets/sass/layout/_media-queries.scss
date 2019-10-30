@@ -1,0 +1,578 @@
+// S T A R T  O F  T Y P O G R A P H Y
+
+.heading-open {
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+        font-size:  3rem;
+        top: 57%;
+        left: 34%;
+    }
+    @media only screen and (min-width: 768px) {
+        font-size:  7.5rem;
+        letter-spacing: 2rem;
+    }
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
+        font-size:  3.4rem;
+        letter-spacing: 1.2rem;
+        top: 55%;
+        left: 37%;
+    }
+    @media only screen and (min-width: 992px) {
+        font-size:  7rem;
+        letter-spacing: 2rem;
+        top: 59%;
+        left: 47%;
+    }
+    @media only screen and (min-width: 1200px) {
+        top: 35%;
+        left: 32%;
+    }
+}
+
+
+// Start of heading primary
+.heading-primary {
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+        top: 57%;
+        left: 35%;
+    }
+    @media only screen and (min-width: 768px) {
+        font-size:  6rem;
+        letter-spacing: 2rem;
+    }
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 814px) {
+        font-size:  3.2rem;
+        letter-spacing: 1.2rem;
+        top: 60%;
+        left: 35%;
+    }
+    @media only screen and (orientation: landscape) and (min-width: 815px) and (max-width: 1199px) {
+        font-size:  6rem;
+        letter-spacing: 3rem;
+        top: 60%;
+        left: 45%;
+    }
+    @media only screen and (min-width: 1200px) {
+        font-size:  7rem;
+        letter-spacing: 2rem;
+        left: 30%;
+    }
+}
+
+.heading-primary__main, .heading-primary__sub1 {
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+        padding-bottom: 2rem;
+    }
+    @media only screen and (min-width: 768px) {
+        padding-bottom: 7rem;
+    }
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+        padding-bottom: 4.9rem;
+    }
+}
+// End of heading primary
+
+// Start of heading secondary
+.heading-secondary {
+    @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+    }
+    @media only screen and (min-width: 992px) {  // 1024
+        font-size: 4rem;
+        letter-spacing: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    &__therapies {
+        @media only screen and (min-width: 320px) and (max-width: 900px) {
+            font-size: 2.3rem;
+            margin-bottom: 2rem;
+        }
+    }
+    &__bookings {
+        @media only screen and (min-width: 900px) {
+            margin-bottom: 4rem;
+        }
+    }
+    &__popup {
+        @media only screen and (min-width: 768px) {
+            font-size: 4.5rem;
+        }
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            font-size: 3.5rem;
+        }
+        @media only screen and (min-width: 1024px) {
+            font-size: 6rem;
+        }
+        @media only screen and (min-width: 1500px) {
+            font-size: 8rem;
+        }
+    }
+}
+// End of heading secondary
+
+// Start of heading tertiary
+.heading-tertiary {
+    @media only screen and (min-width: 768px) {
+        font-size: 2.7rem;
+        letter-spacing: 1rem;
+    }
+    @media only screen and (min-width: 1024px) { // 1024
+        font-size: 3.5rem;
+    }
+    @media only screen and (orientation: landscape) and (min-width: 1200px) {
+        font-size: 2rem;
+    }
+    @media only screen and (orientation: landscape) and (min-width: 1500px) {
+        font-size: 2.7rem;
+    }
+    &__line-1 {
+
+        @media only screen and (min-width: 1500px) {
+            display: block;
+        }
+    }
+    &__therapies {
+        @media only screen and (min-width: 992px) {
+            font-size: 2.5rem;
+            letter-spacing: 1rem;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+    &__popup {
+        @media only screen and (min-width: 768px) {
+            font-size: 3.2rem;
+        }
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            font-size: 2.1rem;
+        }
+        @media only screen and (min-width: 1024px) {
+            font-size: 4.2rem;
+        }
+        @media only screen and (orientation: landscape) and (min-width: 1024px) {
+            font-size: 3.2rem;
+        }
+        @media only screen and (orientation: landscape) and (min-width: 1200px) {
+            font-size: 4.2rem;
+        }
+        @media only screen and (min-width: 1500px) {
+            font-size: 5rem;
+        }
+    }
+}
+// End of heading primary
+
+// E N D  O F  T Y P O G R A P H Y
+
+
+
+// S T A R T  O F  F O O T E R
+
+.footer {
+    @media only screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
+
+    &__heading--margin {
+        @media only screen and (min-width: 992px) {
+            margin-top: 0;
+        }
+    }
+
+}
+
+// E N D  O F  F O O T E R
+
+
+
+// S T A R T  O F  H O M E P A G E  H E A D E R
+
+.homepage__header {
+    @media only screen and (orientation: landscape) {
+        background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg);
+    }
+  
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+        background-position: bottom right;
+    }
+    
+    @media only screen and (orientation: landscape) and (min-width: 991px) and (max-width: 1199px) {
+        height: 75vh;
+        background-position: left;
+    }
+}
+
+.navigation__button {
+    
+    @media only screen and (min-width: 768px) {
+        height: 5rem;
+        width: 5rem;
+        top: 2rem;
+        right: 2.5rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
+        height: 4rem;
+        width: 4rem;
+        top: 1.5rem;
+        right: 5rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        right: 5rem;
+    }
+
+    @media only screen and(orientation: landscape) and (min-width: 1024px) {
+        height: 7rem;
+        width: 7rem;
+        top: 3rem;
+        right: 7rem;
+    }
+
+    // @media only screen and(orientation: landscape) and (min-width: 1200px) {
+    //     height: 8rem;
+    //     width: 8rem;
+    //     top: 4rem;
+    //     right: 9rem;
+    // }
+}
+
+.navigation__item-header {
+
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 991px) {
+        margin: 0.5rem;
+    }
+}
+
+.navigation__link-header,
+.navigation__link-header:link,
+.navigation__link-header:visited {
+
+    @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+        font-size: 2rem;
+    }
+}
+
+
+.navigation__link:hover {
+
+    @media only screen and (min-width: 768px) {
+        transform: translateY(-0.3rem);
+    }    
+}
+
+.navigation__icon {
+
+    @media only screen and (min-width: 768px) {
+        top: 31%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        top: 35%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        top: 40%;
+    }
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+
+    @media only screen and (min-width: 768px) {
+        width: 2.5rem;
+        height: 0.2rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 2.7rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        width: 4rem;
+    }
+
+    // @media only screen and (orientation: landscape) and (min-width: 1200px) {
+    //     width: 5rem;
+    // }
+}
+
+
+.navigation__icon::before {
+
+    @media only screen and (min-width: 768px) {
+        top: -0.8rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        top: -1.2rem;
+    }
+
+}
+
+.navigation__icon::after {
+
+    @media only screen and (min-width: 768px) {
+        top: 0.8rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        top: 1.2rem;
+    }
+}
+
+.navigation__button:hover .navigation__icon::before {
+
+    @media only screen and (min-width: 768px) {
+        top: -0.9rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        top: -1.3rem;
+    }
+}
+
+.navigation__button:hover .navigation__icon::after {
+
+    @media only screen and (min-width: 768px) {
+        top: 0.9rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        top: 1.3rem;
+    }
+}
+
+
+.page-header {
+    @media only screen and (orientation: landscape) {
+        height: 20vh;
+    }
+}
+
+.page-title__heading {
+    @media only screen and (min-width: 375px) {
+        top: 50%;
+    }
+
+    @media only screen and (orientation: landscape) {
+        font-size: 3.5rem;
+        letter-spacing: 1rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size:  4.5rem;
+        letter-spacing: 2rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size:  8rem;
+        letter-spacing: 2rem;
+    }
+}
+
+
+.about-page__inner-container {
+    @media only screen and (min-width: 768px) {
+        width: 80%;
+        margin: 5rem 10%;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
+        width: 90%;
+        margin: 5rem 5%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 110%;
+        margin: 5rem -5%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 100%;
+        margin: 5rem 0%;
+    }
+}
+
+
+.bookings-page__container {
+    @media only screen and (min-width: 768px) {
+        width: 80vw;
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        width: 70vw;
+    }
+}
+
+.form-group {
+    @media only screen and (min-width: 768px) {
+        width: 75%;
+    }
+
+    &:first-child {
+        margin-top: 3rem;
+
+        @media only screen and (min-width: 1200px) {
+            margin-top: 5rem;
+        }
+    }
+}
+
+.label {
+    @media only screen and (orientation: landscape) {
+        font-size: $main-font-size;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+.form-control {
+    @media only screen and (min-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+.calendar {
+    @media only screen and (min-width: 768px) {
+        width: 75%;
+    }
+}
+
+.date {
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
+        font-size: $main-font-size;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
+    }
+
+    @media only screen and (orientation: landscape) {
+        padding: 4.5rem;
+        grid-template-columns: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        padding: 4.5rem;
+        grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        grid-template-columns: 8rem 8rem 8rem 8rem 8rem 8rem 8rem;
+    }
+
+    @media only screen and (min-width: 1800px) {
+        grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
+        grid-template-rows: 6rem auto 2rem;
+    }
+}
+
+.popup__content {
+    @media only screen and (orientation: landscape) {
+        background-image: linear-gradient(to bottom right, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), url(../img/header-image_570x265.jpg);
+        height: 75vh;
+        width: 65%;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 1024px) {
+        height: 55vh;
+        width: 60%;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        height: 60vh;
+        width: 50%;
+    }
+}
+
+
+
+.map-responsive {
+    @media only screen and (min-width: 1024px) {
+        height: 50rem;
+    }
+}
+
+.map-responsive iframe {
+    @media only screen and (orientation: landscape) {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        height: 50rem;
+    }
+}
+
+
+.therapies {
+    @media only screen and (min-width: 768px) {
+        background-color: $color-light-green;
+        margin-top: 6rem;
+        padding: 5rem 0;
+        box-shadow: 0 -1rem 6rem rgba($color-contrast-blue, 0.25), 0 1rem 6rem rgba($color-contrast-blue, 0.25);
+    }
+}
+
+.therapies_row2 {
+    @media only screen and (min-width: 768px) {
+        padding-top: 4rem;
+    }
+}
+
+
+.customer-feedback {
+    @media only screen and (min-width: 768px) {
+        margin-top: 6rem;
+        padding: 5rem 0;
+    }
+}
+
+
+.price-list-page {
+
+    &__list-container {
+        @media only screen and (min-width: 1200px) {
+            width: 50vw;
+        }
+    }
+
+    &__table {
+        @media only screen and (min-width: 992px) {
+            font-size: 2rem;
+        }
+
+    }
+}
+
+
+.therapies-page {
+
+    &__inner-container {
+        @media only screen and (min-width: 768px) {
+            margin: 10rem auto;
+            padding: 2rem 5rem;
+        }
+    }
+
+    &__content, &__table {
+        @media only screen and (min-width: 992px) {
+            font-size: $main-font-size;
+        }
+    }
+}

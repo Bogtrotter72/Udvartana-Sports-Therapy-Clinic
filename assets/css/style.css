@@ -23,15 +23,6 @@
     opacity: 1;
     transform: translateY(0px); } }
 
-/* Book Now Button */
-@keyframes blink {
-  0% {
-    border: 1px solid transparent; }
-  50% {
-    border: 1px solid #D8DfD7; }
-  100% {
-    border: 1px solid transparent; } }
-
 :root {
   font-size: 10px; }
 
@@ -61,31 +52,6 @@ body {
   left: 52%;
   opacity: 0;
   animation: inAndOut 3s linear; }
-  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-    .heading-open {
-      font-size: 3rem;
-      top: 57%;
-      left: 34%; } }
-  @media only screen and (min-width: 768px) {
-    .heading-open {
-      font-size: 7.5rem;
-      letter-spacing: 2rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-    .heading-open {
-      font-size: 3.4rem;
-      letter-spacing: 1.2rem;
-      top: 55%;
-      left: 37%; } }
-  @media only screen and (min-width: 992px) {
-    .heading-open {
-      font-size: 8rem;
-      letter-spacing: 2rem;
-      top: 59%;
-      left: 47%; } }
-  @media only screen and (min-width: 1200px) {
-    .heading-open {
-      top: 35%;
-      left: 32%; } }
 
 .heading-primary {
   color: #FFFFFF;
@@ -100,31 +66,6 @@ body {
   transform: translate(-50%, -50%);
   top: 45%;
   /* mixin adjusted to better accommodate the iPhone X */ }
-  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-    .heading-primary {
-      top: 57%;
-      left: 35%; } }
-  @media only screen and (min-width: 768px) {
-    .heading-primary {
-      font-size: 6rem;
-      letter-spacing: 2rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 814px) {
-    .heading-primary {
-      font-size: 3.2rem;
-      letter-spacing: 1.2rem;
-      top: 60%;
-      left: 35%; } }
-  @media only screen and (orientation: landscape) and (min-width: 815px) and (max-width: 1199px) {
-    .heading-primary {
-      font-size: 6rem;
-      letter-spacing: 3rem;
-      top: 60%;
-      left: 45%; } }
-  @media only screen and (min-width: 1200px) {
-    .heading-primary {
-      font-size: 8rem;
-      letter-spacing: 2rem;
-      left: 30%; } }
 
 .heading-primary__main {
   display: block;
@@ -138,18 +79,6 @@ body {
   padding-bottom: 4.9rem;
   -webkit-animation: slideUp 1.5s linear 3.2s backwards;
   animation: slideUp 1.5s linear 3.2s backwards; }
-
-.heading-primary__main, .heading-primary__sub1 {
-  /* iPhone X */ }
-  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-    .heading-primary__main, .heading-primary__sub1 {
-      padding-bottom: 2rem; } }
-  @media only screen and (min-width: 768px) {
-    .heading-primary__main, .heading-primary__sub1 {
-      padding-bottom: 7rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-    .heading-primary__main, .heading-primary__sub1 {
-      padding-bottom: 4.9rem; } }
 
 .heading-primary__sub2 {
   display: block;
@@ -165,25 +94,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 2rem; }
-  @media only screen and (min-width: 768px) {
-    .heading-secondary {
-      font-size: 3rem;
-      letter-spacing: 1rem; } }
-  @media only screen and (min-width: 1024px) {
-    .heading-secondary {
-      font-size: 5rem; } }
-  @media only screen and (min-width: 1200px) {
-    .heading-secondary {
-      font-size: 6.5rem;
-      letter-spacing: 1.5rem;
-      margin-bottom: 6.5rem; } }
-  @media only screen and (min-width: 320px) and (max-width: 900px) {
-    .heading-secondary__therapies {
-      font-size: 2.3rem;
-      margin-bottom: 2rem; } }
-  @media only screen and (min-width: 900px) {
-    .heading-secondary__bookings {
-      margin-bottom: 4rem; } }
   .heading-secondary__popup {
     font-size: 2.5rem;
     color: #FFFFFF;
@@ -193,18 +103,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     top: 25%; }
-    @media only screen and (min-width: 768px) {
-      .heading-secondary__popup {
-        font-size: 4.5rem; } }
-    @media only screen and (orientation: landscape) and (min-width: 768px) {
-      .heading-secondary__popup {
-        font-size: 3.5rem; } }
-    @media only screen and (min-width: 1024px) {
-      .heading-secondary__popup {
-        font-size: 6rem; } }
-    @media only screen and (min-width: 1500px) {
-      .heading-secondary__popup {
-        font-size: 8rem; } }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -215,59 +113,22 @@ body {
   text-align: center;
   margin-bottom: 2rem;
   padding-top: 1rem; }
-  @media only screen and (min-width: 768px) {
-    .heading-tertiary {
-      font-size: 2.7rem;
-      letter-spacing: 1rem; } }
-  @media only screen and (min-width: 1024px) {
-    .heading-tertiary {
-      font-size: 3.5rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1200px) {
-    .heading-tertiary {
-      font-size: 2rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1500px) {
-    .heading-tertiary {
-      font-size: 4rem; } }
-  @media only screen and (min-width: 1500px) {
-    .heading-tertiary__line-1 {
-      display: block; } }
   .heading-tertiary__therapies {
     font-size: 1.3rem;
     letter-spacing: 0.5rem;
     margin-bottom: 0.5rem;
     padding: 0;
     border-bottom: 1px solid rgba(74, 78, 105, 0.5); }
-    @media only screen and (min-width: 992px) {
-      .heading-tertiary__therapies {
-        font-size: 2.2rem;
-        letter-spacing: 0.8rem;
-        padding: 1rem;
-        text-align: center;
-        margin-bottom: 3rem; } }
   .heading-tertiary__popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 52%;
     font-size: 1.6rem;
     color: #FFFFFF;
     text-shadow: 2px 2px rgba(53, 82, 74, 0.8);
-    position: absolute;
-    top: 40%; }
-    @media only screen and (min-width: 768px) {
-      .heading-tertiary__popup {
-        font-size: 3.2rem; } }
-    @media only screen and (orientation: landscape) and (min-width: 768px) {
-      .heading-tertiary__popup {
-        font-size: 2.1rem; } }
-    @media only screen and (min-width: 1024px) {
-      .heading-tertiary__popup {
-        font-size: 4.2rem; } }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .heading-tertiary__popup {
-        font-size: 3.2rem; } }
-    @media only screen and (orientation: landscape) and (min-width: 1200px) {
-      .heading-tertiary__popup {
-        font-size: 4.2rem; } }
-    @media only screen and (min-width: 1500px) {
-      .heading-tertiary__popup {
-        font-size: 5rem; } }
+    width: 100%; }
 
 .btn-text:link, .btn-text:visited {
   position: absolute;
@@ -319,24 +180,33 @@ body {
     color: #FFFFFF;
     box-shadow: 0 0.5rem 0.7rem rgba(53, 82, 74, 0.9); }
   .btn-booking__prices {
-    top: 65%; }
-    @media only screen and (min-width: 1024px) {
+    top: 65.5%; }
+    @media only screen and (min-width: 768px) {
+      .btn-booking__prices {
+        top: 67.5%; } }
+    @media only screen and (min-width: 992px) {
       .btn-booking__prices {
         top: 84%; } }
     @media only screen and (min-width: 1500px) {
       .btn-booking__prices {
         top: 86.5%; } }
     .btn-booking__prices:hover {
-      top: 64.8%; }
-      @media only screen and (min-width: 1024px) {
+      top: 65.3%; }
+      @media only screen and (min-width: 768px) {
+        .btn-booking__prices:hover {
+          top: 67.3%; } }
+      @media only screen and (min-width: 992px) {
         .btn-booking__prices:hover {
           top: 83.8%; } }
       @media only screen and (min-width: 1500px) {
         .btn-booking__prices:hover {
           top: 86.3%; } }
     .btn-booking__prices:active {
-      top: 65%; }
-      @media only screen and (min-width: 1024px) {
+      top: 65.5%; }
+      @media only screen and (min-width: 768px) {
+        .btn-booking__prices:active {
+          top: 67.5%; } }
+      @media only screen and (min-width: 992px) {
         .btn-booking__prices:active {
           top: 84%; } }
       @media only screen and (min-width: 1500px) {
@@ -365,10 +235,7 @@ body {
     @media only screen and (min-width: 1200px) {
       .btn-booking__bookings {
         top: 78%;
-        font-size: 3rem; } }
-    .btn-booking__bookings:focus {
-      -webkit-animation: blink 5s ease-in-out;
-      animation: blink 0.5s ease-in-out 3; }
+        font-size: 2.7rem; } }
     .btn-booking__bookings:hover {
       top: 55.8%; }
       @media only screen and (min-width: 375px) {
@@ -426,13 +293,7 @@ body {
         font-size: 1.6rem; } }
     @media only screen and (min-width: 1024px) {
       .btn-booking__popup {
-        font-size: 3rem; } }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .btn-booking__popup {
-        font-size: 2.6rem; } }
-    @media only screen and (min-width: 1200px) {
-      .btn-booking__popup {
-        font-size: 3rem; } }
+        font-size: 2.7rem; } }
     @media only screen and (min-width: 1500px) {
       .btn-booking__popup {
         top: 85%; } }
@@ -472,11 +333,10 @@ body {
     @media only screen and (min-width: 1500px) {
       .card-img {
         width: 100%;
-        margin-left: 0%; } }
+        margin-left: auto; } }
     @media only screen and (orientation: landscape) and (min-width: 1500px) {
       .card-img {
-        width: 100%;
-        margin-left: 0%; } }
+        width: 92%; } }
   .card-body {
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.7);
@@ -511,12 +371,14 @@ body {
           width: 100%;
           margin-left: 0%; } }
   .card-text {
+    display: flex;
+    align-items: center;
     margin: 0;
     font-size: 1.3rem;
     font-weight: 400;
     color: #4A4E69;
     overflow: auto;
-    height: 30rem; }
+    height: 20rem; }
     @media only screen and (min-width: 768px) {
       .card-text {
         font-size: 1.6rem;
@@ -530,7 +392,7 @@ body {
         font-size: 1.3rem; } }
     @media only screen and (min-width: 1500px) {
       .card-text {
-        font-size: 2rem;
+        font-size: 1.6rem;
         width: 100%;
         margin: 0%; } }
     .card-text__about {
@@ -616,9 +478,6 @@ body {
   @media only screen and (min-width: 1024px) {
     .logo {
       height: 6rem; } }
-  @media only screen and (min-width: 1200px) {
-    .logo {
-      height: 8rem; } }
 
 .footer {
   background: rgba(53, 82, 74, 0.9);
@@ -633,16 +492,14 @@ body {
     border-width: thin; }
     .footer__heading--margin {
       margin-top: 3rem; }
-      @media only screen and (min-width: 1200px) {
-        .footer__heading--margin {
-          margin-top: 0; } }
   .footer__text {
     font-weight: 400;
     font-size: 1.3rem; }
-  .footer .footer__text a {
-    color: #558B6E;
-    text-decoration: none;
-    font-size: 1.7rem; }
+    .footer__text--centred {
+      margin-left: 1rem; }
+  .footer__text a {
+    color: #FFFFFF;
+    text-decoration: none; }
 
 .footer__location i {
   font-size: 1.4rem; }
@@ -659,30 +516,15 @@ body {
 .fa-linkedin-in {
   margin-left: 1rem; }
 
-/*___________________________________________________________________________________________________________________________________________________________ Header Section */
 .homepage__header {
-  height: 89vh;
+  height: 85vh;
   background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
   background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
   background-size: cover;
   background-position: center right;
   position: relative;
   box-shadow: 0rem -1.2rem 4rem rgba(53, 82, 74, 0.4), 0 1rem 1rem rgba(53, 82, 74, 0.5);
-  backface-visibility: hidden;
-  /* iPad */ }
-  @media only screen and (min-width: 375px) and (max-width: 767px) {
-    .homepage__header {
-      height: 85vh; } }
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .homepage__header {
-      background-position: bottom right; } }
-  @media only screen and (orientation: landscape) {
-    .homepage__header {
-      background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg); } }
-  @media only screen and (orientation: landscape) and (min-width: 991px) and (max-width: 1199px) {
-    .homepage__header {
-      height: 75vh;
-      background-position: left; } }
+  backface-visibility: hidden; }
 
 .navigation__checkbox {
   display: none; }
@@ -701,33 +543,6 @@ body {
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
   backface-visibility: hidden; }
-  @media only screen and (min-width: 768px) {
-    .navigation__button {
-      height: 5rem;
-      width: 5rem;
-      top: 2rem;
-      right: 2.5rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 768px) {
-    .navigation__button {
-      height: 4rem;
-      width: 4rem;
-      top: 1.5rem;
-      right: 5rem; } }
-  @media only screen and (min-width: 1024px) {
-    .navigation__button {
-      right: 5rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .navigation__button {
-      height: 7rem;
-      width: 7rem;
-      top: 3rem;
-      right: 5rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1200px) {
-    .navigation__button {
-      height: 8rem;
-      width: 8rem;
-      top: 4rem;
-      right: 9rem; } }
 
 .navigation__nav {
   position: fixed;
@@ -752,11 +567,7 @@ body {
   visibility: hidden; }
 
 .navigation__item-header {
-  margin: 3rem;
-  /* iPhone X */ }
-  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 991px) {
-    .navigation__item-header {
-      margin: 0.5rem; } }
+  margin: 3rem; }
 
 .navigation__link,
 .navigation__link:link,
@@ -778,18 +589,7 @@ body {
 .navigation__link-header:visited {
   font-size: 2rem;
   font-weight: 300;
-  padding: 0.5rem 0.9rem;
-  /* iPhone X */ }
-  @media only screen and (min-width: 768px) {
-    .navigation__link-header,
-    .navigation__link-header:link,
-    .navigation__link-header:visited {
-      font-size: 3rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-    .navigation__link-header,
-    .navigation__link-header:link,
-    .navigation__link-header:visited {
-      font-size: 2rem; } }
+  padding: 0.5rem 0.9rem; }
 
 .navigation__link-footer,
 .navigation__link-footer:link,
@@ -801,17 +601,14 @@ body {
 .navigation__link:hover {
   color: #558B6E;
   background-position: 100%;
-  -webkit-transform: translateY(-0.3rem);
+  -webkit-transform: translateY(-0.1rem);
   transform: translateY(-0.1rem);
   box-shadow: 0 1rem 2rem rgba(53, 82, 74, 0.5); }
-  @media only screen and (min-width: 768px) {
-    .navigation__link:hover {
-      transform: translateY(-0.3rem); } }
 
 .navigation__link:active {
   color: #558B6E;
   background-position: 100%;
-  -webkit-transform: translateY(-1px);
+  -webkit-transform: translateY(-0.1rem);
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 0.7rem rgba(53, 82, 74, 0.9); }
 
@@ -837,22 +634,12 @@ body {
   opacity: 1;
   visibility: visible; }
 
-/* ICON */
 .navigation__icon {
   position: relative;
   top: 24%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
-  @media only screen and (min-width: 768px) {
-    .navigation__icon {
-      top: 31%; } }
-  @media only screen and (min-width: 1024px) {
-    .navigation__icon {
-      top: 35%; } }
-  @media only screen and (min-width: 1200px) {
-    .navigation__icon {
-      top: 40%; } }
 
 .navigation__icon,
 .navigation__icon::before,
@@ -861,27 +648,6 @@ body {
   width: 1.8rem;
   height: 0.1rem;
   background-color: rgba(53, 82, 74, 0.8); }
-  @media only screen and (min-width: 768px) {
-    .navigation__icon,
-    .navigation__icon::before,
-    .navigation__icon::after {
-      width: 2.5rem;
-      height: 0.2rem; } }
-  @media only screen and (min-width: 1024px) {
-    .navigation__icon,
-    .navigation__icon::before,
-    .navigation__icon::after {
-      width: 2.7rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .navigation__icon,
-    .navigation__icon::before,
-    .navigation__icon::after {
-      width: 4rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1200px) {
-    .navigation__icon,
-    .navigation__icon::before,
-    .navigation__icon::after {
-      width: 5rem; } }
 
 .navigation__icon::before,
 .navigation__icon::after {
@@ -894,64 +660,28 @@ body {
 
 .navigation__icon::before {
   top: -0.5rem; }
-  @media only screen and (min-width: 768px) {
-    .navigation__icon::before {
-      top: -0.8rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .navigation__icon::before {
-      top: -1.2rem; } }
 
 .navigation__icon::after {
   top: 0.5rem; }
-  @media only screen and (min-width: 768px) {
-    .navigation__icon::after {
-      top: 0.8rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .navigation__icon::after {
-      top: 1.2rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   top: -0.6rem; }
-  @media only screen and (min-width: 768px) {
-    .navigation__button:hover .navigation__icon::before {
-      top: -0.9rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .navigation__button:hover .navigation__icon::before {
-      top: -1.3rem; } }
 
 .navigation__button:hover .navigation__icon::after {
   top: 0.6rem; }
-  @media only screen and (min-width: 768px) {
-    .navigation__button:hover .navigation__icon::after {
-      top: 0.9rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .navigation__button:hover .navigation__icon::after {
-      top: 1.3rem; } }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent; }
-  @media only screen and (max-width: 767px) {
-    .navigation__checkbox:checked + .navigation__button .navigation__icon {
-      background-color: transparent; } }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
   top: 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
-  @media only screen and (max-width: 767px) {
-    .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-      top: 0;
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg); } }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
-  @media only screen and (max-width: 767px) {
-    .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-      top: 0;
-      transform: rotate(-45deg); } }
 
 .page-header {
   height: 10vh;
@@ -960,11 +690,9 @@ body {
   background-position: center right;
   position: relative;
   backface-visibility: hidden; }
-  @media only screen and (orientation: landscape) {
-    .page-header {
-      height: 20vh; } }
 
 .page-title__heading {
+  font-family: 'Raleway', sans-serif;
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
@@ -975,21 +703,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 60%; }
-  @media only screen and (min-width: 375px) {
-    .page-title__heading {
-      top: 50%; } }
-  @media only screen and (orientation: landscape) {
-    .page-title__heading {
-      font-size: 3.5rem;
-      letter-spacing: 1rem; } }
-  @media only screen and (min-width: 768px) {
-    .page-title__heading {
-      font-size: 4.5rem;
-      letter-spacing: 2rem; } }
-  @media only screen and (min-width: 1024px) {
-    .page-title__heading {
-      font-size: 8rem;
-      letter-spacing: 2rem; } }
 
 .about-page__container {
   padding: 0;
@@ -1012,22 +725,6 @@ body {
   background-color: rgba(216, 223, 215, 0.5);
   border-radius: 2rem;
   box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5); }
-  @media only screen and (min-width: 768px) {
-    .about-page__inner-container {
-      width: 80%;
-      margin: 5rem 10%; } }
-  @media only screen and (orientation: landscape) and (min-width: 768px) {
-    .about-page__inner-container {
-      width: 90%;
-      margin: 5rem 5%; } }
-  @media only screen and (min-width: 1024px) {
-    .about-page__inner-container {
-      width: 110%;
-      margin: 5rem -5%; } }
-  @media only screen and (min-width: 1200px) {
-    .about-page__inner-container {
-      width: 100%;
-      margin: 5rem 0%; } }
 
 .bookings-page {
   padding: 0;
@@ -1040,12 +737,6 @@ body {
     background-color: rgba(216, 223, 215, 0.7);
     width: 90vw;
     border: 0.1rem solid #35524A; }
-    @media only screen and (min-width: 768px) {
-      .bookings-page__container {
-        width: 80vw; } }
-    @media only screen and (min-width: 1200px) {
-      .bookings-page__container {
-        width: 70vw; } }
   .bookings-page__list-background-container {
     padding: 0; }
   .bookings-page__list-container {
@@ -1061,30 +752,13 @@ body {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 30px; }
-  @media only screen and (min-width: 768px) {
-    .form-group {
-      width: 75%; } }
-  .form-group:first-child {
-    margin-top: 3rem; }
-    @media only screen and (min-width: 1200px) {
-      .form-group:first-child {
-        margin-top: 5rem; } }
 
 .label {
   text-transform: uppercase;
   font-size: 1.3rem; }
-  @media only screen and (orientation: landscape) {
-    .label {
-      font-size: 1.6rem; } }
-  @media only screen and (min-width: 768px) {
-    .label {
-      font-size: 2rem; } }
 
 .form-control {
   font-size: 1.3rem; }
-  @media only screen and (min-width: 768px) {
-    .form-control {
-      font-size: 2rem; } }
 
 .calendar {
   display: flex;
@@ -1094,9 +768,6 @@ body {
   margin: 1rem auto 5rem auto;
   height: auto;
   background-color: #FFFFFF; }
-  @media only screen and (min-width: 768px) {
-    .calendar {
-      width: 75%; } }
   .calendar-label {
     width: 100%;
     margin: 3rem auto 1rem;
@@ -1110,28 +781,6 @@ body {
   column-gap: 1rem;
   row-gap: 1.5rem;
   font-size: 1.3rem; }
-  @media only screen and (min-width: 768px) {
-    .date {
-      grid-template-columns: 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
-      font-size: 1.6rem; } }
-  @media only screen and (min-width: 1024px) {
-    .date {
-      grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem; } }
-  @media only screen and (orientation: landscape) {
-    .date {
-      padding: 4.5rem;
-      grid-template-columns: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .date {
-      padding: 4.5rem;
-      grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem; } }
-  @media only screen and (min-width: 1200px) {
-    .date {
-      grid-template-columns: 8rem 8rem 8rem 8rem 8rem 8rem 8rem; } }
-  @media only screen and (min-width: 1800px) {
-    .date {
-      grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
-      grid-template-rows: 6rem auto 2rem; } }
 
 .day, .number {
   text-align: center; }
@@ -1142,6 +791,8 @@ body {
   text-decoration: none; }
 
 .number:hover {
+  width: 50%;
+  margin-left: 25%;
   background-color: #35524A;
   color: white;
   cursor: pointer; }
@@ -1180,19 +831,6 @@ body {
     width: 90%;
     border-radius: 3rem;
     box-shadow: 0.2rem 0.2rem 1.5rem rgba(255, 255, 255, 0.2); }
-    @media only screen and (orientation: landscape) {
-      .popup__content {
-        background-image: linear-gradient(to bottom right, rgba(53, 82, 74, 0.2), rgba(74, 78, 105, 0.8)), url(../img/header-image_570x265.jpg);
-        height: 75vh;
-        width: 65%; } }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .popup__content {
-        height: 55vh;
-        width: 60%; } }
-    @media only screen and (min-width: 1500px) {
-      .popup__content {
-        height: 60vh;
-        width: 50%; } }
   .popup__text {
     color: #FFFFFF;
     text-shadow: 2px 2px rgba(53, 82, 74, 0.8);
@@ -1225,36 +863,16 @@ body {
   overflow: hidden;
   position: relative;
   height: 30rem; }
-  @media only screen and (min-width: 1024px) {
-    .map-responsive {
-      height: 50rem; } }
 
 .map-responsive iframe {
   height: 30rem;
   width: 100%; }
-  @media only screen and (orientation: landscape) {
-    .map-responsive iframe {
-      width: 80%;
-      margin: 0 10%; } }
-  @media only screen and (min-width: 768px) {
-    .map-responsive iframe {
-      width: 80%;
-      margin: 0 10%; } }
-  @media only screen and (min-width: 1024px) {
-    .map-responsive iframe {
-      height: 50rem; } }
 
 .therapies {
   background-color: #D8DfD7;
   margin-top: 3rem;
   padding: 2rem 0 0 0;
   box-shadow: 0 -1rem 6rem rgba(53, 82, 74, 0.25), 0 1rem 6rem rgba(53, 82, 74, 0.25); }
-  @media only screen and (min-width: 768px) {
-    .therapies {
-      background-color: #D8DfD7;
-      margin-top: 6rem;
-      padding: 5rem 0;
-      box-shadow: 0 -1rem 6rem rgba(74, 78, 105, 0.25), 0 1rem 6rem rgba(74, 78, 105, 0.25); } }
 
 .no-margin {
   margin: 0; }
@@ -1265,17 +883,10 @@ body {
 
 .therapies_row2 {
   padding-top: 0; }
-  @media only screen and (min-width: 768px) {
-    .therapies_row2 {
-      padding-top: 4rem; } }
 
 .customer-feedback {
   background-color: rgba(53, 82, 74, 0.2);
   margin-top: 3rem; }
-  @media only screen and (min-width: 768px) {
-    .customer-feedback {
-      margin-top: 6rem;
-      padding: 5rem 0; } }
   .customer-feedback__inner-container {
     padding: 2rem;
     background-color: #FFFFFF;
@@ -1307,16 +918,10 @@ body {
     width: 90vw;
     padding: 0 1rem;
     border: 1px solid #35524A; }
-    @media only screen and (min-width: 1200px) {
-      .price-list-page__list-container {
-        width: 50vw; } }
   .price-list-page__table {
     display: table;
     text-align: center;
     font-size: 1.3rem; }
-    @media only screen and (min-width: 992px) {
-      .price-list-page__table {
-        font-size: 2rem; } }
 
 .heading-secondary-price-list {
   font-size: 35px;
@@ -1359,15 +964,8 @@ tr {
     background-color: rgba(216, 223, 215, 0.7);
     border: 1px solid #35524A;
     padding: 2rem 2rem; }
-    @media only screen and (min-width: 768px) {
-      .therapies-page__inner-container {
-        margin: 10rem auto;
-        padding: 2rem 5rem; } }
   .therapies-page__content, .therapies-page__table {
     font-size: 1.3rem; }
-    @media only screen and (min-width: 992px) {
-      .therapies-page__content, .therapies-page__table {
-        font-size: 2rem; } }
   .therapies-page__table {
     display: table;
     text-align: center; }
@@ -1381,3 +979,465 @@ th ~ .border-left, th ~ .border-none, td ~ .border-left {
 
 tr {
   height: 2rem; }
+
+@media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+  .heading-open {
+    font-size: 3rem;
+    top: 57%;
+    left: 34%; } }
+
+@media only screen and (min-width: 768px) {
+  .heading-open {
+    font-size: 7.5rem;
+    letter-spacing: 2rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .heading-open {
+    font-size: 3.4rem;
+    letter-spacing: 1.2rem;
+    top: 55%;
+    left: 37%; } }
+
+@media only screen and (min-width: 992px) {
+  .heading-open {
+    font-size: 7rem;
+    letter-spacing: 2rem;
+    top: 59%;
+    left: 47%; } }
+
+@media only screen and (min-width: 1200px) {
+  .heading-open {
+    top: 35%;
+    left: 32%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+  .heading-primary {
+    top: 57%;
+    left: 35%; } }
+
+@media only screen and (min-width: 768px) {
+  .heading-primary {
+    font-size: 6rem;
+    letter-spacing: 2rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 814px) {
+  .heading-primary {
+    font-size: 3.2rem;
+    letter-spacing: 1.2rem;
+    top: 60%;
+    left: 35%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 815px) and (max-width: 1199px) {
+  .heading-primary {
+    font-size: 6rem;
+    letter-spacing: 3rem;
+    top: 60%;
+    left: 45%; } }
+
+@media only screen and (min-width: 1200px) {
+  .heading-primary {
+    font-size: 7rem;
+    letter-spacing: 2rem;
+    left: 30%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+  .heading-primary__main, .heading-primary__sub1 {
+    padding-bottom: 2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .heading-primary__main, .heading-primary__sub1 {
+    padding-bottom: 7rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+  .heading-primary__main, .heading-primary__sub1 {
+    padding-bottom: 4.9rem; } }
+
+@media only screen and (min-width: 768px) {
+  .heading-secondary {
+    font-size: 3rem;
+    letter-spacing: 1rem; } }
+
+@media only screen and (min-width: 992px) {
+  .heading-secondary {
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+    margin-bottom: 4rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+  .heading-secondary__therapies {
+    font-size: 2.3rem;
+    margin-bottom: 2rem; } }
+
+@media only screen and (min-width: 900px) {
+  .heading-secondary__bookings {
+    margin-bottom: 4rem; } }
+
+@media only screen and (min-width: 768px) {
+  .heading-secondary__popup {
+    font-size: 4.5rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .heading-secondary__popup {
+    font-size: 3.5rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .heading-secondary__popup {
+    font-size: 6rem; } }
+
+@media only screen and (min-width: 1500px) {
+  .heading-secondary__popup {
+    font-size: 8rem; } }
+
+@media only screen and (min-width: 768px) {
+  .heading-tertiary {
+    font-size: 2.7rem;
+    letter-spacing: 1rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .heading-tertiary {
+    font-size: 3.5rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+  .heading-tertiary {
+    font-size: 2rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1500px) {
+  .heading-tertiary {
+    font-size: 2.7rem; } }
+
+@media only screen and (min-width: 1500px) {
+  .heading-tertiary__line-1 {
+    display: block; } }
+
+@media only screen and (min-width: 992px) {
+  .heading-tertiary__therapies {
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 3rem; } }
+
+@media only screen and (min-width: 768px) {
+  .heading-tertiary__popup {
+    font-size: 3.2rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .heading-tertiary__popup {
+    font-size: 2.1rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .heading-tertiary__popup {
+    font-size: 4.2rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .heading-tertiary__popup {
+    font-size: 3.2rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+  .heading-tertiary__popup {
+    font-size: 4.2rem; } }
+
+@media only screen and (min-width: 1500px) {
+  .heading-tertiary__popup {
+    font-size: 5rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    margin-top: 0; } }
+
+@media only screen and (min-width: 992px) {
+  .footer__heading--margin {
+    margin-top: 0; } }
+
+@media only screen and (orientation: landscape) {
+  .homepage__header {
+    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg); } }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .homepage__header {
+    background-position: bottom right; } }
+
+@media only screen and (orientation: landscape) and (min-width: 991px) and (max-width: 1199px) {
+  .homepage__header {
+    height: 75vh;
+    background-position: left; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__button {
+    height: 5rem;
+    width: 5rem;
+    top: 2rem;
+    right: 2.5rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .navigation__button {
+    height: 4rem;
+    width: 4rem;
+    top: 1.5rem;
+    right: 5rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .navigation__button {
+    right: 5rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .navigation__button {
+    height: 7rem;
+    width: 7rem;
+    top: 3rem;
+    right: 7rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 991px) {
+  .navigation__item-header {
+    margin: 0.5rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__link-header,
+  .navigation__link-header:link,
+  .navigation__link-header:visited {
+    font-size: 3rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+  .navigation__link-header,
+  .navigation__link-header:link,
+  .navigation__link-header:visited {
+    font-size: 2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__link:hover {
+    transform: translateY(-0.3rem); } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__icon {
+    top: 31%; } }
+
+@media only screen and (min-width: 1024px) {
+  .navigation__icon {
+    top: 35%; } }
+
+@media only screen and (min-width: 1200px) {
+  .navigation__icon {
+    top: 40%; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 2.5rem;
+    height: 0.2rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 2.7rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 4rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__icon::before {
+    top: -0.8rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .navigation__icon::before {
+    top: -1.2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__icon::after {
+    top: 0.8rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .navigation__icon::after {
+    top: 1.2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__button:hover .navigation__icon::before {
+    top: -0.9rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .navigation__button:hover .navigation__icon::before {
+    top: -1.3rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__button:hover .navigation__icon::after {
+    top: 0.9rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .navigation__button:hover .navigation__icon::after {
+    top: 1.3rem; } }
+
+@media only screen and (orientation: landscape) {
+  .page-header {
+    height: 20vh; } }
+
+@media only screen and (min-width: 375px) {
+  .page-title__heading {
+    top: 50%; } }
+
+@media only screen and (orientation: landscape) {
+  .page-title__heading {
+    font-size: 3.5rem;
+    letter-spacing: 1rem; } }
+
+@media only screen and (min-width: 768px) {
+  .page-title__heading {
+    font-size: 4.5rem;
+    letter-spacing: 2rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .page-title__heading {
+    font-size: 8rem;
+    letter-spacing: 2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .about-page__inner-container {
+    width: 80%;
+    margin: 5rem 10%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .about-page__inner-container {
+    width: 90%;
+    margin: 5rem 5%; } }
+
+@media only screen and (min-width: 1024px) {
+  .about-page__inner-container {
+    width: 110%;
+    margin: 5rem -5%; } }
+
+@media only screen and (min-width: 1200px) {
+  .about-page__inner-container {
+    width: 100%;
+    margin: 5rem 0%; } }
+
+@media only screen and (min-width: 768px) {
+  .bookings-page__container {
+    width: 80vw; } }
+
+@media only screen and (min-width: 1200px) {
+  .bookings-page__container {
+    width: 70vw; } }
+
+@media only screen and (min-width: 768px) {
+  .form-group {
+    width: 75%; } }
+
+.form-group:first-child {
+  margin-top: 3rem; }
+  @media only screen and (min-width: 1200px) {
+    .form-group:first-child {
+      margin-top: 5rem; } }
+
+@media only screen and (orientation: landscape) {
+  .label {
+    font-size: 1.6rem; } }
+
+@media only screen and (min-width: 768px) {
+  .label {
+    font-size: 2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .form-control {
+    font-size: 2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .calendar {
+    width: 75%; } }
+
+@media only screen and (min-width: 768px) {
+  .date {
+    grid-template-columns: 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
+    font-size: 1.6rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .date {
+    grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem; } }
+
+@media only screen and (orientation: landscape) {
+  .date {
+    padding: 4.5rem;
+    grid-template-columns: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .date {
+    padding: 4.5rem;
+    grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .date {
+    grid-template-columns: 8rem 8rem 8rem 8rem 8rem 8rem 8rem; } }
+
+@media only screen and (min-width: 1800px) {
+  .date {
+    grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
+    grid-template-rows: 6rem auto 2rem; } }
+
+@media only screen and (orientation: landscape) {
+  .popup__content {
+    background-image: linear-gradient(to bottom right, rgba(53, 82, 74, 0.2), rgba(74, 78, 105, 0.8)), url(../img/header-image_570x265.jpg);
+    height: 75vh;
+    width: 65%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .popup__content {
+    height: 55vh;
+    width: 60%; } }
+
+@media only screen and (min-width: 1500px) {
+  .popup__content {
+    height: 60vh;
+    width: 50%; } }
+
+@media only screen and (min-width: 1024px) {
+  .map-responsive {
+    height: 50rem; } }
+
+@media only screen and (orientation: landscape) {
+  .map-responsive iframe {
+    width: 80%;
+    margin: 0 10%; } }
+
+@media only screen and (min-width: 768px) {
+  .map-responsive iframe {
+    width: 80%;
+    margin: 0 10%; } }
+
+@media only screen and (min-width: 1024px) {
+  .map-responsive iframe {
+    height: 50rem; } }
+
+@media only screen and (min-width: 768px) {
+  .therapies {
+    background-color: #D8DfD7;
+    margin-top: 6rem;
+    padding: 5rem 0;
+    box-shadow: 0 -1rem 6rem rgba(74, 78, 105, 0.25), 0 1rem 6rem rgba(74, 78, 105, 0.25); } }
+
+@media only screen and (min-width: 768px) {
+  .therapies_row2 {
+    padding-top: 4rem; } }
+
+@media only screen and (min-width: 768px) {
+  .customer-feedback {
+    margin-top: 6rem;
+    padding: 5rem 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .price-list-page__list-container {
+    width: 50vw; } }
+
+@media only screen and (min-width: 992px) {
+  .price-list-page__table {
+    font-size: 2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .therapies-page__inner-container {
+    margin: 10rem auto;
+    padding: 2rem 5rem; } }
+
+@media only screen and (min-width: 992px) {
+  .therapies-page__content, .therapies-page__table {
+    font-size: 1.6rem; } }

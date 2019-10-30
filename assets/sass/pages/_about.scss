@@ -24,25 +24,5 @@
         background-color: rgba($color-light-green, 0.5);
         border-radius: 2rem;
         box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
-
-        @media only screen and (min-width: 768px) {
-            width: 80%;
-            margin: 5rem 10%;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 768px) {
-            width: 90%;
-            margin: 5rem 5%;
-        }
-
-        @media only screen and (min-width: 1024px) {
-            width: 110%;
-            margin: 5rem -5%;
-        }
-
-        @media only screen and (min-width: 1200px) {
-            width: 100%;
-            margin: 5rem 0%;
-        }
     }
 }

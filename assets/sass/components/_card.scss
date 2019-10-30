@@ -27,12 +27,11 @@
 
         @media only screen and (min-width: 1500px) {
             width: 100%;
-            margin-left: 0%;
+            margin-left: auto;
         }
 
         @media only screen and (orientation: landscape) and (min-width: 1500px) {
-            width: 100%;
-            margin-left: 0%;
+            width: 92%;
         }
     }
 
@@ -85,12 +84,14 @@
     }
 
     &-text {
+        display: flex;
+        align-items: center;
         margin: 0;
         font-size: $mobile-font-size__portrait;
         font-weight: 400;
         color: $color-contrast-blue;
         overflow: auto;
-        height: 30rem;
+        height: 20rem;
 
         @media only screen and (min-width: 768px) {
             font-size: $main-font-size;
@@ -107,7 +108,7 @@
         }
 
         @media only screen and (min-width: 1500px) {
-            font-size: 2rem;
+            font-size: $main-font-size;
             width: 100%;
             margin: 0%;
         }

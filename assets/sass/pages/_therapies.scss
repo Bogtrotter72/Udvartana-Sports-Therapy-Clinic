@@ -16,19 +16,10 @@
         background-color: rgba($color-light-green, 0.7);
         border: 1px solid $color-dark-green;
         padding: 2rem 2rem;
-
-        @media only screen and (min-width: 768px) {
-            margin: 10rem auto;
-            padding: 2rem 5rem;
-        }
     }
 
     &__content, &__table {
         font-size: $mobile-font-size__portrait;
-
-        @media only screen and (min-width: 992px) {
-            font-size: 2rem;
-        }
     }
 
     &__table {

@@ -15,22 +15,12 @@
         width: 90vw;
         padding: 0 1rem;
         border: 1px solid $color-dark-green;
-
-        @media only screen and (min-width: 1200px) {
-            width: 50vw;
-        }
     }
 
     &__table {
         display: table;
         text-align: center;
         font-size: $mobile-font-size__portrait;
-
-
-        @media only screen and (min-width: 992px) {
-            font-size: 2rem;
-        }
-
     }
 }
 

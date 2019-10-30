@@ -10,14 +10,6 @@
         background-color: rgba($color-light-green, 0.7);
         width: 90vw;
         border: 0.1rem solid $color-dark-green;
-
-        @media only screen and (min-width: 768px) {
-            width: 80vw;
-        }
-        
-        @media only screen and (min-width: 1200px) {
-            width: 70vw;
-        }
     }
 
     &__list-background-container {
@@ -41,39 +33,15 @@
     width: 90%;
     margin: 0 auto;
     padding-bottom: 30px;
-
-    @media only screen and (min-width: 768px) {
-        width: 75%;
-    }
-
-    &:first-child {
-        margin-top: 3rem;
-
-        @media only screen and (min-width: 1200px) {
-            margin-top: 5rem;
-        }
-    }
 }
 
 .label {
     text-transform: uppercase;
     font-size: $mobile-font-size__portrait;
-
-    @media only screen and (orientation: landscape) {
-        font-size: $main-font-size;
-    }
-
-    @media only screen and (min-width: 768px) {
-        font-size: 2rem;
-    }
 }
 
 .form-control {
     font-size: $mobile-font-size__portrait;
-
-    @media only screen and (min-width: 768px) {
-        font-size: 2rem;
-    }
 }
 
 .calendar {
@@ -84,10 +52,6 @@
     margin: 1rem auto 5rem auto;
     height: auto;
     background-color: $color-white;
-
-    @media only screen and (min-width: 768px) {
-        width: 75%;
-    }
 
     &-label {
         width: 100%;
@@ -104,34 +68,6 @@
     column-gap: 1rem;
     row-gap: 1.5rem;
     font-size: $mobile-font-size__portrait;
-
-    @media only screen and (min-width: 768px) {
-        grid-template-columns: 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
-        font-size: $main-font-size;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
-    }
-
-    @media only screen and (orientation: landscape) {
-        padding: 4.5rem;
-        grid-template-columns: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        padding: 4.5rem;
-        grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        grid-template-columns: 8rem 8rem 8rem 8rem 8rem 8rem 8rem;
-    }
-
-    @media only screen and (min-width: 1800px) {
-        grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
-        grid-template-rows: 6rem auto 2rem;
-    }
 }
 
 
@@ -146,6 +82,8 @@
 }
 
 .number:hover {
+    width: 50%;
+    margin-left: 25%;
     background-color: $color-dark-green;
     color: white;
     cursor: pointer;
@@ -190,22 +128,6 @@
         width: 90%;
         border-radius: 3rem;
         box-shadow: 0.2rem 0.2rem 1.5rem rgba($color-white, 0.2);
-
-        @media only screen and (orientation: landscape) {
-            background-image: linear-gradient(to bottom right, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), url(../img/header-image_570x265.jpg);
-            height: 75vh;
-            width: 65%;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 1024px) {
-            height: 55vh;
-            width: 60%;
-        }
-
-        @media only screen and (min-width: 1500px) {
-            height: 60vh;
-            width: 50%;
-        }
     }
 
     &__text {

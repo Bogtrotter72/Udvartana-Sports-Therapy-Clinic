@@ -4,13 +4,6 @@
     margin-top: 3rem;
     padding: 2rem 0 0 0;
     box-shadow: 0 -1rem 6rem rgba(53, 82, 74, 0.25), 0 1rem 6rem rgba(53, 82, 74, 0.25);    
-
-    @media only screen and (min-width: 768px) {
-        background-color: $color-light-green;
-        margin-top: 6rem;
-        padding: 5rem 0;
-        box-shadow: 0 -1rem 6rem rgba($color-contrast-blue, 0.25), 0 1rem 6rem rgba($color-contrast-blue, 0.25);
-    }
 }
 
 .no-margin {
@@ -27,10 +20,6 @@
 
 .therapies_row2 {
     padding-top: 0;
-
-    @media only screen and (min-width: 768px) {
-        padding-top: 4rem;
-    }
 }
 // End of Therapies Section //
 
@@ -39,13 +28,6 @@
 .customer-feedback {
     background-color: rgba($color-dark-green, 0.2);
     margin-top: 3rem;
-    // box-shadow: 0 -1.1rem 1.1rem rgba(74, 78, 105, 0.1);
-
-
-    @media only screen and (min-width: 768px) {
-        margin-top: 6rem;
-        padding: 5rem 0;
-    }
 
     &__inner-container {
         padding: 2rem;

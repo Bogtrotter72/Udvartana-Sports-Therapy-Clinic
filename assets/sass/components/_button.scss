@@ -1,3 +1,4 @@
+// To reduce clutter and maintain the sense of space on the home page, create an inline button that has similar styling to other buttons used
 .btn-text {
     &:link,
     &:visited {
@@ -33,6 +34,7 @@
 .btn-booking {
     @include center-screen;
     
+    // Alternative button - similar enough to navigation to feel consistent; different enough to offer a sense of variety
     padding: 0.6rem 1.2rem;
     font-size: $main-font-size;
     text-transform: uppercase;
@@ -62,9 +64,13 @@
 
     // Positioning for the price list page
     &__prices {
-        top: 65%;
+        top: 65.5%;
 
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 768px) {
+            top: 67.5%;
+        }
+
+        @media only screen and (min-width: 992px) {
             top: 84%;
         }
 
@@ -73,9 +79,13 @@
         }
 
         &:hover {
-            top: 64.8%;
+            top: 65.3%;
 
-            @media only screen and (min-width: 1024px) {
+            @media only screen and (min-width: 768px) {
+                top: 67.3%;
+            }
+
+            @media only screen and (min-width: 992px) {
                 top: 83.8%;
             }
     
@@ -86,9 +96,13 @@
 
 
         &:active {
-            top: 65%;
+            top: 65.5%;
 
-            @media only screen and (min-width: 1024px) {
+            @media only screen and (min-width: 768px) {
+                top: 67.5%;
+            }
+
+            @media only screen and (min-width: 992px) {
                 top: 84%;
             }
     
@@ -128,13 +142,10 @@
 
         @media only screen and (min-width: 1200px) {
             top: 78%;
-            font-size: 3rem;
+            font-size: 2.7rem;
         }
 
-        &:focus {
-            -webkit-animation: blink 5s ease-in-out;
-            animation: blink 0.5s ease-in-out 3;
-        }
+        
     
         &:hover {
             top: 55.8%;
@@ -215,16 +226,9 @@
         }
 
         @media only screen and (min-width: 1024px) {
-            font-size: 3rem;
+            font-size: 2.7rem;
         }
 
-        @media only screen and (orientation: landscape) and (min-width: 1024px) {
-            font-size: 2.6rem;
-        }
-
-        @media only screen and (min-width: 1200px) {
-            font-size: 3rem;
-        }
 
         @media only screen and (min-width: 1500px) {
             top: 85%;

@@ -1,3 +1,4 @@
+// An adaptation of Jonas Schmedtmanns' Checkbox Hack
 .navigation__checkbox {
     display: none;
 }
@@ -16,39 +17,6 @@
     -webkit-transition: transform 0.2s;
     transition: transform 0.2s;
     backface-visibility: hidden;
-
-    @media only screen and (min-width: 768px) {
-        height: 5rem;
-        width: 5rem;
-        top: 2rem;
-        right: 2.5rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 768px) {
-        height: 4rem;
-        width: 4rem;
-        top: 1.5rem;
-        right: 5rem;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        right: 5rem;
-    }
-
-    @media only screen and(orientation: landscape) and (min-width: 1024px) {
-        height: 7rem;
-        width: 7rem;
-        top: 3rem;
-        right: 5rem;
-    }
-
-    @media only screen and(orientation: landscape) and (min-width: 1200px) {
-        height: 8rem;
-        width: 8rem;
-        top: 4rem;
-        right: 9rem;
-    }
-
 }
 
 .navigation__nav {
@@ -58,8 +26,8 @@
     top: 0;
     right: 0;
     z-index: 750;
-    opacity: 0;
-    width: 0;
+    opacity: 0;                                         // hiding the
+    width: 0;                                           // navigation menu
     -webkit-transition: all 0.5s ease-in;
     transition: all 0.7s cubic-bezier(0.68, -0.55, 0, 1.5);
 }
@@ -68,19 +36,15 @@
     @include center-screen;
     list-style: none;
     text-align: center;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 0;                                         // hiding the
+    visibility: hidden;                                 // navigation list
 }
 
 .navigation__item-header {
     margin: 3rem;
- 
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 991px) {
-        margin: 0.5rem;
-    }
 }
 
+// An adaptation of Jonas Schmedtmann's link background animation
 .navigation__link,
 .navigation__link:link,
 .navigation__link:visited {
@@ -92,7 +56,7 @@
     background-image: -webkit-linear-gradient(left, transparent 0%, transparent 50%, $color-white 50%);
     background-image: linear-gradient(90deg, transparent 0%, transparent 50%, $color-white 50%);
     border-radius: 1.4rem;
-    background-size: 220%;
+    background-size: 220%;                                 
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
 }
@@ -103,16 +67,8 @@
     font-size: 2rem;
     font-weight: 300;
     padding: 0.5rem 0.9rem;
-
-    @media only screen and (min-width: 768px) {
-        font-size: 3rem;
-    }
-
-    /* iPhone X */
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-        font-size: 2rem;
-    }
 }
+
 .navigation__link-footer,
 .navigation__link-footer:link,
 .navigation__link-footer:visited {
@@ -124,22 +80,20 @@
 .navigation__link:hover {
     color: $color-medium-green;
     background-position: 100%;
-    -webkit-transform: translateY(-0.3rem);
-    transform: translateY(-0.1rem);
+    -webkit-transform: translateY(-0.1rem);
+    transform: translateY(-0.1rem);                                 // Slight shift upward to provide further user feedback
     box-shadow: 0 1rem 2rem rgba($color-dark-green, 0.5);
-
-    @media only screen and (min-width: 768px) {
-        transform: translateY(-0.3rem);
-    }    
+ 
 }
-
 .navigation__link:active {
     color: $color-medium-green;
     background-position: 100%;
-    -webkit-transform: translateY(-1px);
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 0.7rem rgba($color-dark-green, 0.9);
+    -webkit-transform: translateY(-0.1rem);
+    transform: translateY(-0.1rem);                                 // Slight shift upward 
+    box-shadow: 0 0.5rem 0.7rem rgba($color-dark-green, 0.9);       // and darken shadow to provide user 'button press' feedback
 }
+
+// Add a little site continuity by copying to the links in the footer
 .navigation__link-footer:hover {
     color: $color-medium-green;
     background-position: 100%;
@@ -164,28 +118,12 @@
     visibility: visible;
 }
 
-
-
-/* ICON */
 .navigation__icon {
     position: relative;
     top: 24%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-
-    @media only screen and (min-width: 768px) {
-        top: 31%;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        top: 35%;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        top: 40%;
-    }
-
 }
 
 .navigation__icon,
@@ -195,23 +133,6 @@
     width: 1.8rem;
     height: 0.1rem;
     background-color: rgba($color-dark-green,0.8);
-
-    @media only screen and (min-width: 768px) {
-        width: 2.5rem;
-        height: 0.2rem;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        width: 2.7rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        width: 4rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1200px) {
-        width: 5rem;
-    }
 }
 
 .navigation__icon::before,
@@ -224,81 +145,37 @@
     transition: transform  0.7s cubic-bezier(0.65, 0.9, 0.3, 1.25);
 }
 
+// Creating the hamburger
 .navigation__icon::before {
     top: -0.5rem;
-
-    @media only screen and (min-width: 768px) {
-        top: -0.8rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        top: -1.2rem;
-    }
-
 }
 
 .navigation__icon::after {
     top: 0.5rem;
-
-    @media only screen and (min-width: 768px) {
-        top: 0.8rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        top: 1.2rem;
-    }
 }
 
+
+// Another little shift to give user feedback
 .navigation__button:hover .navigation__icon::before {
     top: -0.6rem;
-
-    @media only screen and (min-width: 768px) {
-        top: -0.9rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        top: -1.3rem;
-    }
 }
 
 .navigation__button:hover .navigation__icon::after {
     top: 0.6rem;
-
-    @media only screen and (min-width: 768px) {
-        top: 0.9rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        top: 1.3rem;
-    }
 }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
     background-color: transparent;
-
-    @media only screen and (max-width: 767px) {
-        background-color: transparent;
-    }
 }
+
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
     top: 0;
     -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-
-    @media only screen and (max-width: 767px) {
-        top: 0;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-        
+    transform: rotate(45deg);  
 }
+
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
     top: 0;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-
-    @media only screen and (max-width: 767px) {
-        top: 0;
-        transform: rotate(-45deg);
-    }
 }

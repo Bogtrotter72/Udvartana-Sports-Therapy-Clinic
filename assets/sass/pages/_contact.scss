@@ -14,27 +14,9 @@
     overflow: hidden;
     position: relative;
     height: 30rem;
-
-    @media only screen and (min-width: 1024px) {
-        height: 50rem;
-    }
 }
 
 .map-responsive iframe {
     height: 30rem;
     width: 100%;
-
-    @media only screen and (orientation: landscape) {
-        width: 80%;
-        margin: 0 10%;
-    }
-
-    @media only screen and (min-width: 768px) {
-        width: 80%;
-        margin: 0 10%;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        height: 50rem;
-    }
 }
