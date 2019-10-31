@@ -40,7 +40,7 @@ Languages used:
 
 <h2>Testing</h2>
 <h3>Cross-Device Compatability</h3>
-<p>The website was tested in the device toolbar of Google's Devtools, on:
+<p>The website was tested in the device toolbar of Chrome's Devtools, on:
     <ul>
         <li>Galaxy S5</li>
         <li>iPhone5/SE</li>
@@ -49,8 +49,10 @@ Languages used:
         <li>iPad</li>
         <li>iPad Pro</li>
     </ul>
-    and live tested on desktop, laptop and mobile environments.
+    and live tested on desktop (22" monitor with 1920x1080 resolution), laptop(17" monitor 1920x1080 resolution) and mobile (Samsung A40) environments.
 </p>
+
+All hover items, buttons, etc. were thoroughly tested using the *forced element state* tools.
 
 <h3>Cross-Browser Compatability</h3>
 <p>The website was tested in the following browsers:
@@ -73,8 +75,7 @@ Languages used:
 
 <h2>Testing</h2>
 
-All hover items, buttons, etc. were thoroughly tested using the *forced element state* tool in
-Chrome's developer tools.
+
 
 <h2>Credits</h2>
 

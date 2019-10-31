@@ -91,7 +91,7 @@
         font-weight: 400;
         color: $color-contrast-blue;
         overflow: auto;
-        height: 20rem;
+        min-height: 20rem;
 
         @media only screen and (min-width: 768px) {
             font-size: $main-font-size;
@@ -113,14 +113,14 @@
             margin: 0%;
         }
 
-        &__about {
+        // &__about {
 
-            text-align: center;
+        //     text-align: center;
 
-            @media only screen and (orientation: landscape) and (min-width: 1200px) {
-                font-size: 2rem;
-            }
-        }
+        //     @media only screen and (orientation: landscape) and (min-width: 1200px) {
+        //         font-size: 2rem;
+        //     }
+        // }
     }
 
     &__individual {

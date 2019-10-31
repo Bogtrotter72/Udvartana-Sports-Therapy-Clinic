@@ -41,3 +41,19 @@ th ~ .border-left, th ~ .border-none, td ~ .border-left {
 tr {
     height: 2rem;
 }
+
+
+.prices {
+    font-size: $main-font-size;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    &-heading {
+        font-weight: bold;
+        margin-top: 2rem;
+
+    }
+    &-content {
+        margin-top: 2rem;
+    }    
+}
