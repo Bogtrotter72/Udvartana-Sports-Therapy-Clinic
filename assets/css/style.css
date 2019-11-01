@@ -155,10 +155,13 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
   transform: translateY(0rem); }
 
+.btn__wrapper {
+  position: relative; }
+
 .btn-booking {
   position: absolute;
-  top: 50%;
   left: 50%;
+  bottom: 0%;
   transform: translate(-50%, -50%);
   padding: 0.6rem 1.2rem;
   font-size: 1.6rem;
@@ -175,117 +178,15 @@ body {
   .btn-booking:hover {
     background-color: #558B6E;
     color: #FFFFFF;
+    transform: translate(-50%, -60%);
     box-shadow: 0 1rem 2rem rgba(53, 82, 74, 0.5); }
   .btn-booking:active {
     background-color: #35524A;
     color: #FFFFFF;
+    transform: translate(-50%, -50%);
     box-shadow: 0 0.5rem 0.7rem rgba(53, 82, 74, 0.9); }
-  .btn-booking__prices {
-    top: 65.5%; }
-    @media only screen and (min-width: 768px) {
-      .btn-booking__prices {
-        top: 67.5%; } }
-    @media only screen and (min-width: 992px) {
-      .btn-booking__prices {
-        top: 84%; } }
-    @media only screen and (min-width: 1500px) {
-      .btn-booking__prices {
-        top: 86.5%; } }
-    .btn-booking__prices:hover {
-      top: 65.3%; }
-      @media only screen and (min-width: 768px) {
-        .btn-booking__prices:hover {
-          top: 67.3%; } }
-      @media only screen and (min-width: 992px) {
-        .btn-booking__prices:hover {
-          top: 83.8%; } }
-      @media only screen and (min-width: 1500px) {
-        .btn-booking__prices:hover {
-          top: 86.3%; } }
-    .btn-booking__prices:active {
-      top: 65.5%; }
-      @media only screen and (min-width: 768px) {
-        .btn-booking__prices:active {
-          top: 67.5%; } }
-      @media only screen and (min-width: 992px) {
-        .btn-booking__prices:active {
-          top: 84%; } }
-      @media only screen and (min-width: 1500px) {
-        .btn-booking__prices:active {
-          top: 86.5%; } }
-  .btn-booking__bookings {
-    top: 56%; }
-    @media only screen and (min-width: 375px) {
-      .btn-booking__bookings {
-        top: 57%; } }
-    @media only screen and (orientation: landscape) {
-      .btn-booking__bookings {
-        top: 59%; } }
-    @media only screen and (min-width: 768px) {
-      .btn-booking__bookings {
-        top: 61.5%; } }
-    @media only screen and (orientation: landscape) and (min-width: 768px) {
-      .btn-booking__bookings {
-        top: 61%; } }
-    @media only screen and (min-width: 1024px) {
-      .btn-booking__bookings {
-        top: 75%; } }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .btn-booking__bookings {
-        top: 76%; } }
-    @media only screen and (min-width: 1200px) {
-      .btn-booking__bookings {
-        top: 78%;
-        font-size: 2.7rem; } }
-    .btn-booking__bookings:hover {
-      top: 55.8%; }
-      @media only screen and (min-width: 375px) {
-        .btn-booking__bookings:hover {
-          top: 56.8%; } }
-      @media only screen and (orientation: landscape) {
-        .btn-booking__bookings:hover {
-          top: 58.8%; } }
-      @media only screen and (min-width: 768px) {
-        .btn-booking__bookings:hover {
-          top: 61.3%; } }
-      @media only screen and (orientation: landscape) and (min-width: 768px) {
-        .btn-booking__bookings:hover {
-          top: 60.8%; } }
-      @media only screen and (min-width: 1024px) {
-        .btn-booking__bookings:hover {
-          top: 74.8%; } }
-      @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        .btn-booking__bookings:hover {
-          top: 76%; } }
-      @media only screen and (min-width: 1200px) {
-        .btn-booking__bookings:hover {
-          top: 77.8%; } }
-    .btn-booking__bookings:active {
-      top: 56%; }
-      @media only screen and (min-width: 375px) {
-        .btn-booking__bookings:active {
-          top: 57%; } }
-      @media only screen and (orientation: landscape) {
-        .btn-booking__bookings:active {
-          top: 59%; } }
-      @media only screen and (min-width: 768px) {
-        .btn-booking__bookings:active {
-          top: 61.5%; } }
-      @media only screen and (orientation: landscape) and (min-width: 768px) {
-        .btn-booking__bookings:active {
-          top: 61%; } }
-      @media only screen and (min-width: 1024px) {
-        .btn-booking__bookings:active {
-          top: 75%; } }
-      @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        .btn-booking__bookings:active {
-          top: 76%; } }
-      @media only screen and (min-width: 1200px) {
-        .btn-booking__bookings:active {
-          top: 78%; } }
   .btn-booking__popup {
-    font-size: 1.3rem;
-    top: 80%; }
+    font-size: 1.3rem; }
     @media only screen and (min-width: 768px) {
       .btn-booking__popup {
         font-size: 2.6rem; } }
@@ -295,20 +196,6 @@ body {
     @media only screen and (min-width: 1024px) {
       .btn-booking__popup {
         font-size: 2.7rem; } }
-    @media only screen and (min-width: 1500px) {
-      .btn-booking__popup {
-        top: 85%; } }
-    .btn-booking__popup:hover {
-      top: 79.5%; }
-      @media only screen and (min-width: 1500px) {
-        .btn-booking__popup:hover {
-          top: 84.5%; } }
-    .btn-booking__popup:active, .btn-booking__popup:focus {
-      animation: none;
-      top: 80%; }
-      @media only screen and (min-width: 1500px) {
-        .btn-booking__popup:active, .btn-booking__popup:focus {
-          top: 85%; } }
 
 .card {
   background-color: transparent;
@@ -1303,161 +1190,6 @@ tr {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
   transform: translateY(0rem); }
-
-.btn-booking {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0.6rem 1.2rem;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  background-color: #35524A;
-  color: #FFFFFF;
-  border: 0.1rem solid transparent;
-  border-radius: 50rem;
-  backface-visibility: hidden;
-  transition: all 0.2s; }
-  @media only screen and (min-width: 768px) {
-    .btn-booking {
-      font-size: 2rem; } }
-  .btn-booking:hover {
-    background-color: #558B6E;
-    color: #FFFFFF;
-    box-shadow: 0 1rem 2rem rgba(53, 82, 74, 0.5); }
-  .btn-booking:active {
-    background-color: #35524A;
-    color: #FFFFFF;
-    box-shadow: 0 0.5rem 0.7rem rgba(53, 82, 74, 0.9); }
-  .btn-booking__prices {
-    top: 65.5%; }
-    @media only screen and (min-width: 768px) {
-      .btn-booking__prices {
-        top: 67.5%; } }
-    @media only screen and (min-width: 992px) {
-      .btn-booking__prices {
-        top: 84%; } }
-    @media only screen and (min-width: 1500px) {
-      .btn-booking__prices {
-        top: 86.5%; } }
-    .btn-booking__prices:hover {
-      top: 65.3%; }
-      @media only screen and (min-width: 768px) {
-        .btn-booking__prices:hover {
-          top: 67.3%; } }
-      @media only screen and (min-width: 992px) {
-        .btn-booking__prices:hover {
-          top: 83.8%; } }
-      @media only screen and (min-width: 1500px) {
-        .btn-booking__prices:hover {
-          top: 86.3%; } }
-    .btn-booking__prices:active {
-      top: 65.5%; }
-      @media only screen and (min-width: 768px) {
-        .btn-booking__prices:active {
-          top: 67.5%; } }
-      @media only screen and (min-width: 992px) {
-        .btn-booking__prices:active {
-          top: 84%; } }
-      @media only screen and (min-width: 1500px) {
-        .btn-booking__prices:active {
-          top: 86.5%; } }
-  .btn-booking__bookings {
-    top: 56%; }
-    @media only screen and (min-width: 375px) {
-      .btn-booking__bookings {
-        top: 57%; } }
-    @media only screen and (orientation: landscape) {
-      .btn-booking__bookings {
-        top: 59%; } }
-    @media only screen and (min-width: 768px) {
-      .btn-booking__bookings {
-        top: 61.5%; } }
-    @media only screen and (orientation: landscape) and (min-width: 768px) {
-      .btn-booking__bookings {
-        top: 61%; } }
-    @media only screen and (min-width: 1024px) {
-      .btn-booking__bookings {
-        top: 75%; } }
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-      .btn-booking__bookings {
-        top: 76%; } }
-    @media only screen and (min-width: 1200px) {
-      .btn-booking__bookings {
-        top: 78%;
-        font-size: 2.7rem; } }
-    .btn-booking__bookings:hover {
-      top: 55.8%; }
-      @media only screen and (min-width: 375px) {
-        .btn-booking__bookings:hover {
-          top: 56.8%; } }
-      @media only screen and (orientation: landscape) {
-        .btn-booking__bookings:hover {
-          top: 58.8%; } }
-      @media only screen and (min-width: 768px) {
-        .btn-booking__bookings:hover {
-          top: 61.3%; } }
-      @media only screen and (orientation: landscape) and (min-width: 768px) {
-        .btn-booking__bookings:hover {
-          top: 60.8%; } }
-      @media only screen and (min-width: 1024px) {
-        .btn-booking__bookings:hover {
-          top: 74.8%; } }
-      @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        .btn-booking__bookings:hover {
-          top: 76%; } }
-      @media only screen and (min-width: 1200px) {
-        .btn-booking__bookings:hover {
-          top: 77.8%; } }
-    .btn-booking__bookings:active {
-      top: 56%; }
-      @media only screen and (min-width: 375px) {
-        .btn-booking__bookings:active {
-          top: 57%; } }
-      @media only screen and (orientation: landscape) {
-        .btn-booking__bookings:active {
-          top: 59%; } }
-      @media only screen and (min-width: 768px) {
-        .btn-booking__bookings:active {
-          top: 61.5%; } }
-      @media only screen and (orientation: landscape) and (min-width: 768px) {
-        .btn-booking__bookings:active {
-          top: 61%; } }
-      @media only screen and (min-width: 1024px) {
-        .btn-booking__bookings:active {
-          top: 75%; } }
-      @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        .btn-booking__bookings:active {
-          top: 76%; } }
-      @media only screen and (min-width: 1200px) {
-        .btn-booking__bookings:active {
-          top: 78%; } }
-  .btn-booking__popup {
-    font-size: 1.3rem;
-    top: 80%; }
-    @media only screen and (min-width: 768px) {
-      .btn-booking__popup {
-        font-size: 2.6rem; } }
-    @media only screen and (orientation: landscape) and (min-width: 768px) {
-      .btn-booking__popup {
-        font-size: 1.6rem; } }
-    @media only screen and (min-width: 1024px) {
-      .btn-booking__popup {
-        font-size: 2.7rem; } }
-    @media only screen and (min-width: 1500px) {
-      .btn-booking__popup {
-        top: 85%; } }
-    .btn-booking__popup:hover {
-      top: 79.5%; }
-      @media only screen and (min-width: 1500px) {
-        .btn-booking__popup:hover {
-          top: 84.5%; } }
-    .btn-booking__popup:active, .btn-booking__popup:focus {
-      animation: none;
-      top: 80%; }
-      @media only screen and (min-width: 1500px) {
-        .btn-booking__popup:active, .btn-booking__popup:focus {
-          top: 85%; } }
 
 @media only screen and (orientation: landscape) {
   .page-header {
