@@ -113,14 +113,14 @@
             margin: 0%;
         }
 
-        // &__about {
+        &__about {
 
-        //     text-align: center;
+            min-height: 35rem;
 
-        //     @media only screen and (orientation: landscape) and (min-width: 1200px) {
-        //         font-size: 2rem;
-        //     }
-        // }
+            @media only screen and (orientation: landscape) and (min-width: 1200px) {
+                font-size: 2rem;
+            }
+        }
     }
 
     &__individual {

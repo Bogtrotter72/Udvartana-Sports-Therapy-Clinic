@@ -163,13 +163,14 @@ body {
   left: 50%;
   bottom: 0%;
   transform: translate(-50%, -50%);
-  padding: 0.6rem 1.2rem;
+  padding: 1rem 1.2rem;
   font-size: 1.6rem;
   text-transform: uppercase;
-  background-color: #35524A;
+  background-image: radial-gradient(circle at center, rgba(53, 82, 74, 0.7) 5%, rgba(53, 82, 74, 0.9));
   color: #FFFFFF;
-  border: 0.1rem solid transparent;
-  border-radius: 50rem;
+  border: 0.2rem solid #FFFFFF;
+  box-shadow: 0 0 0.5rem #35524A;
+  border-radius: 3rem;
   backface-visibility: hidden;
   transition: all 0.2s; }
   @media only screen and (min-width: 768px) {
@@ -185,6 +186,12 @@ body {
     color: #FFFFFF;
     transform: translate(-50%, -50%);
     box-shadow: 0 0.5rem 0.7rem rgba(53, 82, 74, 0.9); }
+  .btn-booking__index {
+    transform: translate(-50%, -25%); }
+    .btn-booking__index:hover {
+      transform: translate(-50%, -30%); }
+    .btn-booking__index:active {
+      transform: translate(-50%, -25%); }
   .btn-booking__popup {
     font-size: 1.3rem; }
     @media only screen and (min-width: 768px) {
@@ -283,6 +290,11 @@ body {
         font-size: 1.6rem;
         width: 100%;
         margin: 0%; } }
+    .card-text__about {
+      min-height: 35rem; }
+      @media only screen and (orientation: landscape) and (min-width: 1200px) {
+        .card-text__about {
+          font-size: 2rem; } }
   .card__individual {
     width: 90%;
     margin: 2rem auto; }
@@ -603,7 +615,7 @@ body {
 
 .about-page__inner-container {
   width: 90%;
-  margin: 5rem 5%;
+  margin: 8rem 5%;
   padding: 2rem;
   background-color: rgba(216, 223, 215, 0.5);
   border-radius: 2rem;
@@ -754,7 +766,7 @@ body {
 .therapies {
   background-color: #D8DfD7;
   margin-top: 3rem;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0 3rem 0;
   box-shadow: 0 -1rem 6rem rgba(53, 82, 74, 0.25), 0 1rem 6rem rgba(53, 82, 74, 0.25); }
 
 .no-margin {
@@ -1217,22 +1229,22 @@ tr {
 @media only screen and (min-width: 768px) {
   .about-page__inner-container {
     width: 80%;
-    margin: 5rem 10%; } }
+    margin: 8rem 10%; } }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .about-page__inner-container {
     width: 90%;
-    margin: 5rem 5%; } }
+    margin: 8rem 5%; } }
 
 @media only screen and (min-width: 1024px) {
   .about-page__inner-container {
     width: 110%;
-    margin: 5rem -5%; } }
+    margin: 8rem -5%; } }
 
 @media only screen and (min-width: 1200px) {
   .about-page__inner-container {
-    width: 100%;
-    margin: 5rem 0%; } }
+    width: 90%;
+    margin: 8rem 5%; } }
 
 @media only screen and (min-width: 768px) {
   .bookings-page__container {
@@ -1330,11 +1342,11 @@ tr {
   .map-responsive iframe {
     height: 50rem; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .therapies {
     background-color: #D8DfD7;
     margin-top: 6rem;
-    padding: 5rem 0;
+    padding: 5rem 0 8rem;
     box-shadow: 0 -1rem 6rem rgba(74, 78, 105, 0.25), 0 1rem 6rem rgba(74, 78, 105, 0.25); } }
 
 @media only screen and (min-width: 768px) {

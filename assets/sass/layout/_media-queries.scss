@@ -419,22 +419,22 @@
 .about-page__inner-container {
     @media only screen and (min-width: 768px) {
         width: 80%;
-        margin: 5rem 10%;
+        margin: 8rem 10%;
     }
 
     @media only screen and (orientation: landscape) and (min-width: 768px) {
         width: 90%;
-        margin: 5rem 5%;
+        margin: 8rem 5%;
     }
 
     @media only screen and (min-width: 1024px) {
         width: 110%;
-        margin: 5rem -5%;
+        margin: 8rem -5%;
     }
 
     @media only screen and (min-width: 1200px) {
-        width: 100%;
-        margin: 5rem 0%;
+        width: 90%;
+        margin: 8rem 5%;
     }
 }
 
@@ -559,10 +559,10 @@
 
 
 .therapies {
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1200px) {
         background-color: $color-light-green;
         margin-top: 6rem;
-        padding: 5rem 0;
+        padding: 5rem 0 8rem;
         box-shadow: 0 -1rem 6rem rgba($color-contrast-blue, 0.25), 0 1rem 6rem rgba($color-contrast-blue, 0.25);
     }
 }

@@ -46,13 +46,14 @@
     transform: translate(-50%, -50%);
     
     // Alternative button - similar enough to navigation to feel consistent; different enough to offer a sense of variety
-    padding: 0.6rem 1.2rem;
+    padding: 1rem 1.2rem;
     font-size: $main-font-size;
     text-transform: uppercase;
-    background-color: $color-dark-green;
+    background-image: radial-gradient(circle at center, rgba($color-dark-green, 0.7) 5%, rgba($color-dark-green, 0.9));
     color: $color-white;
-    border: 0.1rem solid transparent;
-    border-radius: 50rem;
+    border: 0.2rem solid $color-white;
+    box-shadow: 0 0 0.5rem $color-dark-green;
+    border-radius: 3rem;
     backface-visibility: hidden;
     transition: all 0.2s;
 
@@ -73,6 +74,22 @@
         transform: translate(-50%, -50%);
         box-shadow: 0 0.5rem 0.7rem rgba($color-dark-green, 0.9);
     }
+
+    &__index {
+        transform: translate(-50%, -25%);
+
+        &:hover {
+            transform: translate(-50%, -30%);
+        }
+
+        &:active {
+            transform: translate(-50%, -25%);
+        }
+    }
+
+
+
+    
 
     &__popup {
         font-size: $mobile-font-size__portrait;
