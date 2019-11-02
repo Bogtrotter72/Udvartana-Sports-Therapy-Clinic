@@ -34,23 +34,21 @@ Languages used:
 1.  HTML
 2.  CSS & SCSS
 3.  BOOTSTRAP
-4.  <a href="https://nodejs.org/en/" target="_blank">Node.js</a> was used to compile the SCSS file to CSS 
+4.  <a href="https://nodejs.org/en" target="_blank">Node.js</a> was used to compile the SCSS file to CSS 
     (see <em> <a href="README.md#deployment">Deployment</a></em> below)
 
-<a href="https://tinyjpg.com/" target="_blank">tinyjpg.com</a> and
-<a href="https://tinypng.com/" target="_blank">tinypng.com</a> to compress images // Faster loading time
+<a href="https://tinyjpg.com" target="_blank">tinyjpg.com</a> and
+<a href="https://tinypng.com" target="_blank">tinypng.com</a> to compress images // Faster loading time
 
 <h2>Testing</h2>
 <h3>Cross-Device Compatability</h3>
 <p>The website was tested in the device toolbar of Chrome's Devtools, on:
-    <ul>
-        <li>Galaxy S5</li>
-        <li>iPhone5/SE</li>
-        <li>iPhone 6/7/8</li>
-        <li>iPhone X</li>
-        <li>iPad</li>
-        <li>iPad Pro</li>
-    </ul>
+    * Galaxy S5
+    * iPhone 5/SE
+    * iPhone 6/7/8
+    * iPhone X
+    * iPad
+    * iPad Pro
     and live tested on desktop (22" monitor with 1920x1080 resolution), laptop(17" monitor 1920x1080 resolution) and mobile (Samsung A40) environments.
 </p>
 
@@ -58,33 +56,25 @@ All hover items, buttons, etc. were thoroughly tested using the *forced element 
 
 <h3>Cross-Browser Compatability</h3>
 <p>The website was tested in the following browsers:
-    <ul>
-        <li>Google Chrome</li>
-        <li>Firefox</li>
-        <li>Opera</li>
-    </ul>
+    * Google Chrome
+    * Firefox
+    * Opera
+    * Internet Explorer 11
 </p>
 
 <p>The website was also tested in Lunascape 6, using the following engines:
-    <ul>
-        <li>Gecko</li>
-        <li>Trident</li>
-        <li>Webkit</li>
-    </ul>
+    * Gecko
+    * Trident
+    * Webkit
 </p>
 
 <h2 id="deployment">Deployment</h2>
 
 The node modules folder has been removed in order to reduce download size.
-In order to alter the code and re-compile the css, it will be necessary:
-<ol>
-    <li>
-        run an 'npm install' command in a console (after navigating to the main root directory)
-    </li>
-    <li>
-        run an 'npm run compile:sass' command in a console
-    </li>
-</ol>
+In order to alter the code and re-compile the css, it will be necessary to:
+1. run an 'npm install' command in a console (after navigating to the main root directory)
+2. run an 'npm run compile:sass' command in a console
+
 The script has a 'watch' function and automatically updates on saving the code.
 
 
@@ -93,11 +83,11 @@ The script has a 'watch' function and automatically updates on saving the code.
 <h3>Content</h3>
 <p>
     I owe a great deal to Jonas Schmedtmann and his 
-    <a href="https://www.udemy.com/course/advanced-css-and-sass/">Advanced CSS Course</a> on Udemy.
+    <a href="https://www.udemy.com/course/advanced-css-and-sass" target="_blank">Advanced CSS Course</a> on Udemy.
     By following his course, I have learned how to compile Sass, and use variables and mixins.</br>
     I am particularly indebted to him for my website's navigation menu, my use of the 
     checkbox hack and pseudo-classes, as well as the 'center-screen' mixin.
-    (see his 'Natours' project on <a href="https://github.com/jonasschmedtmann/advanced-css-course/tree/master/Natours">GitHub</a>)
+    (see his 'Natours' project on <a href="https://github.com/jonasschmedtmann/advanced-css-course/tree/master/Natours" target="_blank">GitHub</a>)
 </p>
 <p>
     Where possible, I have endeavoured to adapt the code to satisfy my own particular tastes, or the requirements of the project,
@@ -106,15 +96,13 @@ The script has a 'watch' function and automatically updates on saving the code.
 </p>
 <p>
     Other resources that have proven exceedingly useful, include:
-    <ul>
-        <li>w3schools</li>
-        <li>Mozilla Developer Network</li>
-        <li>Stack Overflow</li>
-        <li>freecodecamp</li>
-        <li>Get BEM</li>
-        <li>Code Institute (of course)</li>
-        <li>Fellow students and the Slack channels</li>
-    </ul>
+    * w3schools
+    * Mozilla Developer Network
+    * Stack Overflow
+    * freecodecamp
+    * Get BEM
+    * Code Institute (of course)
+    * Fellow students and the Slack channels
 </p>
 <p>
     In all instances, where I have sought solutions to problems, I have read how others have approached the problem,
