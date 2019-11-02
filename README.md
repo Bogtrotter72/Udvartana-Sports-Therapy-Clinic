@@ -34,8 +34,8 @@ Languages used:
 1.  HTML
 2.  CSS & SCSS
 3.  BOOTSTRAP
-4.  <a href="https://nodejs.org/en/" target="_blank">Node.js</a>was used to compile the SCSS file to CSS 
-    (see <em> <a href="README.md#deployment" Deployment</em> below)
+4.  <a href="https://nodejs.org/en/" target="_blank">Node.js</a> was used to compile the SCSS file to CSS 
+    (see <em> <a href="README.md#deployment">Deployment</a></em> below)
 
 <a href="https://tinyjpg.com/" target="_blank">tinyjpg.com</a> and
 <a href="https://tinypng.com/" target="_blank">tinypng.com</a> to compress images // Faster loading time
