@@ -14,7 +14,7 @@
     &__inner-container {
         margin: 7rem auto;
         background-color: rgba($color-light-green, 0.7);
-        border: 1px solid $color-dark-green;
+        border: 0.1rem solid $color-dark-green;
         padding: 2rem 2rem;
     }
 
@@ -30,7 +30,7 @@
 
 table {
     border-collapse: separate;
-    border-spacing: 9px;
+    border-spacing: 0.9rem;
 }
 
 th ~ .border-left, th ~ .border-none, td ~ .border-left {

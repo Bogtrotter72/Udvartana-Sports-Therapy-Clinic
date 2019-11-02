@@ -7,8 +7,8 @@
       color: $color-white;
       font-weight: 700;
       font-size: 2.5rem;
-      padding-bottom: 5px;
-      border-bottom: 1px solid rgba($color-light-gray, 0.5);
+      padding-bottom: 0.5rem;
+      border-bottom: 0.1rem solid rgba($color-light-gray, 0.5);
       border-width: thin;
 
         &--margin {
@@ -44,7 +44,7 @@
 }
 
 .copyright p {
-  border-top:1px solid rgba($color-light-gray, 0.5);
+  border-top: 0.1rem solid rgba($color-light-gray, 0.5);
 } 
 
 .fab {

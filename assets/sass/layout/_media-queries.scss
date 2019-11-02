@@ -378,7 +378,7 @@
         background-color: $color-medium-green;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-        border-radius: 2rem;
+        border-radius: $image-border-radius-small;
         transform: translateY(-0.3rem);
     }
 

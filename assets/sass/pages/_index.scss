@@ -32,7 +32,7 @@
     &__inner-container {
         padding: 2rem;
         background-color: $color-white;
-        border-radius: 2rem;
+        border-radius: $image-border-radius-small;
         box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
     }
 

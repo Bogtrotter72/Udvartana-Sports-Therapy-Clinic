@@ -13,7 +13,7 @@
 
     &-img {
         width: 100%;
-        border-radius: 3rem;
+        border-radius: $image-border-radius-large;
 
         @media only screen and (orientation: landscape) {
             width: 80%;
@@ -39,7 +39,7 @@
         padding: 2rem;
         background-color: rgba($color-white, 0.7);
         box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
-        border-radius: 2rem;
+        border-radius: $image-border-radius-small;
         overflow: auto;
 
         @media only screen and (min-width: 768px) {
@@ -70,11 +70,6 @@
                 width: 100%;
                 margin-left: 0%;
             }
-
-            // @media only screen and (orientation: landscape) and (min-width: 1024px) {
-            //     width: 110%;
-            //     margin-left: -5%;
-            // }
 
             @media only screen and (min-width: 1200px) {
                 width: 100%;
@@ -120,6 +115,12 @@
             @media only screen and (orientation: landscape) and (min-width: 1200px) {
                 font-size: 2rem;
             }
+        }
+
+        &__contact {
+            min-height: 1rem;
+            text-align: center;
+            justify-content: center;
         }
     }
 

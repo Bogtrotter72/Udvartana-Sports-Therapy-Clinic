@@ -164,7 +164,7 @@ body {
   bottom: 0%;
   transform: translate(-50%, -50%);
   padding: 1rem 1.2rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   background-image: radial-gradient(circle at center, rgba(53, 82, 74, 0.7) 5%, rgba(53, 82, 74, 0.9));
   color: #FFFFFF;
@@ -295,6 +295,10 @@ body {
       @media only screen and (orientation: landscape) and (min-width: 1200px) {
         .card-text__about {
           font-size: 2rem; } }
+    .card-text__contact {
+      min-height: 1rem;
+      text-align: center;
+      justify-content: center; }
   .card__individual {
     width: 90%;
     margin: 2rem auto; }
@@ -382,8 +386,8 @@ body {
     color: #FFFFFF;
     font-weight: 700;
     font-size: 2.5rem;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgba(121, 123, 132, 0.5);
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgba(121, 123, 132, 0.5);
     border-width: thin; }
     .footer__heading--margin {
       margin-top: 3rem; }
@@ -403,7 +407,7 @@ body {
   list-style-type: none; }
 
 .copyright p {
-  border-top: 1px solid rgba(121, 123, 132, 0.5); }
+  border-top: 0.1rem solid rgba(121, 123, 132, 0.5); }
 
 .fab {
   color: #FFFFFF; }
@@ -606,12 +610,20 @@ body {
   background-position: top center;
   position: relative; }
 
+.about-page__content {
+  padding: 1rem;
+  color: #4A4E69;
+  font-weight: 400;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 2rem; }
+
 .about-page__card-container {
   margin: 10vh auto;
   padding: 10vh 0;
-  border-radius: 30px;
+  border-radius: 3rem;
   background-color: rgba(216, 223, 215, 0.7);
-  box-shadow: 9px 8px 20px rgba(74, 78, 105, 0.5); }
+  box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5); }
 
 .about-page__inner-container {
   width: 90%;
@@ -635,10 +647,10 @@ body {
   .bookings-page__list-background-container {
     padding: 0; }
   .bookings-page__list-container {
-    margin: 100px auto;
+    margin: 10rem auto;
     background-color: rgba(216, 223, 215, 0.7);
     width: 50vw;
-    border: 1px solid #35524A; }
+    border: 0.1rem solid #35524A; }
   .bookings-page__table {
     width: 85%;
     margin: 0 27%; }
@@ -646,7 +658,7 @@ body {
 .form-group {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 30px; }
+  padding-bottom: 3rem; }
 
 .label {
   text-transform: uppercase;
@@ -709,11 +721,11 @@ body {
   .popup__close:link, .popup__close:visited {
     display: inline-block;
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 4rem;
     text-decoration: none;
     position: absolute;
-    top: 5px;
-    right: 25px; }
+    top: 0.5rem;
+    right: 2.5rem; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -728,15 +740,15 @@ body {
     box-shadow: 0.2rem 0.2rem 1.5rem rgba(255, 255, 255, 0.2); }
   .popup__text {
     color: #FFFFFF;
-    text-shadow: 2px 2px rgba(53, 82, 74, 0.8);
+    text-shadow: 0.2rem 0.2rem rgba(53, 82, 74, 0.8);
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%); }
     .popup__text-secondary {
-      font-size: 30px;
+      font-size: 3rem;
       color: #FFFFFF;
-      text-shadow: 2px 2px rgba(53, 82, 74, 0.8);
+      text-shadow: 0.2rem 0.2rem rgba(53, 82, 74, 0.8);
       position: absolute;
       top: 40%;
       left: 15%;
@@ -808,35 +820,35 @@ body {
   .price-list-page__list-background-container {
     padding: 0; }
   .price-list-page__list-container {
-    margin: 100px auto;
+    margin: 10rem auto;
     background-color: rgba(216, 223, 215, 0.7);
     width: 90vw;
     padding: 0 1rem;
-    border: 1px solid #35524A; }
+    border: 0.1rem solid #35524A; }
   .price-list-page__table {
     display: table;
     text-align: center;
     font-size: 1.3rem; }
 
 .heading-secondary-price-list {
-  font-size: 35px;
-  margin-bottom: 30px;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
   color: #35524A;
   padding-top: 5vh; }
   .heading-secondary-price-list:not(:first-child) {
     padding-top: 5vh; }
 
 .heading-tertiary-price-list {
-  font-size: 22px;
+  font-size: 2.2rem;
   color: #4A4E69;
-  margin-bottom: 10px; }
+  margin-bottom: 1rem; }
 
 table {
   border-collapse: separate;
-  border-spacing: 9px; }
+  border-spacing: 0.9rem; }
 
 .table {
-  margin-bottom: 30px; }
+  margin-bottom: 3rem; }
 
 th ~ .border-left, th ~ .border-none, td ~ .border-left {
   padding-left: 0; }
@@ -857,7 +869,7 @@ tr {
   .therapies-page__inner-container {
     margin: 7rem auto;
     background-color: rgba(216, 223, 215, 0.7);
-    border: 1px solid #35524A;
+    border: 0.1rem solid #35524A;
     padding: 2rem 2rem; }
   .therapies-page__content, .therapies-page__table {
     font-size: 1.3rem; }
@@ -867,7 +879,7 @@ tr {
 
 table {
   border-collapse: separate;
-  border-spacing: 9px; }
+  border-spacing: 0.9rem; }
 
 th ~ .border-left, th ~ .border-none, td ~ .border-left {
   padding-left: 0; }

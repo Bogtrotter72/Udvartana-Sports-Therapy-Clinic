@@ -8,12 +8,21 @@
         position: relative;
     }
 
+    &__content {
+        padding: 1rem;
+        color: $color-contrast-blue;
+        font-weight: 400;
+        border-radius: $image-border-radius-small;
+        background-color: rgba($color-white, 0.8);
+        font-size: 2rem;
+    }
+
     &__card-container {
         margin: 10vh auto;
         padding: 10vh 0;
-        border-radius: 30px;
+        border-radius: $image-border-radius-large;
         background-color: rgba($color-light-green, 0.7);
-        box-shadow: 9px 8px 20px rgba($color-contrast-blue, 0.5);
+        box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
     }
 
     &__inner-container {
@@ -22,7 +31,7 @@
 
         padding: 2rem;
         background-color: rgba($color-light-green, 0.5);
-        border-radius: 2rem;
+        border-radius: $image-border-radius-small;
         box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
     }
 }

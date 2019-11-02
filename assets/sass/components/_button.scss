@@ -21,7 +21,7 @@
         background-color: $color-medium-green;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-        border-radius: 2rem;
+        border-radius: $image-border-radius-small;
         transform: translateY(-0.3rem);
     }
 
@@ -47,13 +47,13 @@
     
     // Alternative button - similar enough to navigation to feel consistent; different enough to offer a sense of variety
     padding: 1rem 1.2rem;
-    font-size: $main-font-size;
+    font-size: $mobile-font-size__portrait;
     text-transform: uppercase;
     background-image: radial-gradient(circle at center, rgba($color-dark-green, 0.7) 5%, rgba($color-dark-green, 0.9));
     color: $color-white;
     border: 0.2rem solid $color-white;
     box-shadow: 0 0 0.5rem $color-dark-green;
-    border-radius: 3rem;
+    border-radius: $image-border-radius-large;
     backface-visibility: hidden;
     transition: all 0.2s;
 
