@@ -34,9 +34,7 @@
 </p>
 <p>
     The mouse icon changes to a pointer when hovering on clickable items, and buttons shift up on hover and down when pressed
-    to provide the user with positive feedback.
-
-    As weel as those features mentione above, the pop out navigation menu and footer navigation menu use the same animation, and
+    to provide the user with positive feedback. As well as those features mentioned above, the pop out navigation menu and footer navigation menu use the same animation, and
     overall these features should help provide the user with a sense of continuity.
 </p>
 <p>
@@ -54,14 +52,14 @@
 With no *Back End*, the bookings page does not function.  It is planned that further developments will include
 a fully-functioning calendar that:
 
-..* links to a diary-style page, with available times, etc. (_colour coded_)
-..* notifies the therapist of a booking
-..* provides customers with the option to select the therapist of their choice
-..* allows customers to block book appointments
+* links to a diary-style page, with available times, etc. (_colour coded_)
+* notifies the therapist of a booking
+* provides customers with the option to select the therapist of their choice
+* allows customers to block book appointments
 
 Should sufficient interest be shown, it may be possible to allow clients to:
-..* pay online (particularly for block bookings)
-..* purchase gift vouchers online
+* pay online (particularly for block bookings)
+* purchase gift vouchers online
 
 
 <h2>Technologies Used</h2>
