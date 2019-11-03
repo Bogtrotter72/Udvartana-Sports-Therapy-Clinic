@@ -279,9 +279,6 @@ body {
         font-size: 1.6rem;
         width: 90%;
         margin: auto 5%; } }
-    @media only screen and (min-width: 1024px) {
-      .card-text {
-        font-size: 2rem; } }
     @media only screen and (orientation: landscape) and (min-width: 1200px) {
       .card-text {
         font-size: 1.3rem; } }
@@ -299,6 +296,9 @@ body {
       min-height: 1rem;
       text-align: center;
       justify-content: center; }
+    .card-text__contact a {
+      color: #4A4E69;
+      text-decoration: none; }
   .card__individual {
     width: 90%;
     margin: 2rem auto; }
@@ -1142,12 +1142,6 @@ tr {
   .navigation__icon::after {
     width: 2.5rem;
     height: 0.2rem; } }
-
-@media only screen and (min-width: 1024px) {
-  .navigation__icon,
-  .navigation__icon::before,
-  .navigation__icon::after {
-    width: 2.7rem; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1024px) {
   .navigation__icon,
