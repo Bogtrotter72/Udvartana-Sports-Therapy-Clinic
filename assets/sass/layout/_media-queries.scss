@@ -1,57 +1,228 @@
+.logo-box {
+    @media only screen and (orientation: landscape) {
+        top: 1.5rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+        top: 2rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+        top: 3rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        top: 4rem;
+        left: 4rem;
+    }
+}
+.logo {
+    @media only screen and (min-width: 768px) {
+        height: 4rem;
+    }
+    @media only screen and (min-width: 992px) {
+        height: 5rem;
+    }
+}
+
+
+// S T A R T  O F  H O M E P A G E  H E A D E R  A N D  N A V I G A T I O N
+
+.homepage__header {
+    @media only screen and (orientation: landscape) {
+        background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
+    }
+  
+    @media only screen and (min-width: 768px) and (max-width: 1499px) {
+        background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/header-image_1366x1024_tbyawy.jpg");
+        background-position: bottom right;
+    }
+  
+    // Readjust back to the original image for iPhone X in landscape orientation
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+        background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
+    }
+  
+    // Readjust back to the original image for iPhone X in landscape orientation
+    @media only screen and (orientation: landscape) and (min-width: 992px)  {
+        background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/header-image_1366x1024_tbyawy.jpg");
+    }
+}
+
+.navigation__button {
+    
+    @media only screen and (min-width: 768px) {
+        height: 4rem;
+        width: 4rem;
+        top: 2rem;
+        right: 2.5rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+        height: 5rem;
+        width: 5rem;
+        right: 5rem;
+    }
+}
+
+.navigation__item-header {
+
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 991px) {
+        margin: 0.5rem;
+    }
+}
+
+.navigation__link-header,
+.navigation__link-header:link,
+.navigation__link-header:visited {
+
+    @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+        font-size: 2rem;
+    }
+}
+
+.navigation__link:hover {
+
+    @media only screen and (min-width: 768px) {
+        transform: translateY(-0.3rem);
+    }    
+}
+
+.navigation__icon {
+
+@media only screen and (min-width: 768px) {
+        top: 31%;
+    }
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+
+    @media only screen and (min-width: 768px) {
+        width: 2.5rem;
+        height: 0.2rem;
+    }
+}
+
+.navigation__icon::before {
+
+    @media only screen and (min-width: 768px) {
+        top: -0.8rem;
+    }
+}
+
+.navigation__icon::after {
+
+    @media only screen and (min-width: 768px) {
+        top: 0.8rem;
+    }
+}
+
+.navigation__button:hover .navigation__icon::before {
+
+    @media only screen and (min-width: 768px) {
+        top: -0.9rem;
+    }
+}
+
+.navigation__button:hover .navigation__icon::after {
+
+    @media only screen and (min-width: 768px) {
+        top: 0.9rem;
+    }
+}
+
+// E N D  O F  H O M E P A G E  H E A D E R  A N D  N A V I G A T I O N
+
+
+
+
+
 // S T A R T  O F  T Y P O G R A P H Y
 
 .heading-open {
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-        font-size:  3rem;
+    @media only screen and (orientation: landscape) {
+        left: 36%;
         top: 57%;
-        left: 34%;
     }
     @media only screen and (min-width: 768px) {
         font-size:  7.5rem;
-        letter-spacing: 2rem;
+        left: 55%;
+        letter-spacing: 1.7rem;
+        top: 57%;
     }
     @media only screen and (orientation: landscape) and (min-width: 768px) {
-        font-size:  3.4rem;
-        letter-spacing: 1.2rem;
-        top: 55%;
-        left: 37%;
+        font-size: 3.4rem;
+        left: 35%;
+        letter-spacing: 1rem;
     }
     @media only screen and (min-width: 992px) {
-        font-size:  7rem;
-        letter-spacing: 2rem;
-        top: 59%;
-        left: 47%;
+        left: 44%;
+        text-shadow: 0.5rem 0.4rem 0.5rem $color-white;
+        top: 50%;
+    }
+    @media only screen and (orientation: landscape) and (min-width: 992px) {
+        font-size: 6.5rem;
+        left: 37%;
+        letter-spacing: 1.7rem;
+        top: 50%;
     }
     @media only screen and (min-width: 1200px) {
-        top: 35%;
-        left: 32%;
+        font-size: 7.5rem;
+        left: 33%;
+        letter-spacing: 1.7rem;
+        top: 60%;
+    }
+    @media only screen and (min-width: 1500px) {
+        left: 31%;
     }
 }
 
 
 // Start of heading primary
 .heading-primary {
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-        top: 57%;
+   
+    @media only screen and (orientation: landscape) {
         left: 35%;
     }
+
     @media only screen and (min-width: 768px) {
         font-size:  6rem;
         letter-spacing: 2rem;
     }
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 814px) {
+
+    @media only screen and (min-width: 992px) {
+        top: 50%;
+        left: 40%;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
         font-size:  3.2rem;
         letter-spacing: 1.2rem;
         top: 60%;
         left: 35%;
     }
-    @media only screen and (orientation: landscape) and (min-width: 815px) and (max-width: 1199px) {
+    @media only screen and (orientation: landscape) and (min-width: 992px) {
         font-size:  6rem;
-        letter-spacing: 3rem;
+        letter-spacing: 1.5rem;
         top: 60%;
-        left: 45%;
+        left: 34%;
     }
     @media only screen and (min-width: 1200px) {
+        font-size:  6rem;
+        letter-spacing: 2rem;
+        left: 30%;
+    }
+    @media only screen and (min-width: 1500px) {
         font-size:  7rem;
         letter-spacing: 2rem;
         left: 30%;
@@ -70,6 +241,7 @@
     }
 }
 // End of heading primary
+
 
 // Start of heading secondary
 .heading-secondary {
@@ -110,6 +282,7 @@
 }
 // End of heading secondary
 
+
 // Start of heading tertiary
 .heading-tertiary {
     @media only screen and (min-width: 768px) {
@@ -120,17 +293,19 @@
         font-size: 3.5rem;
     }
     @media only screen and (orientation: landscape) and (min-width: 1200px) {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     @media only screen and (orientation: landscape) and (min-width: 1500px) {
         font-size: 2.7rem;
     }
-    &__line-1 {
 
-        @media only screen and (min-width: 1500px) {
-            display: block;
+    &__customer-feedback {
+
+        @media only screen and (min-width: 992px) {
+            font-size: 2.4rem;
         }
     }
+
     &__therapies {
         @media only screen and (min-width: 992px) {
             font-size: 2.5rem;
@@ -139,6 +314,14 @@
             text-align: center;
             margin-bottom: 3rem;
         }
+
+        &-home {
+
+        @media only screen and (min-width: 1500px) {
+            display: block;
+        }
+    }
+
     }
     &__popup {
         @media only screen and (min-width: 768px) {
@@ -161,9 +344,212 @@
         }
     }
 }
-// End of heading primary
+End of heading tertiary
 
 // E N D  O F  T Y P O G R A P H Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+
+    @media only screen and (orientation: landscape) {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0;
+    }
+
+    &-img {
+
+        @media only screen and (orientation: landscape) {
+            width: 80%;
+            margin: 0 10%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            width: 70%;
+            margin: 0 15%;
+        }
+
+        @media only screen and (min-width: 1500px) {
+            width: 80%;
+            margin: 0 10%;
+        }
+    }
+
+    &-text {
+
+        @media only screen and (min-width: 768px) {
+            font-size: $main-font-size;
+            width: 80%;
+            margin: 0 10%;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 1200px) {
+            font-size: $mobile-font-size__portrait;
+        }
+
+        @media only screen and (min-width: 1500px) {
+            font-size: $main-font-size;
+            width: 100%;
+            margin: 0%;
+        }
+
+        // To fix the sizing issue between the cards for the iPad & iPad Pro in landscape orientation
+        &__customer-feedback {
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                width: 90%;
+                margin: 0 5%;
+                min-height: 24rem;
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+                min-height: 14rem;
+            }
+       }
+
+        &__about {
+
+            @media only screen and (orientation: landscape) and (min-width: 1200px) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+
+   &__therapies {
+        @media only screen and (min-width: 992px) {
+            width: 80%;
+            margin: 2rem 10%;
+        }
+        
+        @media only screen and (min-width: 1200px) {
+            width: 100%;
+            margin: 2rem 0%;
+        }
+    }
+
+
+    &-individual__image {
+
+        @media only screen and (orientation: landscape) {
+            width: 80%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            width: 60%;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            width: 80%;
+        }
+
+        @media only screen and(orientation: landscape) and (min-width: 1200px) {
+            width: 60%;
+        }
+
+        @media only screen and (min-width: 1500px) {
+            width: 90%;
+        }    
+    }
+
+
+    &__customer-feedback {
+
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            width: 80%;
+        }
+
+        @media only screen and (min-width: 992px) {
+            width: 140%;
+            margin: 2rem -20%;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 1200px) {
+            width: 130%;
+            margin: 2rem -15%;
+        }
+
+        @media only screen and (min-width: 1500px) {
+            width: 100%;
+            margin: 2rem auto;
+        }
+    }
+
+    &-body__about {
+
+        @media only screen and (min-width: 768px) {
+            width: 120%;
+            margin-left: -10%;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            width: 110%;
+            margin-left: -5%;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            width: 100%;
+            margin-left: 0%;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 100%;
+            margin-left: 0%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -186,160 +572,7 @@
 
 
 
-// S T A R T  O F  H O M E P A G E  H E A D E R
 
-.homepage__header {
-    @media only screen and (orientation: landscape) {
-        background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg);
-    }
-  
-    @media only screen and (min-width: 768px) and (max-width: 1199px) {
-        background-position: bottom right;
-    }
-    
-    @media only screen and (orientation: landscape) and (min-width: 991px) and (max-width: 1199px) {
-        height: 75vh;
-        background-position: left;
-    }
-}
-
-.navigation__button {
-    
-    @media only screen and (min-width: 768px) {
-        height: 5rem;
-        width: 5rem;
-        top: 2rem;
-        right: 2.5rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 768px) {
-        height: 4rem;
-        width: 4rem;
-        top: 1.5rem;
-        right: 5rem;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        right: 5rem;
-    }
-
-    @media only screen and(orientation: landscape) and (min-width: 1024px) {
-        height: 7rem;
-        width: 7rem;
-        top: 3rem;
-        right: 7rem;
-    }
-
-    // @media only screen and(orientation: landscape) and (min-width: 1200px) {
-    //     height: 8rem;
-    //     width: 8rem;
-    //     top: 4rem;
-    //     right: 9rem;
-    // }
-}
-
-.navigation__item-header {
-
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 991px) {
-        margin: 0.5rem;
-    }
-}
-
-.navigation__link-header,
-.navigation__link-header:link,
-.navigation__link-header:visited {
-
-    @media only screen and (min-width: 768px) {
-        font-size: 3rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-        font-size: 2rem;
-    }
-}
-
-
-.navigation__link:hover {
-
-    @media only screen and (min-width: 768px) {
-        transform: translateY(-0.3rem);
-    }    
-}
-
-.navigation__icon {
-
-    @media only screen and (min-width: 768px) {
-        top: 31%;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        top: 35%;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        top: 40%;
-    }
-}
-
-.navigation__icon,
-.navigation__icon::before,
-.navigation__icon::after {
-
-    @media only screen and (min-width: 768px) {
-        width: 2.5rem;
-        height: 0.2rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        width: 4rem;
-    }
-}
-
-
-.navigation__icon::before {
-
-    @media only screen and (min-width: 768px) {
-        top: -0.8rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        top: -1.2rem;
-    }
-
-}
-
-.navigation__icon::after {
-
-    @media only screen and (min-width: 768px) {
-        top: 0.8rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        top: 1.2rem;
-    }
-}
-
-.navigation__button:hover .navigation__icon::before {
-
-    @media only screen and (min-width: 768px) {
-        top: -0.9rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        top: -1.3rem;
-    }
-}
-
-.navigation__button:hover .navigation__icon::after {
-
-    @media only screen and (min-width: 768px) {
-        top: 0.9rem;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        top: 1.3rem;
-    }
-}
 
 
 
@@ -349,20 +582,24 @@
     &:visited {
 
         @media only screen and (min-width: 768px) {
-            left: 7.5rem;
+            // left: 5.5rem;
+            right: 2rem;
         }
 
         @media only screen and (min-width: 992px) {
             font-size: $main-font-size;
-            left: 9.5rem;
+            // left: 9.5rem;
+            right: 2rem;
         }
 
         @media only screen and (min-width: 1200px) {
-            left: 2.5rem;
+            // left: 2.5rem;
+            right: 2rem;
         }
 
         @media only screen and (min-width: 1500px) {
-            left: 1rem;
+            // left: 1rem;
+            right: 2rem;
         }
     }
 
@@ -509,7 +746,8 @@
 
 .popup__content {
     @media only screen and (orientation: landscape) {
-        background-image: linear-gradient(to bottom right, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), url(../img/header-image_570x265.jpg);
+        background-image: linear-gradient(to bottom right, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
         height: 75vh;
         width: 65%;
     }
@@ -551,11 +789,14 @@
 
 
 .therapies {
+    @media only screen and (min-width: 768px) {
+        margin-top: 6rem;
+        padding: 5rem 0 6rem;
+    }
+
     @media only screen and (min-width: 1200px) {
-        background-color: $color-light-green;
         margin-top: 6rem;
         padding: 5rem 0 8rem;
-        box-shadow: 0 -1rem 6rem rgba($color-contrast-blue, 0.25), 0 1rem 6rem rgba($color-contrast-blue, 0.25);
     }
 }
 
@@ -571,6 +812,7 @@
         margin-top: 6rem;
         padding: 5rem 0;
     }
+
 
     &__username {
         @media only screen and (min-width: 768px) {

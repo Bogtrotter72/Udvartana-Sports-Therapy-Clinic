@@ -28,9 +28,9 @@ were selected to reinforce the ideas of vitality, health, and relaxation.  In ad
 
 
 ## Features
-The lack of a navbar and collapsed menu were also chosen to provide a feeling of space and freedom.
+The lack of a navbar and collapsed menu were chosen to provide a feeling of space and freedom.
 
-The mouse icon changes when hovering on clickable items, and the buttons shift (up on hover and down when pressed) aim to provide the user with positive feedback. 
+The mouse icon changes when hovering on clickable items, and the buttons shift (up on hover and down when pressed). These aim to provide the user with positive feedback. 
 The pop out navigation menu and footer navigation menu use the same animation, and overall these features should help provide the user with a sense of continuity.
 
 The whole experience is designed to be effortless.
@@ -43,7 +43,11 @@ The *BOOK NOW* button remains a strong feature throughout.
 
 The fixed hamburger / pop out navigation menu and footer navigation menu allow all users to quickly navigate through the site.
 
-<a href="https://tinyjpg.com">tinyjpg.com</a> and <a href="https://tinypng.com">tinypng.com</a> to compress images and improve loading time
+The initial positioning of the opening headings and their animation is designed to subtly suggest that Udvartana gives rise to feelings of
+revitalization, repair and relaxation. 
+
+
+<a href="https://tinyjpg.com">tinyjpg.com</a> and <a href="https://tinypng.com">tinypng.com</a> were used to compress images and improve loading times.
 
 
 ### Planned Features
@@ -95,6 +99,12 @@ The website was also tested in Lunascape 6, using the following engines:
 * Gecko
 * Trident
 * Webkit
+
+
+### General Testing
+The final *style.css* file was passed through the <a href="https://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a>.
+All HTML files were passed through the <a href="https://validator.w3.org/">W3C Markup Validation Service</a>.
+The files passed with no errors.
 
 
 <h2 id="deployment">Deployment</h2>

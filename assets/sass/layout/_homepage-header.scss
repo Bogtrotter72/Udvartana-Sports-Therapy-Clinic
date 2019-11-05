@@ -1,9 +1,11 @@
 .homepage__header {
     height: 85vh;
-    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
-    background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg); 
+    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
+                      url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978497/Milestone%201/header-image_330x535_fxh6jg.jpg");
+    background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
+                    url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978497/Milestone%201/header-image_330x535_fxh6jg.jpg");
     background-size: cover;
-    background-position: center right;
+    background-position: bottom right;
     position: relative;
     box-shadow: 0rem -1.2rem 4rem rgba(53, 82, 74, 0.4), 0 1rem 1rem rgba(53, 82, 74, 0.5);
     backface-visibility: hidden;

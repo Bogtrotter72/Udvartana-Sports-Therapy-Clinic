@@ -2,55 +2,19 @@
     background-color: transparent;
     border: none;
     margin-bottom: 3rem;
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: rgba($color-white, 0.7);
+    box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
+    border-radius: $image-border-radius-small;
+    overflow: auto;
 
-    @media only screen and (min-width: 1200px) {
-        margin-bottom: 0;
-    }
-
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 1199px) {
-        margin: 0 3rem 3rem 3rem;
-    }
-
-    &-img {
-        width: 100%;
-        border-radius: $image-border-radius-large;
-
-        @media only screen and (orientation: landscape) {
-            width: 80%;
-            margin: 0 10%;
-        }
-
-        @media only screen and (min-width: 768px) {
-            width: 80%;
-            margin: 0 10%;
-        }
-
-        @media only screen and (min-width: 1500px) {
-            width: 100%;
-            margin-left: auto;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 1500px) {
-            width: 92%;
-        }
+    &-footer {
+        background-color: transparent;
+        border: none;
     }
 
     &-body {
-        padding: 2rem;
-        background-color: rgba($color-white, 0.7);
-        box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
-        border-radius: $image-border-radius-small;
-        overflow: auto;
-
-        @media only screen and (min-width: 768px) {
-            width: 90%;
-            margin-left: 5%;
-        }
-
-        @media only screen and (min-width: 1200px) {
-            width: 100%;
-            margin-left: 0%;
-        }
 
         &__about {
             width: 110%;
@@ -78,20 +42,55 @@
         }
     }
 
+    &-img {
+        width: 100%;
+        margin: 0 0%;
+        border-radius: $image-border-radius-large;
+
+
+        &__therapies {
+            border: 0.3rem solid rgba($color-contrast-blue, 0.25);
+            box-shadow: 0 0.6rem 2.3rem rgba($color-contrast-blue, 0.5);
+        }
+
+        @media only screen and (orientation: landscape) {
+            width: 80%;
+            margin: 0 10%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            width: 70%;
+            margin: 0 15%;
+        }
+
+        @media only screen and (min-width: 1500px) {
+            width: 80%;
+            margin: 0 10%;
+        }
+    }
+
     &-text {
         display: flex;
         align-items: center;
-        margin: 0;
+        margin: 1rem auto;
         font-size: $mobile-font-size__portrait;
         font-weight: 400;
         color: $color-contrast-blue;
         overflow: auto;
+        word-wrap: break-word;
         min-height: 20rem;
+
+
+        @media only screen and (orientation: landscape) {
+            font-size: $main-font-size;
+            width: 90%;
+            margin: 1rem 5%;
+        }
 
         @media only screen and (min-width: 768px) {
             font-size: $main-font-size;
-            width: 90%;
-            margin: auto 5%;
+            width: 80%;
+            margin: 0 10%;
         }
 
         @media only screen and (orientation: landscape) and (min-width: 1200px) {
@@ -104,6 +103,7 @@
             margin: 0%;
         }
 
+        
         &__about {
 
             min-height: 35rem;
@@ -125,37 +125,18 @@
         }
     }
 
-    &__individual {
-        width: 90%;
-        margin: 2rem auto;
-
-        @media only screen and (orientation: landscape) {
+   &__therapies {
+        @media only screen and (min-width: 992px) {
             width: 80%;
+            margin: 2rem 10%;
         }
-
-        @media only screen and (min-width: 768px) {
-            width: 70%;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 768px) {
-            width: 80%;
-        }
-
-        @media only screen and (min-width: 1024px) {
-            width: 140%;
-            margin: 2rem -20%;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 1200px) {
-            width: 130%;
-            margin: 2rem -15%;
-        }
-
-        @media only screen and (min-width: 1500px) {
+        
+        @media only screen and (min-width: 1200px) {
             width: 100%;
-            margin: 2rem auto;
+            margin: 2rem 0%;
         }
     }
+
 
     &-individual__image {
         width: 90%;
@@ -180,5 +161,10 @@
         @media only screen and (min-width: 1500px) {
             width: 90%;
         }    
+    }
+
+    &__customer-feedback {
+        background-color: $color-white;
+        box-shadow: 0.5rem 0.5rem 3rem rgba($color-black, 0.4);
     }
 }

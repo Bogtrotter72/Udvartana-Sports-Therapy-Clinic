@@ -42,8 +42,8 @@ body {
   color: #35524A;
   font-size: 3.4rem;
   font-weight: 700;
-  letter-spacing: 0.95rem;
-  text-shadow: 0.5rem 0.4rem 0.5rem #FFFFFF;
+  letter-spacing: 1rem;
+  text-shadow: 0.3rem 0.1rem 0.6rem #FFFFFF;
   text-transform: uppercase;
   position: absolute;
   top: 50%;
@@ -64,8 +64,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 45%;
-  /* mixin adjusted to better accommodate the iPhone X */ }
+  top: 57%; }
 
 .heading-primary__main {
   display: block;
@@ -119,6 +118,20 @@ body {
     margin-bottom: 0.5rem;
     padding: 0;
     border-bottom: 1px solid rgba(74, 78, 105, 0.5); }
+    .heading-tertiary__therapies-home {
+      font-size: 1.7rem;
+      letter-spacing: 0.8rem; }
+      @media only screen and (min-width: 992px) {
+        .heading-tertiary__therapies-home {
+          font-size: 2.4rem;
+          letter-spacing: 1rem;
+          display: block; } }
+  .heading-tertiary__customer-feedback {
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem; }
+    @media only screen and (orientation: landscape) {
+      .heading-tertiary__customer-feedback {
+        font-size: 2rem; } }
   .heading-tertiary__popup {
     position: absolute;
     top: 50%;
@@ -132,9 +145,9 @@ body {
 
 .btn-text:link, .btn-text:visited {
   position: absolute;
-  left: 1rem;
-  bottom: 0;
-  display: block;
+  right: 2rem;
+  bottom: 1rem;
+  display: inline-block;
   font-size: 1.3rem;
   font-weight: 700;
   color: #558B6E;
@@ -157,6 +170,9 @@ body {
 
 .btn__wrapper {
   position: relative; }
+
+.btn-link:hover {
+  text-decoration: none; }
 
 .btn-booking {
   position: absolute;
@@ -207,78 +223,74 @@ body {
 .card {
   background-color: transparent;
   border: none;
-  margin-bottom: 3rem; }
-  @media only screen and (min-width: 1200px) {
-    .card {
-      margin-bottom: 0; } }
-  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 1199px) {
-    .card {
-      margin: 0 3rem 3rem 3rem; } }
+  margin-bottom: 3rem;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5);
+  border-radius: 2rem;
+  overflow: auto; }
+  .card-footer {
+    background-color: transparent;
+    border: none; }
+  .card-body__about {
+    width: 110%;
+    margin-left: -5%; }
+    @media only screen and (min-width: 768px) {
+      .card-body__about {
+        width: 120%;
+        margin-left: -10%; } }
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
+      .card-body__about {
+        width: 110%;
+        margin-left: -5%; } }
+    @media only screen and (min-width: 1024px) {
+      .card-body__about {
+        width: 100%;
+        margin-left: 0%; } }
+    @media only screen and (min-width: 1200px) {
+      .card-body__about {
+        width: 100%;
+        margin-left: 0%; } }
   .card-img {
     width: 100%;
+    margin: 0 0%;
     border-radius: 3rem; }
+    .card-img__therapies {
+      border: 0.3rem solid rgba(74, 78, 105, 0.25);
+      box-shadow: 0 0.6rem 2.3rem rgba(74, 78, 105, 0.5); }
     @media only screen and (orientation: landscape) {
       .card-img {
         width: 80%;
         margin: 0 10%; } }
     @media only screen and (min-width: 768px) {
       .card-img {
-        width: 80%;
-        margin: 0 10%; } }
+        width: 70%;
+        margin: 0 15%; } }
     @media only screen and (min-width: 1500px) {
       .card-img {
-        width: 100%;
-        margin-left: auto; } }
-    @media only screen and (orientation: landscape) and (min-width: 1500px) {
-      .card-img {
-        width: 92%; } }
-  .card-body {
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5);
-    border-radius: 2rem;
-    overflow: auto; }
-    @media only screen and (min-width: 768px) {
-      .card-body {
-        width: 90%;
-        margin-left: 5%; } }
-    @media only screen and (min-width: 1200px) {
-      .card-body {
-        width: 100%;
-        margin-left: 0%; } }
-    .card-body__about {
-      width: 110%;
-      margin-left: -5%; }
-      @media only screen and (min-width: 768px) {
-        .card-body__about {
-          width: 120%;
-          margin-left: -10%; } }
-      @media only screen and (orientation: landscape) and (min-width: 768px) {
-        .card-body__about {
-          width: 110%;
-          margin-left: -5%; } }
-      @media only screen and (min-width: 1024px) {
-        .card-body__about {
-          width: 100%;
-          margin-left: 0%; } }
-      @media only screen and (min-width: 1200px) {
-        .card-body__about {
-          width: 100%;
-          margin-left: 0%; } }
+        width: 80%;
+        margin: 0 10%; } }
   .card-text {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: 1rem auto;
     font-size: 1.3rem;
     font-weight: 400;
     color: #4A4E69;
     overflow: auto;
+    word-wrap: break-word;
     min-height: 20rem; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (orientation: landscape) {
       .card-text {
         font-size: 1.6rem;
         width: 90%;
-        margin: auto 5%; } }
+        margin: 1rem 5%; } }
+    @media only screen and (min-width: 768px) {
+      .card-text {
+        font-size: 1.6rem;
+        width: 80%;
+        margin: 0 10%; } }
     @media only screen and (orientation: landscape) and (min-width: 1200px) {
       .card-text {
         font-size: 1.3rem; } }
@@ -299,30 +311,14 @@ body {
     .card-text__contact a {
       color: #4A4E69;
       text-decoration: none; }
-  .card__individual {
-    width: 90%;
-    margin: 2rem auto; }
-    @media only screen and (orientation: landscape) {
-      .card__individual {
-        width: 80%; } }
-    @media only screen and (min-width: 768px) {
-      .card__individual {
-        width: 70%; } }
-    @media only screen and (orientation: landscape) and (min-width: 768px) {
-      .card__individual {
-        width: 80%; } }
-    @media only screen and (min-width: 1024px) {
-      .card__individual {
-        width: 140%;
-        margin: 2rem -20%; } }
-    @media only screen and (orientation: landscape) and (min-width: 1200px) {
-      .card__individual {
-        width: 130%;
-        margin: 2rem -15%; } }
-    @media only screen and (min-width: 1500px) {
-      .card__individual {
-        width: 100%;
-        margin: 2rem auto; } }
+  @media only screen and (min-width: 992px) {
+    .card__therapies {
+      width: 80%;
+      margin: 2rem 10%; } }
+  @media only screen and (min-width: 1200px) {
+    .card__therapies {
+      width: 100%;
+      margin: 2rem 0%; } }
   .card-individual__image {
     width: 90%;
     margin: auto; }
@@ -341,42 +337,17 @@ body {
     @media only screen and (min-width: 1500px) {
       .card-individual__image {
         width: 90%; } }
+  .card__customer-feedback {
+    background-color: #FFFFFF;
+    box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.4); }
 
 .logo-box {
   position: absolute;
   top: 1.4rem;
   left: 2rem; }
-  @media only screen and (orientation: landscape) {
-    .logo-box {
-      top: 1.5rem; } }
-  @media only screen and (min-width: 768px) {
-    .logo-box {
-      top: 2rem; } }
-  @media only screen and (min-width: 1024px) {
-    .logo-box {
-      top: 3rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 1024px) {
-    .logo-box {
-      top: 4rem; } }
-  @media only screen and (min-width: 1200px) {
-    .logo-box {
-      top: 4rem;
-      left: 4rem; } }
 
 .logo {
   height: 3rem; }
-  @media only screen and (orientation: landscape) {
-    .logo {
-      height: 3.7rem; } }
-  @media only screen and (min-width: 768px) {
-    .logo {
-      height: 5rem; } }
-  @media only screen and (orientation: landscape) and (min-width: 768px) {
-    .logo {
-      height: 4rem; } }
-  @media only screen and (min-width: 1024px) {
-    .logo {
-      height: 6rem; } }
 
 .footer {
   background: rgba(53, 82, 74, 0.9);
@@ -417,10 +388,10 @@ body {
 
 .homepage__header {
   height: 85vh;
-  background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
-  background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_330x535.jpg);
+  background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978497/Milestone%201/header-image_330x535_fxh6jg.jpg");
+  background-image: -webkit-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978497/Milestone%201/header-image_330x535_fxh6jg.jpg");
   background-size: cover;
-  background-position: center right;
+  background-position: bottom right;
   position: relative;
   box-shadow: 0rem -1.2rem 4rem rgba(53, 82, 74, 0.4), 0 1rem 1rem rgba(53, 82, 74, 0.5);
   backface-visibility: hidden; }
@@ -604,90 +575,90 @@ body {
   top: 60%; }
 
 .about-page__container {
-  padding: 0;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.8)), url(../img/about-bg-img.jpg);
-  background-size: cover;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.8)), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/about-bg-img_eagexh.jpg");
   background-position: top center;
+  background-size: cover;
+  padding: 0;
   position: relative; }
 
 .about-page__content {
-  padding: 1rem;
-  color: #4A4E69;
-  font-weight: 400;
-  border-radius: 2rem;
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 2rem; }
+  border-radius: 2rem;
+  color: #4A4E69;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem; }
 
 .about-page__card-container {
-  margin: 10vh auto;
-  padding: 10vh 0;
-  border-radius: 3rem;
   background-color: rgba(216, 223, 215, 0.7);
-  box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5); }
+  border-radius: 3rem;
+  box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5);
+  margin: 10vh auto;
+  padding: 10vh 0; }
 
 .about-page__inner-container {
-  width: 90%;
-  margin: 8rem 5%;
-  padding: 2rem;
   background-color: rgba(216, 223, 215, 0.5);
   border-radius: 2rem;
-  box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5); }
+  box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5);
+  margin: 8rem 5%;
+  padding: 2rem;
+  width: 90%; }
 
 .bookings-page {
-  padding: 0;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.8)), url(../img/bookings-bg-img.jpg);
-  background-size: cover;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.8)), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978497/Milestone%201/bookings-bg-img_gt4vjb.jpg");
   background-position: left;
+  background-size: cover;
+  padding: 0;
   position: relative; }
   .bookings-page__container {
-    margin: 10rem auto;
     background-color: rgba(216, 223, 215, 0.7);
-    width: 90vw;
-    border: 0.1rem solid #35524A; }
+    border: 0.1rem solid #35524A;
+    margin: 10rem auto;
+    width: 90vw; }
   .bookings-page__list-background-container {
     padding: 0; }
   .bookings-page__list-container {
-    margin: 10rem auto;
     background-color: rgba(216, 223, 215, 0.7);
-    width: 50vw;
-    border: 0.1rem solid #35524A; }
+    border: 0.1rem solid #35524A;
+    margin: 10rem auto;
+    width: 50vw; }
   .bookings-page__table {
-    width: 85%;
-    margin: 0 27%; }
+    margin: 0 27%;
+    width: 85%; }
 
 .form-group {
-  width: 90%;
   margin: 0 auto;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  width: 90%; }
 
 .label {
-  text-transform: uppercase;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  text-transform: uppercase; }
 
 .form-control {
   font-size: 1.3rem; }
 
 .calendar {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 90%;
-  margin: 1rem auto 5rem auto;
+  background-color: #FFFFFF;
+  display: flex;
   height: auto;
-  background-color: #FFFFFF; }
+  justify-content: center;
+  margin: 1rem auto 5rem auto;
+  width: 90%; }
   .calendar-label {
-    width: 100%;
     margin: 3rem auto 1rem;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
 
 .date {
-  padding: 2.5rem;
+  column-gap: 1rem;
   display: grid;
+  font-size: 1.3rem;
   grid-template-columns: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
   grid-template-rows: 3.5rem auto 2rem;
-  column-gap: 1rem;
-  row-gap: 1.5rem;
-  font-size: 1.3rem; }
+  padding: 2.5rem;
+  row-gap: 1.5rem; }
 
 .day, .number {
   text-align: center; }
@@ -698,60 +669,60 @@ body {
   text-decoration: none; }
 
 .number:hover {
-  width: 50%;
-  margin-left: 25%;
   background-color: #35524A;
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-left: 25%;
+  width: 50%; }
 
 .popup {
   background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
+  left: 0;
+  opacity: 0;
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 5000;
-  opacity: 0;
+  transition: all 0.5s ease-in;
   visibility: hidden;
-  transition: all 0.5s ease-in; }
+  z-index: 5000; }
   .popup:target {
     opacity: 1;
     visibility: visible;
     width: 100%; }
   .popup__close:link, .popup__close:visited {
-    display: inline-block;
     color: #FFFFFF;
+    display: inline-block;
     font-size: 4rem;
-    text-decoration: none;
     position: absolute;
-    top: 0.5rem;
-    right: 2.5rem; }
+    right: 2.5rem;
+    text-decoration: none;
+    top: 0.5rem; }
   .popup__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(to bottom right, rgba(53, 82, 74, 0.2), rgba(74, 78, 105, 0.8)), url(../img/header-image_330x535.jpg);
-    background-size: cover;
+    background-image: linear-gradient(to bottom right, rgba(53, 82, 74, 0.2), rgba(74, 78, 105, 0.8)), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978497/Milestone%201/header-image_330x535_fxh6jg.jpg");
     background-position: bottom;
-    height: 40vh;
-    width: 90%;
+    background-size: cover;
     border-radius: 3rem;
-    box-shadow: 0.2rem 0.2rem 1.5rem rgba(255, 255, 255, 0.2); }
+    box-shadow: 0.2rem 0.2rem 1.5rem rgba(255, 255, 255, 0.2);
+    height: 40vh;
+    width: 90%; }
   .popup__text {
     color: #FFFFFF;
-    text-shadow: 0.2rem 0.2rem rgba(53, 82, 74, 0.8);
-    position: absolute;
-    top: 25%;
     left: 50%;
+    position: absolute;
+    text-shadow: 0.2rem 0.2rem rgba(53, 82, 74, 0.8);
+    top: 25%;
     transform: translate(-50%, -50%); }
     .popup__text-secondary {
-      font-size: 3rem;
       color: #FFFFFF;
-      text-shadow: 0.2rem 0.2rem rgba(53, 82, 74, 0.8);
-      position: absolute;
-      top: 40%;
+      font-size: 3rem;
       left: 15%;
+      position: absolute;
+      text-shadow: 0.2rem 0.2rem rgba(53, 82, 74, 0.8);
+      top: 40%;
       transform: translateX(-6%); }
 
 .contact-page__map {
@@ -784,21 +755,12 @@ body {
 .no-margin {
   margin: 0; }
 
-.therapies-box__image {
-  border: 0.3rem solid rgba(74, 78, 105, 0.25);
-  box-shadow: 0 0.6rem 2.3rem rgba(74, 78, 105, 0.5); }
-
 .therapies_row2 {
   padding-top: 0; }
 
 .customer-feedback {
-  background-color: rgba(53, 82, 74, 0.2);
+  background-color: #D8DfD7;
   margin-top: 3rem; }
-  .customer-feedback__inner-container {
-    padding: 2rem;
-    background-color: #FFFFFF;
-    border-radius: 2rem;
-    box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5); }
   .customer-feedback__username {
     font-size: 1.4rem;
     color: #2a2d3c; }
@@ -813,7 +775,7 @@ body {
 
 .price-list-page {
   padding: 0;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.8)), url(../img/prices-bg-img.jpg);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.8)), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/prices-bg-img_r56pp6.jpg");
   background-size: cover;
   background-position: left;
   position: absolute; }
@@ -858,7 +820,7 @@ tr {
 
 .therapies-page {
   padding: 0;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.1)), url(../img/therapies-bg-img.jpg);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.1)), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/therapies-bg-img_rspvuh.jpg");
   background-size: 150%;
   background-position: top center;
   position: absolute; }
@@ -871,21 +833,8 @@ tr {
     background-color: rgba(216, 223, 215, 0.7);
     border: 0.1rem solid #35524A;
     padding: 2rem 2rem; }
-  .therapies-page__content, .therapies-page__table {
+  .therapies-page__content {
     font-size: 1.3rem; }
-  .therapies-page__table {
-    display: table;
-    text-align: center; }
-
-table {
-  border-collapse: separate;
-  border-spacing: 0.9rem; }
-
-th ~ .border-left, th ~ .border-none, td ~ .border-left {
-  padding-left: 0; }
-
-tr {
-  height: 2rem; }
 
 .prices {
   font-size: 1.6rem;
@@ -897,39 +846,152 @@ tr {
   .prices-content {
     margin-top: 2rem; }
 
-@media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (orientation: landscape) {
+  .logo-box {
+    top: 1.5rem; } }
+
+@media only screen and (min-width: 768px) {
+  .logo-box {
+    top: 2rem; } }
+
+@media only screen and (min-width: 992px) {
+  .logo-box {
+    top: 3rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .logo-box {
+    top: 4rem;
+    left: 4rem; } }
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    height: 4rem; } }
+
+@media only screen and (min-width: 992px) {
+  .logo {
+    height: 5rem; } }
+
+@media only screen and (orientation: landscape) {
+  .homepage__header {
+    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg"); } }
+
+@media only screen and (min-width: 768px) and (max-width: 1499px) {
+  .homepage__header {
+    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/header-image_1366x1024_tbyawy.jpg");
+    background-position: bottom right; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+  .homepage__header {
+    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg"); } }
+
+@media only screen and (orientation: landscape) and (min-width: 992px) {
+  .homepage__header {
+    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/header-image_1366x1024_tbyawy.jpg"); } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__button {
+    height: 4rem;
+    width: 4rem;
+    top: 2rem;
+    right: 2.5rem; } }
+
+@media only screen and (min-width: 992px) {
+  .navigation__button {
+    height: 5rem;
+    width: 5rem;
+    right: 5rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 991px) {
+  .navigation__item-header {
+    margin: 0.5rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__link-header,
+  .navigation__link-header:link,
+  .navigation__link-header:visited {
+    font-size: 3rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+  .navigation__link-header,
+  .navigation__link-header:link,
+  .navigation__link-header:visited {
+    font-size: 2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__link:hover {
+    transform: translateY(-0.3rem); } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__icon {
+    top: 31%; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 2.5rem;
+    height: 0.2rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__icon::before {
+    top: -0.8rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__icon::after {
+    top: 0.8rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__button:hover .navigation__icon::before {
+    top: -0.9rem; } }
+
+@media only screen and (min-width: 768px) {
+  .navigation__button:hover .navigation__icon::after {
+    top: 0.9rem; } }
+
+@media only screen and (orientation: landscape) {
   .heading-open {
-    font-size: 3rem;
-    top: 57%;
-    left: 34%; } }
+    left: 36%;
+    top: 57%; } }
 
 @media only screen and (min-width: 768px) {
   .heading-open {
     font-size: 7.5rem;
-    letter-spacing: 2rem; } }
+    left: 55%;
+    letter-spacing: 1.7rem;
+    top: 57%; } }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .heading-open {
     font-size: 3.4rem;
-    letter-spacing: 1.2rem;
-    top: 55%;
-    left: 37%; } }
+    left: 35%;
+    letter-spacing: 1rem; } }
 
 @media only screen and (min-width: 992px) {
   .heading-open {
-    font-size: 7rem;
-    letter-spacing: 2rem;
-    top: 59%;
-    left: 47%; } }
+    left: 44%;
+    text-shadow: 0.5rem 0.4rem 0.5rem #FFFFFF;
+    top: 50%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 992px) {
+  .heading-open {
+    font-size: 6.5rem;
+    left: 37%;
+    letter-spacing: 1.7rem;
+    top: 50%; } }
 
 @media only screen and (min-width: 1200px) {
   .heading-open {
-    top: 35%;
-    left: 32%; } }
+    font-size: 7.5rem;
+    left: 33%;
+    letter-spacing: 1.7rem;
+    top: 60%; } }
 
-@media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 1500px) {
+  .heading-open {
+    left: 31%; } }
+
+@media only screen and (orientation: landscape) {
   .heading-primary {
-    top: 57%;
     left: 35%; } }
 
 @media only screen and (min-width: 768px) {
@@ -937,21 +999,32 @@ tr {
     font-size: 6rem;
     letter-spacing: 2rem; } }
 
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 814px) {
+@media only screen and (min-width: 992px) {
+  .heading-primary {
+    top: 50%;
+    left: 40%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
   .heading-primary {
     font-size: 3.2rem;
     letter-spacing: 1.2rem;
     top: 60%;
     left: 35%; } }
 
-@media only screen and (orientation: landscape) and (min-width: 815px) and (max-width: 1199px) {
+@media only screen and (orientation: landscape) and (min-width: 992px) {
   .heading-primary {
     font-size: 6rem;
-    letter-spacing: 3rem;
+    letter-spacing: 1.5rem;
     top: 60%;
-    left: 45%; } }
+    left: 34%; } }
 
 @media only screen and (min-width: 1200px) {
+  .heading-primary {
+    font-size: 6rem;
+    letter-spacing: 2rem;
+    left: 30%; } }
+
+@media only screen and (min-width: 1500px) {
   .heading-primary {
     font-size: 7rem;
     letter-spacing: 2rem;
@@ -1016,15 +1089,15 @@ tr {
 
 @media only screen and (orientation: landscape) and (min-width: 1200px) {
   .heading-tertiary {
-    font-size: 2rem; } }
+    font-size: 1.8rem; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1500px) {
   .heading-tertiary {
     font-size: 2.7rem; } }
 
-@media only screen and (min-width: 1500px) {
-  .heading-tertiary__line-1 {
-    display: block; } }
+@media only screen and (min-width: 992px) {
+  .heading-tertiary__customer-feedback {
+    font-size: 2.4rem; } }
 
 @media only screen and (min-width: 992px) {
   .heading-tertiary__therapies {
@@ -1033,6 +1106,10 @@ tr {
     padding: 1rem;
     text-align: center;
     margin-bottom: 3rem; } }
+
+@media only screen and (min-width: 1500px) {
+  .heading-tertiary__therapies-home {
+    display: block; } }
 
 @media only screen and (min-width: 768px) {
   .heading-tertiary__popup {
@@ -1058,6 +1135,163 @@ tr {
   .heading-tertiary__popup {
     font-size: 5rem; } }
 
+@media only screen and (orientation: landscape) {
+  End of heading tertiary
+.card {
+    width: 80%;
+    margin-left: 10%; } }
+
+@media only screen and (min-width: 768px) {
+  End of heading tertiary
+.card {
+    width: 80%;
+    margin-left: 10%; } }
+
+@media only screen and (min-width: 1200px) {
+  End of heading tertiary
+.card {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 0; } }
+
+@media only screen and (orientation: landscape) {
+  End of heading tertiary
+.card-img {
+    width: 80%;
+    margin: 0 10%; } }
+
+@media only screen and (min-width: 768px) {
+  End of heading tertiary
+.card-img {
+    width: 70%;
+    margin: 0 15%; } }
+
+@media only screen and (min-width: 1500px) {
+  End of heading tertiary
+.card-img {
+    width: 80%;
+    margin: 0 10%; } }
+
+@media only screen and (min-width: 768px) {
+  End of heading tertiary
+.card-text {
+    font-size: 1.6rem;
+    width: 80%;
+    margin: 0 10%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+  End of heading tertiary
+.card-text {
+    font-size: 1.3rem; } }
+
+@media only screen and (min-width: 1500px) {
+  End of heading tertiary
+.card-text {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 0%; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  End of heading tertiary
+.card-text__customer-feedback {
+    width: 90%;
+    margin: 0 5%;
+    min-height: 24rem; } }
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  End of heading tertiary
+.card-text__customer-feedback {
+    min-height: 14rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+  End of heading tertiary
+.card-text__about {
+    font-size: 2rem; } }
+
+@media only screen and (min-width: 992px) {
+  End of heading tertiary
+.card__therapies {
+    width: 80%;
+    margin: 2rem 10%; } }
+
+@media only screen and (min-width: 1200px) {
+  End of heading tertiary
+.card__therapies {
+    width: 100%;
+    margin: 2rem 0%; } }
+
+@media only screen and (orientation: landscape) {
+  End of heading tertiary
+.card-individual__image {
+    width: 80%; } }
+
+@media only screen and (min-width: 768px) {
+  End of heading tertiary
+.card-individual__image {
+    width: 60%; } }
+
+@media only screen and (min-width: 1024px) {
+  End of heading tertiary
+.card-individual__image {
+    width: 80%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+  End of heading tertiary
+.card-individual__image {
+    width: 60%; } }
+
+@media only screen and (min-width: 1500px) {
+  End of heading tertiary
+.card-individual__image {
+    width: 90%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  End of heading tertiary
+.card__customer-feedback {
+    width: 80%; } }
+
+@media only screen and (min-width: 992px) {
+  End of heading tertiary
+.card__customer-feedback {
+    width: 140%;
+    margin: 2rem -20%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+  End of heading tertiary
+.card__customer-feedback {
+    width: 130%;
+    margin: 2rem -15%; } }
+
+@media only screen and (min-width: 1500px) {
+  End of heading tertiary
+.card__customer-feedback {
+    width: 100%;
+    margin: 2rem auto; } }
+
+@media only screen and (min-width: 768px) {
+  End of heading tertiary
+.card-body__about {
+    width: 120%;
+    margin-left: -10%; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  End of heading tertiary
+.card-body__about {
+    width: 110%;
+    margin-left: -5%; } }
+
+@media only screen and (min-width: 1024px) {
+  End of heading tertiary
+.card-body__about {
+    width: 100%;
+    margin-left: 0%; } }
+
+@media only screen and (min-width: 1200px) {
+  End of heading tertiary
+.card-body__about {
+    width: 100%;
+    margin-left: 0%; } }
+
 @media only screen and (min-width: 1200px) {
   .footer {
     margin-top: 0; } }
@@ -1066,137 +1300,22 @@ tr {
   .footer__heading--margin {
     margin-top: 0; } }
 
-@media only screen and (orientation: landscape) {
-  .homepage__header {
-    background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), url(../img/header-image_570x265.jpg); } }
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .homepage__header {
-    background-position: bottom right; } }
-
-@media only screen and (orientation: landscape) and (min-width: 991px) and (max-width: 1199px) {
-  .homepage__header {
-    height: 75vh;
-    background-position: left; } }
-
-@media only screen and (min-width: 768px) {
-  .navigation__button {
-    height: 5rem;
-    width: 5rem;
-    top: 2rem;
-    right: 2.5rem; } }
-
-@media only screen and (orientation: landscape) and (min-width: 768px) {
-  .navigation__button {
-    height: 4rem;
-    width: 4rem;
-    top: 1.5rem;
-    right: 5rem; } }
-
-@media only screen and (min-width: 1024px) {
-  .navigation__button {
-    right: 5rem; } }
-
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .navigation__button {
-    height: 7rem;
-    width: 7rem;
-    top: 3rem;
-    right: 7rem; } }
-
-@media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 991px) {
-  .navigation__item-header {
-    margin: 0.5rem; } }
-
-@media only screen and (min-width: 768px) {
-  .navigation__link-header,
-  .navigation__link-header:link,
-  .navigation__link-header:visited {
-    font-size: 3rem; } }
-
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-  .navigation__link-header,
-  .navigation__link-header:link,
-  .navigation__link-header:visited {
-    font-size: 2rem; } }
-
-@media only screen and (min-width: 768px) {
-  .navigation__link:hover {
-    transform: translateY(-0.3rem); } }
-
-@media only screen and (min-width: 768px) {
-  .navigation__icon {
-    top: 31%; } }
-
-@media only screen and (min-width: 1024px) {
-  .navigation__icon {
-    top: 35%; } }
-
-@media only screen and (min-width: 1200px) {
-  .navigation__icon {
-    top: 40%; } }
-
-@media only screen and (min-width: 768px) {
-  .navigation__icon,
-  .navigation__icon::before,
-  .navigation__icon::after {
-    width: 2.5rem;
-    height: 0.2rem; } }
-
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .navigation__icon,
-  .navigation__icon::before,
-  .navigation__icon::after {
-    width: 4rem; } }
-
-@media only screen and (min-width: 768px) {
-  .navigation__icon::before {
-    top: -0.8rem; } }
-
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .navigation__icon::before {
-    top: -1.2rem; } }
-
-@media only screen and (min-width: 768px) {
-  .navigation__icon::after {
-    top: 0.8rem; } }
-
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .navigation__icon::after {
-    top: 1.2rem; } }
-
-@media only screen and (min-width: 768px) {
-  .navigation__button:hover .navigation__icon::before {
-    top: -0.9rem; } }
-
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .navigation__button:hover .navigation__icon::before {
-    top: -1.3rem; } }
-
-@media only screen and (min-width: 768px) {
-  .navigation__button:hover .navigation__icon::after {
-    top: 0.9rem; } }
-
-@media only screen and (orientation: landscape) and (min-width: 1024px) {
-  .navigation__button:hover .navigation__icon::after {
-    top: 1.3rem; } }
-
 @media only screen and (min-width: 768px) {
   .btn-text:link, .btn-text:visited {
-    left: 7.5rem; } }
+    right: 2rem; } }
 
 @media only screen and (min-width: 992px) {
   .btn-text:link, .btn-text:visited {
     font-size: 1.6rem;
-    left: 9.5rem; } }
+    right: 2rem; } }
 
 @media only screen and (min-width: 1200px) {
   .btn-text:link, .btn-text:visited {
-    left: 2.5rem; } }
+    right: 2rem; } }
 
 @media only screen and (min-width: 1500px) {
   .btn-text:link, .btn-text:visited {
-    left: 1rem; } }
+    right: 2rem; } }
 
 .btn-text:hover {
   background-color: #558B6E;
@@ -1316,7 +1435,7 @@ tr {
 
 @media only screen and (orientation: landscape) {
   .popup__content {
-    background-image: linear-gradient(to bottom right, rgba(53, 82, 74, 0.2), rgba(74, 78, 105, 0.8)), url(../img/header-image_570x265.jpg);
+    background-image: linear-gradient(to bottom right, rgba(53, 82, 74, 0.2), rgba(74, 78, 105, 0.8)), url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
     height: 75vh;
     width: 65%; } }
 
@@ -1348,12 +1467,15 @@ tr {
   .map-responsive iframe {
     height: 50rem; } }
 
+@media only screen and (min-width: 768px) {
+  .therapies {
+    margin-top: 6rem;
+    padding: 5rem 0 6rem; } }
+
 @media only screen and (min-width: 1200px) {
   .therapies {
-    background-color: #D8DfD7;
     margin-top: 6rem;
-    padding: 5rem 0 8rem;
-    box-shadow: 0 -1rem 6rem rgba(74, 78, 105, 0.25), 0 1rem 6rem rgba(74, 78, 105, 0.25); } }
+    padding: 5rem 0 8rem; } }
 
 @media only screen and (min-width: 768px) {
   .therapies_row2 {

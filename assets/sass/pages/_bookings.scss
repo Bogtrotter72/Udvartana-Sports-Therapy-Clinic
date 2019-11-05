@@ -1,15 +1,17 @@
 .bookings-page {
-    padding: 0;
-    background-image: linear-gradient(to right, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), url(../img/bookings-bg-img.jpg);
-    background-size: cover;
+    background-image: linear-gradient(to right, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), 
+                      url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978497/Milestone%201/bookings-bg-img_gt4vjb.jpg");
+    
     background-position: left;
+    background-size: cover;
+    padding: 0;
     position: relative;
 
     &__container {
-        margin: 10rem auto;
         background-color: rgba($color-light-green, 0.7);
-        width: 90vw;
         border: 0.1rem solid $color-dark-green;
+        margin: 10rem auto;
+        width: 90vw;
     }
 
     &__list-background-container {
@@ -17,27 +19,27 @@
     }
 
     &__list-container {
-        margin: 10rem auto;
         background-color: rgba($color-light-green, 0.7);
-        width: 50vw;
         border: 0.1rem solid $color-dark-green;
+        margin: 10rem auto;
+        width: 50vw;
     }
 
     &__table {
-        width: 85%;
         margin: 0 27%;
+        width: 85%;
     }
 }
 
 .form-group {
-    width: 90%;
     margin: 0 auto;
     padding-bottom: 3rem;
+    width: 90%;
 }
 
 .label {
-    text-transform: uppercase;
     font-size: $mobile-font-size__portrait;
+    text-transform: uppercase;
 }
 
 .form-control {
@@ -45,29 +47,29 @@
 }
 
 .calendar {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin: 1rem auto 5rem auto;
-    height: auto;
     background-color: $color-white;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: 1rem auto 5rem auto;
+    width: 90%;
 
     &-label {
-        width: 100%;
         margin: 3rem auto 1rem;
         text-align: center;
+        width: 100%;
     }
 }
 
 .date {
-    padding: 2.5rem;
+    column-gap: 1rem;
     display: grid;
+    font-size: $mobile-font-size__portrait;
     grid-template-columns: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
     grid-template-rows: 3.5rem auto 2rem;
-    column-gap: 1rem;
+    padding: 2.5rem;
     row-gap: 1.5rem;
-    font-size: $mobile-font-size__portrait;
 }
 
 
@@ -82,23 +84,25 @@
 }
 
 .number:hover {
-    width: 50%;
-    margin-left: 25%;
     background-color: $color-dark-green;
     color: white;
     cursor: pointer;
+    margin-left: 25%;
+    width: 50%;
 }
 
 .popup {
     background-color: rgba($color-black, 0.8);
     height: 100vh;
+    left: 0;
+    opacity: 0;
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 5000;
-    opacity: 0;
-    visibility: hidden;
     transition: all 0.5s ease-in;
+    visibility: hidden;
+    z-index: 5000;
+
+
 
     &:target {
         opacity: 1;
@@ -109,42 +113,44 @@
     &__close {
         &:link,
         &:visited {
-            display: inline-block;
             color: $color-white;
+            display: inline-block;
             font-size: 4rem;
-            text-decoration: none;
             position: absolute;
-            top: 0.5rem;
             right: 2.5rem;
+            text-decoration: none;
+            top: 0.5rem;
         }
     }
 
     &__content {
         @include center-screen;
-        background-image: linear-gradient(to bottom right, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), url(../img/header-image_330x535.jpg);
-        background-size: cover;
+        background-image: linear-gradient(to bottom right, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978497/Milestone%201/header-image_330x535_fxh6jg.jpg");
+        
         background-position: bottom;
-        height: 40vh;
-        width: 90%;
+        background-size: cover;
         border-radius: $image-border-radius-large;
         box-shadow: 0.2rem 0.2rem 1.5rem rgba($color-white, 0.2);
+        height: 40vh;
+        width: 90%;
     }
 
     &__text {
         color: $color-white;
-        text-shadow: 0.2rem 0.2rem rgba($color-dark-green, 0.8) ;
-        position: absolute;
-        top: 25%;
         left: 50%;
+        position: absolute;
+        text-shadow: 0.2rem 0.2rem rgba($color-dark-green, 0.8) ;
+        top: 25%;
         transform: translate(-50%, -50%);
         
         &-secondary {
-            font-size: 3rem;
             color: $color-white;
-            text-shadow: 0.2rem 0.2rem rgba($color-dark-green, 0.8) ;
-            position: absolute;
-            top: 40%;
+            font-size: 3rem;
             left: 15%;
+            position: absolute;
+            text-shadow: 0.2rem 0.2rem rgba($color-dark-green, 0.8) ;
+            top: 40%;
             transform: translateX(-6%);
         }
     }

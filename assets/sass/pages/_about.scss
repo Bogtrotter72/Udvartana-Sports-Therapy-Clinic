@@ -1,37 +1,37 @@
 .about-page {
-
+    
     &__container {
-        padding: 0;
-        background-image: linear-gradient(to right, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), url(../img/about-bg-img.jpg);
-        background-size: cover;
+        background-image: linear-gradient(to right, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/about-bg-img_eagexh.jpg");
         background-position: top center;
+        background-size: cover;
+        padding: 0;
         position: relative;
     }
 
     &__content {
-        padding: 1rem;
-        color: $color-contrast-blue;
-        font-weight: 400;
-        border-radius: $image-border-radius-small;
         background-color: rgba($color-white, 0.8);
+        border-radius: $image-border-radius-small;
+        color: $color-contrast-blue;
         font-size: 2rem;
+        font-weight: 400;
+        padding: 1rem;
     }
 
     &__card-container {
+        background-color: rgba($color-light-green, 0.7);
+        border-radius: $image-border-radius-large;
+        box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
         margin: 10vh auto;
         padding: 10vh 0;
-        border-radius: $image-border-radius-large;
-        background-color: rgba($color-light-green, 0.7);
-        box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
     }
 
     &__inner-container {
-        width: 90%;
-        margin: 8rem 5%;
-
-        padding: 2rem;
         background-color: rgba($color-light-green, 0.5);
         border-radius: $image-border-radius-small;
         box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
+        margin: 8rem 5%;
+        padding: 2rem;
+        width: 90%;        
     }
 }

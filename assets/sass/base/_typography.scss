@@ -2,8 +2,8 @@
     color: $color-dark-green;
     font-size: 3.4rem;  // 4rem;
     font-weight: 700;
-    letter-spacing: 0.95rem;
-    text-shadow: 0.5rem 0.4rem 0.5rem $color-white;
+    letter-spacing: 1rem;
+    text-shadow: 0.3rem 0.1rem 0.6rem $color-white;
     text-transform: uppercase;
     @include center-screen;
     left: 52%;
@@ -21,7 +21,7 @@
     text-shadow: 0.5rem 0.4rem 0.5rem $color-dark-green;
     text-transform: uppercase;
     @include center-screen;
-    top: 45%;  /* mixin adjusted to better accommodate the iPhone X */
+    top: 57%;
 }
 
 .heading-primary__main {
@@ -88,6 +88,26 @@
         margin-bottom: 0.5rem;
         padding: 0;
         border-bottom: 1px solid rgba($color-contrast-blue, 0.5);
+
+        &-home {
+            font-size: 1.7rem;
+            letter-spacing: 0.8rem;
+
+            @media only screen and (min-width: 992px) {
+                font-size: 2.4rem;
+                letter-spacing: 1rem;
+                display: block;
+            }
+        }
+    }
+
+    &__customer-feedback {
+        font-size: 1.7rem;
+        letter-spacing: 0.5rem;
+
+        @media only screen and (orientation: landscape) {
+            font-size: 2rem;
+        }
     }
 
     &__popup {

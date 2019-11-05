@@ -1,6 +1,7 @@
 .therapies-page {
     padding: 0;
-    background-image: linear-gradient(to right, rgba($color-white, 0.2) 0%, rgba($color-white, 0.5) 50%,  rgba($color-white, 0.1)), url(../img/therapies-bg-img.jpg);
+    background-image: linear-gradient(to right, rgba($color-white, 0.2) 0%, rgba($color-white, 0.5) 50%,  rgba($color-white, 0.1)), 
+                      url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/therapies-bg-img_rspvuh.jpg");
     background-size: 150%;
     background-position: top center;
     position: absolute;
@@ -18,30 +19,10 @@
         padding: 2rem 2rem;
     }
 
-    &__content, &__table {
+    &__content {
         font-size: $mobile-font-size__portrait;
     }
-
-    &__table {
-        display: table;
-        text-align: center;
-    }
 }
-
-table {
-    border-collapse: separate;
-    border-spacing: 0.9rem;
-}
-
-th ~ .border-left, th ~ .border-none, td ~ .border-left {
-    padding-left: 0;
-
-}
-
-tr {
-    height: 2rem;
-}
-
 
 .prices {
     font-size: $main-font-size;
@@ -55,5 +36,5 @@ tr {
     }
     &-content {
         margin-top: 2rem;
-    }    
+    }
 }
