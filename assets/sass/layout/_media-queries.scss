@@ -148,18 +148,17 @@
 
 
 // S T A R T  O F  T Y P O G R A P H Y
-
+// Start of heading open
 .heading-open {
     @media only screen and (orientation: landscape) {
-        left: 36%;
-        top: 57%;
+        left: 38%;
     }
     @media only screen and (min-width: 768px) {
         font-size:  7.5rem;
-        left: 55%;
+        left: 52%;
         letter-spacing: 1.7rem;
-        top: 57%;
     }
+    // Reposition and resetting font - opening heading for iPhone X series
     @media only screen and (orientation: landscape) and (min-width: 768px) {
         font-size: 3.4rem;
         left: 35%;
@@ -167,26 +166,22 @@
     }
     @media only screen and (min-width: 992px) {
         left: 44%;
-        text-shadow: 0.5rem 0.4rem 0.5rem $color-white;
-        top: 50%;
+        text-shadow: 0.5rem 0.4rem 0.5rem rgba($color-contrast-blue, 0.5);  // Increasing shadow size
     }
     @media only screen and (orientation: landscape) and (min-width: 992px) {
         font-size: 6.5rem;
         left: 37%;
         letter-spacing: 1.7rem;
-        top: 50%;
     }
     @media only screen and (min-width: 1200px) {
         font-size: 7.5rem;
         left: 33%;
-        letter-spacing: 1.7rem;
-        top: 60%;
     }
     @media only screen and (min-width: 1500px) {
         left: 31%;
     }
 }
-
+// End of heading open
 
 // Start of heading primary
 .heading-primary {
@@ -194,50 +189,43 @@
     @media only screen and (orientation: landscape) {
         left: 35%;
     }
-
     @media only screen and (min-width: 768px) {
         font-size:  6rem;
-        letter-spacing: 2rem;
+        left: 45%;
+        letter-spacing: 1.7rem;
     }
-
     @media only screen and (min-width: 992px) {
-        top: 50%;
-        left: 40%;
+        left: 38%;
     }
-
+    // Resetting font
     @media only screen and (orientation: landscape) and (min-width: 768px) {
-        font-size:  3.2rem;
-        letter-spacing: 1.2rem;
-        top: 60%;
-        left: 35%;
+        font-size:  3rem;
+        letter-spacing: 1rem;
+        left: 33%;
     }
     @media only screen and (orientation: landscape) and (min-width: 992px) {
         font-size:  6rem;
-        letter-spacing: 1.5rem;
-        top: 60%;
+        letter-spacing: 1.7rem;
         left: 34%;
     }
     @media only screen and (min-width: 1200px) {
-        font-size:  6rem;
-        letter-spacing: 2rem;
-        left: 30%;
+        left: 29%;
     }
     @media only screen and (min-width: 1500px) {
         font-size:  7rem;
-        letter-spacing: 2rem;
-        left: 30%;
+        letter-spacing: 1.7rem;
     }
 }
 
 .heading-primary__main, .heading-primary__sub1 {
-    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
-        padding-bottom: 2rem;
+     @media only screen and (min-width: 992px) {
+        padding-bottom: 5rem;
     }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
+        padding-bottom: 3.5rem;
+    }
+    @media only screen and (min-width: 1200px) {
         padding-bottom: 7rem;
-    }
-    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-        padding-bottom: 4.9rem;
     }
 }
 // End of heading primary
@@ -246,13 +234,14 @@
 // Start of heading secondary
 .heading-secondary {
     @media only screen and (min-width: 768px) {
-        font-size: 3rem;
+        font-size: 4.2rem;
         letter-spacing: 1rem;
     }
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
+        font-size: 2.5rem;
+    }
     @media only screen and (min-width: 992px) {  // 1024
-        font-size: 4rem;
-        letter-spacing: 1.5rem;
-        margin-bottom: 4rem;
+        font-size: 5rem;
     }
     &__therapies {
         @media only screen and (min-width: 320px) and (max-width: 900px) {
@@ -286,18 +275,30 @@
 // Start of heading tertiary
 .heading-tertiary {
     @media only screen and (min-width: 768px) {
-        font-size: 2.7rem;
+        font-size: 3.2rem;
         letter-spacing: 1rem;
     }
-    @media only screen and (min-width: 1024px) { // 1024
-        font-size: 3.5rem;
+    @media only screen and (min-width: 992px) { // 1024
+        font-size: 3.7rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
+        font-size: 2.2rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 992px) {
+        font-size: 3.2rem;
     }
     @media only screen and (orientation: landscape) and (min-width: 1200px) {
-        font-size: 1.8rem;
+        font-size: 3rem;  // Breakpoint for column (now three abreast)
     }
-    @media only screen and (orientation: landscape) and (min-width: 1500px) {
-        font-size: 2.7rem;
+
+    &__therapies-home {
+        @media only screen and (min-width: 1500px) {
+            display: block;
+        }
     }
+
 
     &__customer-feedback {
 
@@ -314,15 +315,8 @@
             text-align: center;
             margin-bottom: 3rem;
         }
-
-        &-home {
-
-        @media only screen and (min-width: 1500px) {
-            display: block;
-        }
     }
 
-    }
     &__popup {
         @media only screen and (min-width: 768px) {
             font-size: 3.2rem;
@@ -348,34 +342,19 @@ End of heading tertiary
 
 // E N D  O F  T Y P O G R A P H Y
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// S T A R T  O F  C A R D
+.card {
+    @media only screen and (orientation: landscape) {
+        width: 80%;
+        margin-left: 10%;
+    }
+    @media only screen and (min-width: 768px) {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
 
 .card {
-
     @media only screen and (orientation: landscape) {
         width: 80%;
         margin-left: 10%;
@@ -429,18 +408,18 @@ End of heading tertiary
         }
 
         // To fix the sizing issue between the cards for the iPad & iPad Pro in landscape orientation
-        &__customer-feedback {
+    //     &__customer-feedback {
 
-            @media only screen and (min-width: 992px) and (max-width: 1199px) {
-                width: 90%;
-                margin: 0 5%;
-                min-height: 24rem;
-            }
+    //         @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    //             width: 90%;
+    //             margin: 0 5%;
+    //             min-height: 24rem;
+    //         }
 
-            @media only screen and (min-width: 1200px) and (max-width: 1500px) {
-                min-height: 14rem;
-            }
-       }
+    //         @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    //             min-height: 14rem;
+    //         }
+    //    }
 
         &__about {
 
@@ -485,29 +464,6 @@ End of heading tertiary
         @media only screen and (min-width: 1500px) {
             width: 90%;
         }    
-    }
-
-
-    &__customer-feedback {
-
-        @media only screen and (orientation: landscape) and (min-width: 768px) {
-            width: 80%;
-        }
-
-        @media only screen and (min-width: 992px) {
-            width: 140%;
-            margin: 2rem -20%;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 1200px) {
-            width: 130%;
-            margin: 2rem -15%;
-        }
-
-        @media only screen and (min-width: 1500px) {
-            width: 100%;
-            margin: 2rem auto;
-        }
     }
 
     &-body__about {

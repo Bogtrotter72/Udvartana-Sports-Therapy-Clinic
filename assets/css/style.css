@@ -39,93 +39,85 @@ body {
   color: #000000; }
 
 .heading-open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: inAndOut 3s linear;
   color: #35524A;
   font-size: 3.4rem;
   font-weight: 700;
+  left: 52%;
   letter-spacing: 1rem;
-  text-shadow: 0.3rem 0.1rem 0.6rem #FFFFFF;
-  text-transform: uppercase;
+  opacity: 0;
+  text-shadow: 0.3rem 0.1rem 0.6rem rgba(74, 78, 105, 0.5);
+  text-transform: uppercase; }
+
+.heading-primary {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  left: 52%;
-  opacity: 0;
-  animation: inAndOut 3s linear; }
-
-.heading-primary {
   color: #FFFFFF;
   font-size: 3rem;
   font-weight: 300;
-  letter-spacing: 1.2rem;
+  left: 47%;
+  letter-spacing: 1rem;
   text-shadow: 0.5rem 0.4rem 0.5rem #35524A;
-  text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 57%; }
+  text-transform: uppercase; }
+
+.heading-primary__main, .heading-primary__sub1 {
+  display: block;
+  opacity: 0;
+  padding-bottom: 3rem; }
 
 .heading-primary__main {
-  display: block;
-  padding-bottom: 4.9rem;
-  opacity: 0;
-  -webkit-animation: slideUp 1.5s linear 2.6s forwards;
-  animation: slideUp 1.5s linear 2.6s forwards; }
+  animation: slideUp 1.75s linear 2.6s forwards;
+  -webkit-animation: slideUp 1.5s linear 2.6s forwards; }
 
 .heading-primary__sub1 {
-  display: block;
-  padding-bottom: 4.9rem;
-  -webkit-animation: slideUp 1.5s linear 3.2s backwards;
-  animation: slideUp 1.5s linear 3.2s backwards; }
+  animation: slideUp 1.75s linear 3.5s forwards;
+  -webkit-animation: slideUp 1.5s linear 3.2s forwards; }
 
 .heading-primary__sub2 {
+  animation: slideUp 1.75s linear 4.3s backwards;
   display: block;
-  -webkit-animation: slideUp 1.5s linear 4s backwards;
-  animation: slideUp 1.5s linear 4s backwards; }
+  -webkit-animation: slideUp 1.5s linear 4s backwards; }
 
 .heading-secondary {
-  font-size: 2.7rem;
   color: #35524A;
+  font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
   padding-top: 2rem;
-  text-transform: uppercase;
   text-align: center;
-  margin-bottom: 2rem; }
+  text-transform: uppercase; }
   .heading-secondary__popup {
-    font-size: 2.5rem;
-    color: #FFFFFF;
-    text-shadow: 2px 2px rgba(53, 82, 74, 0.8);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px rgba(53, 82, 74, 0.8);
     top: 25%; }
 
 .heading-tertiary {
-  font-size: 2rem;
   color: #4A4E69;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  text-align: center;
   margin-bottom: 2rem;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  text-align: center;
+  text-transform: uppercase; }
   .heading-tertiary__therapies {
     font-size: 1.3rem;
     letter-spacing: 0.5rem;
     margin-bottom: 0.5rem;
     padding: 0;
     border-bottom: 1px solid rgba(74, 78, 105, 0.5); }
-    .heading-tertiary__therapies-home {
-      font-size: 1.7rem;
-      letter-spacing: 0.8rem; }
-      @media only screen and (min-width: 992px) {
-        .heading-tertiary__therapies-home {
-          font-size: 2.4rem;
-          letter-spacing: 1rem;
-          display: block; } }
   .heading-tertiary__customer-feedback {
     font-size: 1.7rem;
     letter-spacing: 0.5rem; }
@@ -225,7 +217,7 @@ body {
   border: none;
   margin-bottom: 3rem;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0.9rem 0.8rem 2rem rgba(74, 78, 105, 0.5);
   border-radius: 2rem;
@@ -950,15 +942,13 @@ tr {
 
 @media only screen and (orientation: landscape) {
   .heading-open {
-    left: 36%;
-    top: 57%; } }
+    left: 38%; } }
 
 @media only screen and (min-width: 768px) {
   .heading-open {
     font-size: 7.5rem;
-    left: 55%;
-    letter-spacing: 1.7rem;
-    top: 57%; } }
+    left: 52%;
+    letter-spacing: 1.7rem; } }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .heading-open {
@@ -969,22 +959,18 @@ tr {
 @media only screen and (min-width: 992px) {
   .heading-open {
     left: 44%;
-    text-shadow: 0.5rem 0.4rem 0.5rem #FFFFFF;
-    top: 50%; } }
+    text-shadow: 0.5rem 0.4rem 0.5rem rgba(74, 78, 105, 0.5); } }
 
 @media only screen and (orientation: landscape) and (min-width: 992px) {
   .heading-open {
     font-size: 6.5rem;
     left: 37%;
-    letter-spacing: 1.7rem;
-    top: 50%; } }
+    letter-spacing: 1.7rem; } }
 
 @media only screen and (min-width: 1200px) {
   .heading-open {
     font-size: 7.5rem;
-    left: 33%;
-    letter-spacing: 1.7rem;
-    top: 60%; } }
+    left: 33%; } }
 
 @media only screen and (min-width: 1500px) {
   .heading-open {
@@ -997,61 +983,58 @@ tr {
 @media only screen and (min-width: 768px) {
   .heading-primary {
     font-size: 6rem;
-    letter-spacing: 2rem; } }
+    left: 45%;
+    letter-spacing: 1.7rem; } }
 
 @media only screen and (min-width: 992px) {
   .heading-primary {
-    top: 50%;
-    left: 40%; } }
+    left: 38%; } }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
   .heading-primary {
-    font-size: 3.2rem;
-    letter-spacing: 1.2rem;
-    top: 60%;
-    left: 35%; } }
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    left: 33%; } }
 
 @media only screen and (orientation: landscape) and (min-width: 992px) {
   .heading-primary {
     font-size: 6rem;
-    letter-spacing: 1.5rem;
-    top: 60%;
+    letter-spacing: 1.7rem;
     left: 34%; } }
 
 @media only screen and (min-width: 1200px) {
   .heading-primary {
-    font-size: 6rem;
-    letter-spacing: 2rem;
-    left: 30%; } }
+    left: 29%; } }
 
 @media only screen and (min-width: 1500px) {
   .heading-primary {
     font-size: 7rem;
-    letter-spacing: 2rem;
-    left: 30%; } }
+    letter-spacing: 1.7rem; } }
 
-@media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 992px) {
   .heading-primary__main, .heading-primary__sub1 {
-    padding-bottom: 2rem; } }
+    padding-bottom: 5rem; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .heading-primary__main, .heading-primary__sub1 {
+    padding-bottom: 3.5rem; } }
+
+@media only screen and (min-width: 1200px) {
   .heading-primary__main, .heading-primary__sub1 {
     padding-bottom: 7rem; } }
 
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
-  .heading-primary__main, .heading-primary__sub1 {
-    padding-bottom: 4.9rem; } }
-
 @media only screen and (min-width: 768px) {
   .heading-secondary {
-    font-size: 3rem;
+    font-size: 4.2rem;
     letter-spacing: 1rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .heading-secondary {
+    font-size: 2.5rem; } }
 
 @media only screen and (min-width: 992px) {
   .heading-secondary {
-    font-size: 4rem;
-    letter-spacing: 1.5rem;
-    margin-bottom: 4rem; } }
+    font-size: 5rem; } }
 
 @media only screen and (min-width: 320px) and (max-width: 900px) {
   .heading-secondary__therapies {
@@ -1080,20 +1063,28 @@ tr {
 
 @media only screen and (min-width: 768px) {
   .heading-tertiary {
-    font-size: 2.7rem;
+    font-size: 3.2rem;
     letter-spacing: 1rem; } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .heading-tertiary {
-    font-size: 3.5rem; } }
+    font-size: 3.7rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  .heading-tertiary {
+    font-size: 2.2rem; } }
+
+@media only screen and (orientation: landscape) and (min-width: 992px) {
+  .heading-tertiary {
+    font-size: 3.2rem; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1200px) {
   .heading-tertiary {
-    font-size: 1.8rem; } }
+    font-size: 3rem; } }
 
-@media only screen and (orientation: landscape) and (min-width: 1500px) {
-  .heading-tertiary {
-    font-size: 2.7rem; } }
+@media only screen and (min-width: 1500px) {
+  .heading-tertiary__therapies-home {
+    display: block; } }
 
 @media only screen and (min-width: 992px) {
   .heading-tertiary__customer-feedback {
@@ -1106,10 +1097,6 @@ tr {
     padding: 1rem;
     text-align: center;
     margin-bottom: 3rem; } }
-
-@media only screen and (min-width: 1500px) {
-  .heading-tertiary__therapies-home {
-    display: block; } }
 
 @media only screen and (min-width: 768px) {
   .heading-tertiary__popup {
@@ -1147,148 +1134,104 @@ tr {
     width: 80%;
     margin-left: 10%; } }
 
+@media only screen and (orientation: landscape) {
+  .card {
+    width: 80%;
+    margin-left: 10%; } }
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 80%;
+    margin-left: 10%; } }
+
 @media only screen and (min-width: 1200px) {
-  End of heading tertiary
-.card {
+  .card {
     width: 100%;
     margin-left: 0%;
     margin-bottom: 0; } }
 
 @media only screen and (orientation: landscape) {
-  End of heading tertiary
-.card-img {
+  .card-img {
     width: 80%;
     margin: 0 10%; } }
 
 @media only screen and (min-width: 768px) {
-  End of heading tertiary
-.card-img {
+  .card-img {
     width: 70%;
     margin: 0 15%; } }
 
 @media only screen and (min-width: 1500px) {
-  End of heading tertiary
-.card-img {
+  .card-img {
     width: 80%;
     margin: 0 10%; } }
 
 @media only screen and (min-width: 768px) {
-  End of heading tertiary
-.card-text {
+  .card-text {
     font-size: 1.6rem;
     width: 80%;
     margin: 0 10%; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1200px) {
-  End of heading tertiary
-.card-text {
+  .card-text {
     font-size: 1.3rem; } }
 
 @media only screen and (min-width: 1500px) {
-  End of heading tertiary
-.card-text {
+  .card-text {
     font-size: 1.6rem;
     width: 100%;
     margin: 0%; } }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  End of heading tertiary
-.card-text__customer-feedback {
-    width: 90%;
-    margin: 0 5%;
-    min-height: 24rem; } }
-
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
-  End of heading tertiary
-.card-text__customer-feedback {
-    min-height: 14rem; } }
-
 @media only screen and (orientation: landscape) and (min-width: 1200px) {
-  End of heading tertiary
-.card-text__about {
+  .card-text__about {
     font-size: 2rem; } }
 
 @media only screen and (min-width: 992px) {
-  End of heading tertiary
-.card__therapies {
+  .card__therapies {
     width: 80%;
     margin: 2rem 10%; } }
 
 @media only screen and (min-width: 1200px) {
-  End of heading tertiary
-.card__therapies {
+  .card__therapies {
     width: 100%;
     margin: 2rem 0%; } }
 
 @media only screen and (orientation: landscape) {
-  End of heading tertiary
-.card-individual__image {
+  .card-individual__image {
     width: 80%; } }
 
 @media only screen and (min-width: 768px) {
-  End of heading tertiary
-.card-individual__image {
+  .card-individual__image {
     width: 60%; } }
 
 @media only screen and (min-width: 1024px) {
-  End of heading tertiary
-.card-individual__image {
+  .card-individual__image {
     width: 80%; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1200px) {
-  End of heading tertiary
-.card-individual__image {
+  .card-individual__image {
     width: 60%; } }
 
 @media only screen and (min-width: 1500px) {
-  End of heading tertiary
-.card-individual__image {
+  .card-individual__image {
     width: 90%; } }
 
-@media only screen and (orientation: landscape) and (min-width: 768px) {
-  End of heading tertiary
-.card__customer-feedback {
-    width: 80%; } }
-
-@media only screen and (min-width: 992px) {
-  End of heading tertiary
-.card__customer-feedback {
-    width: 140%;
-    margin: 2rem -20%; } }
-
-@media only screen and (orientation: landscape) and (min-width: 1200px) {
-  End of heading tertiary
-.card__customer-feedback {
-    width: 130%;
-    margin: 2rem -15%; } }
-
-@media only screen and (min-width: 1500px) {
-  End of heading tertiary
-.card__customer-feedback {
-    width: 100%;
-    margin: 2rem auto; } }
-
 @media only screen and (min-width: 768px) {
-  End of heading tertiary
-.card-body__about {
+  .card-body__about {
     width: 120%;
     margin-left: -10%; } }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
-  End of heading tertiary
-.card-body__about {
+  .card-body__about {
     width: 110%;
     margin-left: -5%; } }
 
 @media only screen and (min-width: 1024px) {
-  End of heading tertiary
-.card-body__about {
+  .card-body__about {
     width: 100%;
     margin-left: 0%; } }
 
 @media only screen and (min-width: 1200px) {
-  End of heading tertiary
-.card-body__about {
+  .card-body__about {
     width: 100%;
     margin-left: 0%; } }
 

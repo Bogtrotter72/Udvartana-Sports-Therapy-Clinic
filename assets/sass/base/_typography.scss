@@ -1,69 +1,65 @@
 .heading-open {
+    @include center-screen;
+    animation: inAndOut 3s linear;
     color: $color-dark-green;
     font-size: 3.4rem;  // 4rem;
     font-weight: 700;
-    letter-spacing: 1rem;
-    text-shadow: 0.3rem 0.1rem 0.6rem $color-white;
-    text-transform: uppercase;
-    @include center-screen;
     left: 52%;
+    letter-spacing: 1rem;
     opacity: 0;
-    animation: inAndOut 3s linear;
+    text-shadow: 0.3rem 0.1rem 0.6rem rgba($color-contrast-blue, 0.5);
+    text-transform: uppercase;
 }
 
 
 // Start of heading primary
 .heading-primary {
+    @include center-screen;
     color: $color-white;
     font-size:  3rem;
     font-weight: 300;
-    letter-spacing: 1.2rem;
+    left: 47%;
+    letter-spacing: 1rem;
     text-shadow: 0.5rem 0.4rem 0.5rem $color-dark-green;
     text-transform: uppercase;
-    @include center-screen;
-    top: 57%;
 }
-
-.heading-primary__main {
+.heading-primary__main, .heading-primary__sub1 {
     display: block;
-    padding-bottom: 4.9rem;
     opacity: 0;
+    padding-bottom: 3rem;
+}
+.heading-primary__main {
+    animation: slideUp 1.75s linear 2.6s forwards;
     -webkit-animation: slideUp 1.5s linear 2.6s forwards;
-    animation: slideUp 1.5s linear 2.6s forwards;
 }
-
 .heading-primary__sub1 {
-    display: block;
-    padding-bottom: 4.9rem;
-    -webkit-animation: slideUp 1.5s linear 3.2s backwards;
-    animation: slideUp 1.5s linear 3.2s backwards;
+    animation: slideUp 1.75s linear 3.5s forwards;
+    -webkit-animation: slideUp 1.5s linear 3.2s forwards;
 }
-
 .heading-primary__sub2 {
+    animation: slideUp 1.75s linear 4.3s backwards;
     display: block;
     -webkit-animation: slideUp 1.5s linear 4s backwards;
-    animation: slideUp 1.5s linear 4s backwards;
 }
 // End of heading primary
 
 
-
 // Start of heading secondary
 .heading-secondary {
-    font-size: 2.7rem;
     color: $color-dark-green;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
-    padding-top: 2rem;
-    text-transform: uppercase;
-    text-align: center;
     margin-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
 
     &__popup {
-        font-size: 2.5rem;
-        color: $color-white;
-        text-shadow: 2px 2px rgba($color-dark-green, 0.8) ;
         @include center-screen;
+        color: $color-white;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px rgba($color-dark-green, 0.8) ;
         top: 25%;
     }
 }
@@ -73,14 +69,14 @@
 
 // Start of heading tertiary
 .heading-tertiary {
-    font-size: 2rem;
     color: $color-contrast-blue;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
-    text-transform: uppercase;
-    text-align: center;
     margin-bottom: 2rem;
     padding-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
 
     &__therapies {
         font-size: $mobile-font-size__portrait;
@@ -88,18 +84,7 @@
         margin-bottom: 0.5rem;
         padding: 0;
         border-bottom: 1px solid rgba($color-contrast-blue, 0.5);
-
-        &-home {
-            font-size: 1.7rem;
-            letter-spacing: 0.8rem;
-
-            @media only screen and (min-width: 992px) {
-                font-size: 2.4rem;
-                letter-spacing: 1rem;
-                display: block;
-            }
         }
-    }
 
     &__customer-feedback {
         font-size: 1.7rem;

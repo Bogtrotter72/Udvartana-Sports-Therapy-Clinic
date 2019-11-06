@@ -3,7 +3,7 @@
     border: none;
     margin-bottom: 3rem;
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 1rem;
     background-color: rgba($color-white, 0.7);
     box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
     border-radius: $image-border-radius-small;
@@ -136,7 +136,6 @@
             margin: 2rem 0%;
         }
     }
-
 
     &-individual__image {
         width: 90%;
