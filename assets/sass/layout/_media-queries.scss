@@ -300,12 +300,11 @@
     }
 
 
-    &__customer-feedback {
-
-        @media only screen and (min-width: 992px) {
-            font-size: 2.4rem;
-        }
-    }
+    // &__customer-feedback {
+    //     @media only screen and (min-width: 992px) {
+    //         font-size: 2.4rem;
+    //     }
+    // }
 
     &__therapies {
         @media only screen and (min-width: 992px) {
@@ -338,7 +337,7 @@
         }
     }
 }
-End of heading tertiary
+// End of heading tertiary
 
 // E N D  O F  T Y P O G R A P H Y
 
@@ -348,21 +347,10 @@ End of heading tertiary
         width: 80%;
         margin-left: 10%;
     }
-    @media only screen and (min-width: 768px) {
-        width: 80%;
-        margin-left: 10%;
-    }
-}
-
-.card {
-    @media only screen and (orientation: landscape) {
-        width: 80%;
-        margin-left: 10%;
-    }
 
     @media only screen and (min-width: 768px) {
-        width: 80%;
-        margin-left: 10%;
+        width: 70%;
+        margin-left: 15%;
     }
 
     @media only screen and (min-width: 1200px) {
@@ -392,34 +380,33 @@ End of heading tertiary
     &-text {
 
         @media only screen and (min-width: 768px) {
-            font-size: $main-font-size;
-            width: 80%;
-            margin: 0 10%;
+            font-size: 2rem;
+            margin: 2rem 5%;
+            min-height: 29rem;
+            width: 90%;
         }
 
-        @media only screen and (orientation: landscape) and (min-width: 1200px) {
-            font-size: $mobile-font-size__portrait;
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            font-size: 1.5rem;
+            margin: 2rem auto;
+            min-height: 16rem;
+        }
+
+        @media only screen and (min-width: 992px) {
+            font-size: 2rem;
+            min-height: 23rem;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 992px) {
+            min-height: 33rem;
         }
 
         @media only screen and (min-width: 1500px) {
             font-size: $main-font-size;
-            width: 100%;
-            margin: 0%;
+            margin: 3rem 5%;
+            min-height: 20rem;
+            width: 90%;
         }
-
-        // To fix the sizing issue between the cards for the iPad & iPad Pro in landscape orientation
-    //     &__customer-feedback {
-
-    //         @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    //             width: 90%;
-    //             margin: 0 5%;
-    //             min-height: 24rem;
-    //         }
-
-    //         @media only screen and (min-width: 1200px) and (max-width: 1500px) {
-    //             min-height: 14rem;
-    //         }
-    //    }
 
         &__about {
 
@@ -429,6 +416,20 @@ End of heading tertiary
         }
     }
 
+    &__customer-feedback {
+        @media only screen and (min-width: 1200px) {
+            width: 70%;
+
+            // To centralize the cards
+            &-left {
+                margin: 3rem 25%;
+            }
+
+            &-right {
+                margin: 3rem 5%;
+            }
+        }
+    }
 
    &__therapies {
         @media only screen and (min-width: 992px) {
@@ -447,23 +448,23 @@ End of heading tertiary
 
         @media only screen and (orientation: landscape) {
             width: 80%;
+            margin: 0 10%;
         }
 
         @media only screen and (min-width: 768px) {
-            width: 60%;
+            width: 80%;
+            margin: 0 10%;
         }
 
         @media only screen and (min-width: 1024px) {
             width: 80%;
+            margin: 0 10%;
         }
 
         @media only screen and(orientation: landscape) and (min-width: 1200px) {
-            width: 60%;
+            margin: 0 10%;
+            width: 80%;
         }
-
-        @media only screen and (min-width: 1500px) {
-            width: 90%;
-        }    
     }
 
     &-body__about {
@@ -538,24 +539,19 @@ End of heading tertiary
     &:visited {
 
         @media only screen and (min-width: 768px) {
-            // left: 5.5rem;
-            right: 2rem;
+            font-size: 2rem;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            font-size: 1.5rem;
         }
 
         @media only screen and (min-width: 992px) {
-            font-size: $main-font-size;
-            // left: 9.5rem;
-            right: 2rem;
-        }
-
-        @media only screen and (min-width: 1200px) {
-            // left: 2.5rem;
-            right: 2rem;
+            font-size: 2rem;
         }
 
         @media only screen and (min-width: 1500px) {
-            // left: 1rem;
-            right: 2rem;
+            font-size: $main-font-size;
         }
     }
 

@@ -86,15 +86,6 @@
         border-bottom: 1px solid rgba($color-contrast-blue, 0.5);
         }
 
-    &__customer-feedback {
-        font-size: 1.7rem;
-        letter-spacing: 0.5rem;
-
-        @media only screen and (orientation: landscape) {
-            font-size: 2rem;
-        }
-    }
-
     &__popup {
         @include center-screen;
         top: 52%;

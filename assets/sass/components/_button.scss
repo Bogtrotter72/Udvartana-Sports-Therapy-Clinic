@@ -2,19 +2,19 @@
 .btn-text {
     &:link,
     &:visited {
-        position: absolute;
-        // left: 1rem;
-        right: 2rem;
+        backface-visibility: hidden;
         bottom: 1rem;
+        color: $color-medium-green;
         display: inline-block;
         font-size: $mobile-font-size__portrait;
         font-weight: 700;
-        color: $color-medium-green;
-        text-decoration: none;
         padding: 1rem;
-        -webkit-transition: all 0.15s;
+        position: absolute;
+        right: 2rem;
+        text-decoration: none;
         transition: all 0.15s;
-        backface-visibility: hidden;
+        -webkit-transition: all 0.15s;
+
 
     }
 

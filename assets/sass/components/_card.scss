@@ -19,26 +19,6 @@
         &__about {
             width: 110%;
             margin-left: -5%;
-
-            @media only screen and (min-width: 768px) {
-                width: 120%;
-                margin-left: -10%;
-            }
-
-            @media only screen and (orientation: landscape) and (min-width: 768px) {
-                width: 110%;
-                margin-left: -5%;
-            }
-
-            @media only screen and (min-width: 1024px) {
-                width: 100%;
-                margin-left: 0%;
-            }
-
-            @media only screen and (min-width: 1200px) {
-                width: 100%;
-                margin-left: 0%;
-            }
         }
     }
 
@@ -47,70 +27,32 @@
         margin: 0 0%;
         border-radius: $image-border-radius-large;
 
-
         &__therapies {
             border: 0.3rem solid rgba($color-contrast-blue, 0.25);
             box-shadow: 0 0.6rem 2.3rem rgba($color-contrast-blue, 0.5);
         }
-
-        @media only screen and (orientation: landscape) {
-            width: 80%;
-            margin: 0 10%;
-        }
-
-        @media only screen and (min-width: 768px) {
-            width: 70%;
-            margin: 0 15%;
-        }
-
-        @media only screen and (min-width: 1500px) {
-            width: 80%;
-            margin: 0 10%;
-        }
     }
 
     &-text {
-        display: flex;
         align-items: center;
-        margin: 1rem auto;
+        color: $color-contrast-blue;
+        display: flex;
         font-size: $mobile-font-size__portrait;
         font-weight: 400;
-        color: $color-contrast-blue;
-        overflow: auto;
+        margin: 2rem auto;
+        min-height: 25rem;
+        overflow: auto; 
         word-wrap: break-word;
-        min-height: 20rem;
 
-
-        @media only screen and (orientation: landscape) {
-            font-size: $main-font-size;
-            width: 90%;
-            margin: 1rem 5%;
-        }
-
-        @media only screen and (min-width: 768px) {
-            font-size: $main-font-size;
-            width: 80%;
-            margin: 0 10%;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 1200px) {
-            font-size: $mobile-font-size__portrait;
-        }
-
-        @media only screen and (min-width: 1500px) {
-            font-size: $main-font-size;
-            width: 100%;
-            margin: 0%;
+        &__therapies-home {
+            min-height: 18rem;
+            overflow: auto;
         }
 
         
         &__about {
 
             min-height: 35rem;
-
-            @media only screen and (orientation: landscape) and (min-width: 1200px) {
-                font-size: 2rem;
-            }
         }
 
         &__contact {
@@ -125,41 +67,9 @@
         }
     }
 
-   &__therapies {
-        @media only screen and (min-width: 992px) {
-            width: 80%;
-            margin: 2rem 10%;
-        }
-        
-        @media only screen and (min-width: 1200px) {
-            width: 100%;
-            margin: 2rem 0%;
-        }
-    }
-
     &-individual__image {
         width: 90%;
-        margin: auto;
-
-        @media only screen and (orientation: landscape) {
-            width: 80%;
-        }
-
-        @media only screen and (min-width: 768px) {
-            width: 60%;
-        }
-
-        @media only screen and (min-width: 1024px) {
-            width: 80%;
-        }
-
-        @media only screen and(orientation: landscape) and (min-width: 1200px) {
-            width: 60%;
-        }
-
-        @media only screen and (min-width: 1500px) {
-            width: 90%;
-        }    
+        margin: 0 5%; 
     }
 
     &__customer-feedback {
