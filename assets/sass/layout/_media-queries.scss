@@ -144,9 +144,6 @@
 // E N D  O F  H O M E P A G E  H E A D E R  A N D  N A V I G A T I O N
 
 
-
-
-
 // S T A R T  O F  T Y P O G R A P H Y
 // Start of heading open
 .heading-open {
@@ -243,12 +240,7 @@
     @media only screen and (min-width: 992px) {  // 1024
         font-size: 5rem;
     }
-    &__therapies {
-        @media only screen and (min-width: 320px) and (max-width: 900px) {
-            font-size: 2.3rem;
-            margin-bottom: 2rem;
-        }
-    }
+    
     &__bookings {
         @media only screen and (min-width: 900px) {
             margin-bottom: 4rem;
@@ -290,29 +282,12 @@
         font-size: 3.2rem;
     }
     @media only screen and (orientation: landscape) and (min-width: 1200px) {
-        font-size: 3rem;  // Breakpoint for column (now three abreast)
+        font-size: 2.7rem;  // Breakpoint for column (now three abreast)
     }
 
     &__therapies-home {
-        @media only screen and (min-width: 1500px) {
+        @media only screen and (min-width: 1200px) {
             display: block;
-        }
-    }
-
-
-    // &__customer-feedback {
-    //     @media only screen and (min-width: 992px) {
-    //         font-size: 2.4rem;
-    //     }
-    // }
-
-    &__therapies {
-        @media only screen and (min-width: 992px) {
-            font-size: 2.5rem;
-            letter-spacing: 1rem;
-            padding: 1rem;
-            text-align: center;
-            margin-bottom: 3rem;
         }
     }
 
@@ -393,12 +368,16 @@
         }
 
         @media only screen and (min-width: 992px) {
-            font-size: 2rem;
             min-height: 23rem;
         }
 
         @media only screen and (orientation: landscape) and (min-width: 992px) {
-            min-height: 33rem;
+            font-size: 2rem;
+            min-height: 30rem;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            min-height: 36rem;
         }
 
         @media only screen and (min-width: 1500px) {
@@ -413,6 +392,10 @@
             @media only screen and (orientation: landscape) and (min-width: 1200px) {
                 font-size: 2rem;
             }
+        }
+
+        &__contact {
+            min-height: 0;  // Overwrite other text styles
         }
     }
 
@@ -489,51 +472,46 @@
             margin-left: 0%;
         }
     }
-}
 
+    &__about {
 
+        @media only screen and (orientation: landscape) {
+            width: 96%;
+            margin-left: 2%;
+        }
 
+        @media only screen and (min-width: 768px) {
+            width: 90%;
+            margin-left: 5%;
+        }
 
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            width: 94%;
+            margin-left: 3%;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// S T A R T  O F  F O O T E R
-
-.footer {
-    @media only screen and (min-width: 1200px) {
-        margin-top: 0;
-    }
-
-    &__heading--margin {
         @media only screen and (min-width: 992px) {
-            margin-top: 0;
+            width: 78%;
+            margin-left: 11%;
+        }
+
+        @media only screen and (min-width: 1500px) {
+            width: 70%;
+            margin-left: 15%;
+            margin-bottom: 3rem;
         }
     }
 
+
+    &__contact {
+        width: 100%;
+        margin: 3rem 0%;
+    }
 }
+// E N D  O F  C A R D
 
-// E N D  O F  F O O T E R
-
-
-
-
-
-
-
-// To reduce clutter and maintain the sense of space on the home page, create an inline button that has similar styling to other buttons used
+// S T A R T  O F  L E A R N  M O R E  B U T T O N
+// inline button (similar styling to other buttons - reduce button overload)
 .btn-text {
     &:link,
     &:visited {
@@ -568,10 +546,33 @@
         transform: translateY(0rem);
     }
 }
+// E N D  O F  L E A R N  M O R E  B U T T O N
+
+// S T A R T  O F  F O O T E R
+.footer {
+    @media only screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
+
+    &__heading--margin {
+        @media only screen and (min-width: 992px) {
+            margin-top: 0;
+        }
+    }
+
+}
+// E N D  O F  F O O T E R
+
+
+
 
 .page-header {
     @media only screen and (orientation: landscape) {
         height: 20vh;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        height: 11vh;
     }
 }
 
@@ -597,25 +598,35 @@
 }
 
 
-.about-page__inner-container {
-    @media only screen and (min-width: 768px) {
-        width: 80%;
-        margin: 8rem 10%;
+.about-page {
+
+    &__inner-container {
+        @media only screen and (min-width: 768px) {
+            width: 80%;
+            margin: 8rem 10%;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            width: 90%;
+            margin: 8rem 5%;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            width: 110%;
+            margin: 8rem -5%;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 90%;
+            margin: 8rem 5%;
+        }
     }
 
-    @media only screen and (orientation: landscape) and (min-width: 768px) {
-        width: 90%;
-        margin: 8rem 5%;
-    }
+    &__content {
 
-    @media only screen and (min-width: 1024px) {
-        width: 110%;
-        margin: 8rem -5%;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        width: 90%;
-        margin: 8rem 5%;
+        @media only screen and (min-width: 768px) {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -626,7 +637,7 @@
     }
     
     @media only screen and (min-width: 1200px) {
-        width: 70vw;
+        width: 60vw;
     }
 }
 
@@ -642,15 +653,24 @@
             margin-top: 5rem;
         }
     }
+
+    @media only screen and (min-width: 1500px) {
+        width: 60%;
+    }
 }
 
-.label {
-    @media only screen and (orientation: landscape) {
-        font-size: $main-font-size;
-    }
+.label, .date, .calendar__month {
 
     @media only screen and (min-width: 768px) {
         font-size: 2rem;
+    }
+
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (min-width: 1500px) {
+        font-size: $main-font-size;
     }
 }
 
@@ -660,16 +680,24 @@
     }
 }
 
+.form-text {
+    @media only screen and (min-width: 992px) {
+        font-size: 1.2rem;
+    }
+}
+
 .calendar {
     @media only screen and (min-width: 768px) {
         width: 75%;
+    }
+    @media only screen and (min-width: 1500px) {
+        width: 60%;
     }
 }
 
 .date {
     @media only screen and (min-width: 768px) {
         grid-template-columns: 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
-        font-size: $main-font-size;
     }
 
     @media only screen and (min-width: 1024px) {
@@ -696,6 +724,7 @@
     }
 }
 
+
 .popup__content {
     @media only screen and (orientation: landscape) {
         background-image: linear-gradient(to bottom right, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), 
@@ -714,8 +743,6 @@
         width: 50%;
     }
 }
-
-
 
 .map-responsive {
     @media only screen and (min-width: 1024px) {
@@ -806,9 +833,23 @@
         }
     }
 
-    &__content, &__table {
-        @media only screen and (min-width: 992px) {
+    &__content {
+
+        @media only screen and (min-width: 768px) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 768px) {
+            font-size: 1.5rem;
+        }
+
+        @media only screen and (orientation: landscape) and (min-width: 992px) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (min-width: 1500px) {
             font-size: $main-font-size;
+
         }
     }
 }

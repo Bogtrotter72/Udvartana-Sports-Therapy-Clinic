@@ -51,8 +51,9 @@ revitalization, repair and relaxation.
 
 
 ### Planned Features
-Without back-end technologies, the bookings page will not function.  It is, therefore, planned that further developments will include a fully-functioning calendar that:
+With the addition of JavaScript functionality, it is envisaged that further developments will include a fully-functioning calendar that:
 
+* allows users to change months
 * links to a diary-style page, with available times, etc. (_colour coded_)
 * notifies the therapist of a booking
 * provides customers with the option to select the therapist of their choice
@@ -75,8 +76,8 @@ Languages used:
 ## Testing
 ### Cross-Device Compatability
 
-The website was tested in the device toolbar of Chrome's Devtools, on:
-* Galaxy S5
+The website was tested in Blisk, on a variety of devices, including:
+* Samsung Galaxy S5
 * iPhone 5/SE
 * iPhone 6/7/8
 * iPhone X
@@ -116,7 +117,7 @@ This resulted in a substantial initial commit.
 <small>Version one is held on file by the author.</small>
 
 
-The node modules folder has been removed in order to reduce download size.
+The node modules folder has been ignore in order to reduce download size.
 In order to alter the code and re-compile the css, it will be necessary to:
 1. run an 'npm install' command in a console (after navigating to the main root directory)
 2. run an 'npm run compile:sass' command in a console

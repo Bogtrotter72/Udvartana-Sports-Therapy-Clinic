@@ -46,6 +46,10 @@
     font-size: $mobile-font-size__portrait;
 }
 
+.form-text {
+    font-size: 1rem;
+}
+
 .calendar {
     align-items: center;
     background-color: $color-white;
@@ -55,19 +59,29 @@
     margin: 1rem auto 5rem auto;
     width: 90%;
 
-    &-label {
+    &__label {
         margin: 3rem auto 1rem;
         text-align: center;
         width: 100%;
     }
+
+    &__month {
+        color: $color-contrast-blue;
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin: 2rem 0 -5rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
 
 .date {
+    backface-visibility: hidden;
     column-gap: 1rem;
     display: grid;
     font-size: $mobile-font-size__portrait;
     grid-template-columns: 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem 2.5rem;
-    grid-template-rows: 3.5rem auto 2rem;
+    grid-template-rows: 3.5rem auto 2.5rem;
     padding: 2.5rem;
     row-gap: 1.5rem;
 }

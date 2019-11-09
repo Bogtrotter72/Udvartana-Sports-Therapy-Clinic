@@ -5,57 +5,19 @@
     background-size: cover;
     background-position: left;
     position: absolute;
+}
 
-    &__list-background-container {
+.prices {
+
+    &-background-container {
         padding: 0;
     }
 
-    &__list-container {
+    &-inner-container {
         margin: 10rem auto;
         background-color: rgba($color-light-green, 0.7);
         width: 90vw;
         padding: 0 1rem;
         border: 0.1rem solid $color-dark-green;
     }
-
-    &__table {
-        display: table;
-        text-align: center;
-        font-size: $mobile-font-size__portrait;
-    }
-}
-
-.heading-secondary-price-list {
-    font-size: 3.5rem;
-    margin-bottom: 3rem;
-    color: $color-dark-green;
-    padding-top: 5vh;
-
-    &:not(:first-child) {
-        padding-top: 5vh;
-    }
-}
-
-.heading-tertiary-price-list {
-    font-size: 2.2rem;
-    color: $color-contrast-blue;
-    margin-bottom: 1rem;
-}
-
-
-table {
-    border-collapse: separate;
-    border-spacing: 0.9rem;
-}
-
-.table {
-    margin-bottom: 3rem;
-}
-
-th ~ .border-left, th ~ .border-none, td ~ .border-left {
-    padding-left: 0;
-}
-
-tr {
-    height: 2rem;
 }

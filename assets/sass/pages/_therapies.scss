@@ -20,7 +20,10 @@
     }
 
     &__content {
+        color: $color-contrast-blue;
         font-size: $mobile-font-size__portrait;
+        font-weight: 400;
+        overflow: auto; 
     }
 }
 

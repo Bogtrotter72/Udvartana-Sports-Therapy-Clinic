@@ -10,12 +10,15 @@
     }
 
     &__content {
-        background-color: rgba($color-white, 0.8);
+        background-color: rgba($color-white, 0.7);
         border-radius: $image-border-radius-small;
+        box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
         color: $color-contrast-blue;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 400;
+        margin: 5%;
         padding: 1rem;
+        width: 90%;
     }
 
     &__card-container {
@@ -30,8 +33,8 @@
         background-color: rgba($color-light-green, 0.5);
         border-radius: $image-border-radius-small;
         box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
-        margin: 8rem 5%;
+        margin: 8rem 0%;
         padding: 2rem;
-        width: 90%;        
+        width: 100%;        
     }
 }

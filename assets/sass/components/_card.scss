@@ -42,7 +42,6 @@
         margin: 2rem auto;
         min-height: 25rem;
         overflow: auto; 
-        word-wrap: break-word;
 
         &__therapies-home {
             min-height: 18rem;
@@ -75,5 +74,9 @@
     &__customer-feedback {
         background-color: $color-white;
         box-shadow: 0.5rem 0.5rem 3rem rgba($color-black, 0.4);
+    }
+
+    &__contact {
+        width: 100%;
     }
 }
