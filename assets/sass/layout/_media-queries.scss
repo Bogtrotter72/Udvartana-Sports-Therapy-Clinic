@@ -12,8 +12,8 @@
     }
 
     @media only screen and (min-width: 1200px) {
-        top: 4rem;
         left: 4rem;
+        top: 4rem;
     }
 }
 .logo {
@@ -30,11 +30,19 @@
 
 .homepage__header {
     @media only screen and (orientation: landscape) {
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(53, 82, 74, 0.7)), color-stop(67%, rgba(53, 82, 74, 0.1)), to(rgba(216, 223, 215, 0))), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
+        background-image: -o-linear-gradient(left, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
         background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
                           url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
     }
   
     @media only screen and (min-width: 768px) and (max-width: 1499px) {
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(53, 82, 74, 0.7)), color-stop(67%, rgba(53, 82, 74, 0.1)), to(rgba(216, 223, 215, 0))), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/header-image_1366x1024_tbyawy.jpg");
+        background-image: -o-linear-gradient(left, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/header-image_1366x1024_tbyawy.jpg");
         background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
                           url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/header-image_1366x1024_tbyawy.jpg");
         background-position: bottom right;
@@ -42,12 +50,20 @@
   
     // Readjust back to the original image for iPhone X in landscape orientation
     @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 991px) {
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(53, 82, 74, 0.7)), color-stop(67%, rgba(53, 82, 74, 0.1)), to(rgba(216, 223, 215, 0))), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
+        background-image: -o-linear-gradient(left, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
         background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
                           url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
     }
   
     // Readjust back to the original image for iPhone X in landscape orientation
     @media only screen and (orientation: landscape) and (min-width: 992px)  {
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(53, 82, 74, 0.7)), color-stop(67%, rgba(53, 82, 74, 0.1)), to(rgba(216, 223, 215, 0))), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/header-image_1366x1024_tbyawy.jpg");
+        background-image: -o-linear-gradient(left, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/header-image_1366x1024_tbyawy.jpg");
         background-image: linear-gradient(to right, rgba(53, 82, 74, 0.7) 10%, rgba(53, 82, 74, 0.1) 67%, rgba(216, 223, 215, 0) 100%), 
                           url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/header-image_1366x1024_tbyawy.jpg");
     }
@@ -57,15 +73,15 @@
     
     @media only screen and (min-width: 768px) {
         height: 4rem;
-        width: 4rem;
-        top: 2rem;
         right: 2.5rem;
+        top: 2rem;
+        width: 4rem;
     }
 
     @media only screen and (min-width: 992px) {
         height: 5rem;
-        width: 5rem;
         right: 5rem;
+        width: 5rem;
     }
 }
 
@@ -92,7 +108,9 @@
 .navigation__link:hover {
 
     @media only screen and (min-width: 768px) {
-        transform: translateY(-0.3rem);
+        -webkit-transform: translateY(-0.3rem);
+            -ms-transform: translateY(-0.3rem);
+                transform: translateY(-0.3rem);
     }    
 }
 
@@ -108,8 +126,8 @@
 .navigation__icon::after {
 
     @media only screen and (min-width: 768px) {
-        width: 2.5rem;
         height: 0.2rem;
+        width: 2.5rem;
     }
 }
 
@@ -197,13 +215,13 @@
     // Resetting font
     @media only screen and (orientation: landscape) and (min-width: 768px) {
         font-size:  3rem;
-        letter-spacing: 1rem;
         left: 33%;
+        letter-spacing: 1rem;
     }
     @media only screen and (orientation: landscape) and (min-width: 992px) {
         font-size:  6rem;
-        letter-spacing: 1.7rem;
         left: 34%;
+        letter-spacing: 1.7rem;
     }
     @media only screen and (min-width: 1200px) {
         left: 29%;
@@ -237,7 +255,7 @@
     @media only screen and (orientation: landscape) and (min-width: 768px) {
         font-size: 2.5rem;
     }
-    @media only screen and (min-width: 992px) {  // 1024
+    @media only screen and (min-width: 992px) {
         font-size: 5rem;
     }
     
@@ -270,7 +288,7 @@
         font-size: 3.2rem;
         letter-spacing: 1rem;
     }
-    @media only screen and (min-width: 992px) { // 1024
+    @media only screen and (min-width: 992px) {
         font-size: 3.7rem;
     }
 
@@ -319,36 +337,36 @@
 // S T A R T  O F  C A R D
 .card {
     @media only screen and (orientation: landscape) {
-        width: 80%;
         margin-left: 10%;
+        width: 80%;
     }
 
     @media only screen and (min-width: 768px) {
-        width: 70%;
         margin-left: 15%;
+        width: 70%;
     }
 
     @media only screen and (min-width: 1200px) {
-        width: 100%;
-        margin-left: 0%;
         margin-bottom: 0;
+        margin-left: 0%;
+        width: 100%;
     }
 
     &-img {
 
         @media only screen and (orientation: landscape) {
-            width: 80%;
             margin: 0 10%;
+            width: 80%;
         }
 
         @media only screen and (min-width: 768px) {
-            width: 70%;
             margin: 0 15%;
+            width: 70%;
         }
 
         @media only screen and (min-width: 1500px) {
-            width: 80%;
             margin: 0 10%;
+            width: 80%;
         }
     }
 
@@ -416,13 +434,13 @@
 
    &__therapies {
         @media only screen and (min-width: 992px) {
-            width: 80%;
             margin: 2rem 10%;
+            width: 80%;
         }
         
         @media only screen and (min-width: 1200px) {
-            width: 100%;
             margin: 2rem 0%;
+            width: 100%;
         }
     }
 
@@ -430,18 +448,18 @@
     &-individual__image {
 
         @media only screen and (orientation: landscape) {
-            width: 80%;
             margin: 0 10%;
+            width: 80%;
         }
 
         @media only screen and (min-width: 768px) {
-            width: 80%;
             margin: 0 10%;
+            width: 80%;
         }
 
         @media only screen and (min-width: 1024px) {
-            width: 80%;
             margin: 0 10%;
+            width: 80%;
         }
 
         @media only screen and(orientation: landscape) and (min-width: 1200px) {
@@ -450,62 +468,38 @@
         }
     }
 
-    &-body__about {
-
-        @media only screen and (min-width: 768px) {
-            width: 120%;
-            margin-left: -10%;
-        }
-
-        @media only screen and (orientation: landscape) and (min-width: 768px) {
-            width: 110%;
-            margin-left: -5%;
-        }
-
-        @media only screen and (min-width: 1024px) {
-            width: 100%;
-            margin-left: 0%;
-        }
-
-        @media only screen and (min-width: 1200px) {
-            width: 100%;
-            margin-left: 0%;
-        }
-    }
-
     &__about {
 
         @media only screen and (orientation: landscape) {
-            width: 96%;
             margin-left: 2%;
+            width: 96%;
         }
 
         @media only screen and (min-width: 768px) {
-            width: 90%;
             margin-left: 5%;
+            width: 90%;
         }
 
         @media only screen and (orientation: landscape) and (min-width: 768px) {
-            width: 94%;
             margin-left: 3%;
+            width: 94%;
         }
 
         @media only screen and (min-width: 992px) {
-            width: 78%;
             margin-left: 11%;
+            width: 78%;
         }
 
         @media only screen and (min-width: 1500px) {
-            width: 70%;
-            margin-left: 15%;
             margin-bottom: 3rem;
+            margin-left: 15%;
+            width: 70%;
         }
     }
 
-
     &__contact {
-        width: 100%;
         margin: 3rem 0%;
+        width: 100%;
     }
 }
 // E N D  O F  C A R D
@@ -535,15 +529,21 @@
 
     &:hover {
         background-color: $color-medium-green;
-        color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
         border-radius: $image-border-radius-small;
-        transform: translateY(-0.3rem);
+        -webkit-box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+                box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+        color: $color-white;
+        -webkit-transform: translateY(-0.3rem);
+            -ms-transform: translateY(-0.3rem);
+                transform: translateY(-0.3rem);
     }
 
     &:active {
-        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.25);
-        transform: translateY(0rem);
+        -webkit-box-shadow: 0 0.5rem 1rem rgba($color-black, 0.25);
+                box-shadow: 0 0.5rem 1rem rgba($color-black, 0.25);
+        -webkit-transform: translateY(0rem);
+            -ms-transform: translateY(0rem);
+                transform: translateY(0rem);
     }
 }
 // E N D  O F  L E A R N  M O R E  B U T T O N
@@ -562,8 +562,6 @@
 
 }
 // E N D  O F  F O O T E R
-
-
 
 
 .page-header {
@@ -597,28 +595,27 @@
     }
 }
 
-
 .about-page {
 
     &__inner-container {
         @media only screen and (min-width: 768px) {
-            width: 80%;
             margin: 8rem 10%;
+            width: 80%;
         }
 
         @media only screen and (orientation: landscape) and (min-width: 768px) {
-            width: 90%;
             margin: 8rem 5%;
+            width: 90%;
         }
 
         @media only screen and (min-width: 1024px) {
-            width: 110%;
             margin: 8rem -5%;
+            width: 110%;
         }
 
         @media only screen and (min-width: 1200px) {
-            width: 90%;
             margin: 8rem 5%;
+            width: 90%;
         }
     }
 
@@ -629,7 +626,6 @@
         }
     }
 }
-
 
 .bookings-page__container {
     @media only screen and (min-width: 768px) {
@@ -697,36 +693,46 @@
 
 .date {
     @media only screen and (min-width: 768px) {
+        -ms-grid-template-columns: 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
         grid-template-columns: 4rem 4rem 4rem 4rem 4rem 4rem 4rem;
     }
 
     @media only screen and (min-width: 1024px) {
+        -ms-grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
         grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
     }
 
     @media only screen and (orientation: landscape) {
-        padding: 4.5rem;
+        -ms-grid-template-columns: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem;
         grid-template-columns: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem;
+        padding: 4.5rem;
     }
 
     @media only screen and (orientation: landscape) and (min-width: 1024px) {
-        padding: 4.5rem;
+        -ms-grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
         grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
+        padding: 4.5rem;
     }
 
     @media only screen and (min-width: 1200px) {
+        -ms-grid-template-columns: 8rem 8rem 8rem 8rem 8rem 8rem 8rem;
         grid-template-columns: 8rem 8rem 8rem 8rem 8rem 8rem 8rem;
     }
 
     @media only screen and (min-width: 1800px) {
+        -ms-grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
         grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
+        -ms-grid-template-rows: 6rem auto 2rem;
         grid-template-rows: 6rem auto 2rem;
     }
 }
 
-
 .popup__content {
     @media only screen and (orientation: landscape) {
+        background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-dark-green, 0.2)), to(rgba($color-contrast-blue, 0.8))), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
+        background-image: -o-linear-gradient(top left, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
         background-image: linear-gradient(to bottom right, rgba($color-dark-green, 0.2), rgba($color-contrast-blue, 0.8)), 
                           url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978498/Milestone%201/header-image_570x265_e6b1gd.jpg");
         height: 75vh;
@@ -752,20 +758,19 @@
 
 .map-responsive iframe {
     @media only screen and (orientation: landscape) {
-        width: 80%;
         margin: 0 10%;
+        width: 80%;
     }
 
     @media only screen and (min-width: 768px) {
-        width: 80%;
         margin: 0 10%;
+        width: 80%;
     }
 
     @media only screen and (min-width: 1024px) {
         height: 50rem;
     }
 }
-
 
 .therapies {
     @media only screen and (min-width: 768px) {
@@ -779,50 +784,24 @@
     }
 }
 
-.therapies_row2 {
-    @media only screen and (min-width: 768px) {
-        padding-top: 4rem;
-    }
-}
-
-
 .customer-feedback {
     @media only screen and (min-width: 768px) {
         margin-top: 6rem;
         padding: 5rem 0;
     }
 
-
     &__username {
         @media only screen and (min-width: 768px) {
-            width: 90%;
             margin: 0 5%;
+            width: 90%;
         }
 
         @media only screen and (min-width: 1500px) {
-            width: 100%;
             margin: 0;
+            width: 100%;
         }
     }
 }
-
-
-.price-list-page {
-
-    &__list-container {
-        @media only screen and (min-width: 1200px) {
-            width: 50vw;
-        }
-    }
-
-    &__table {
-        @media only screen and (min-width: 992px) {
-            font-size: 2rem;
-        }
-
-    }
-}
-
 
 .therapies-page {
 

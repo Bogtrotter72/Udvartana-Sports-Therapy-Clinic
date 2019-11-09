@@ -4,60 +4,69 @@
 }
 
 .navigation__button {
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
-    background-color: rgba($color-white,.75);
-    box-shadow: 0.2rem 0.47rem 1rem rgba(53, 82, 74, 0.3);
-    position: fixed;
-    top: 1.2rem;
-    right: 2.5rem;
-    z-index: 1000;
-    cursor: pointer;
-    -webkit-transition: transform 0.2s;
-    transition: transform 0.2s;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    background-color: rgba($color-white,.75);
+    border-radius: 50%;
+    -webkit-box-shadow: 0.2rem 0.47rem 1rem rgba(53, 82, 74, 0.3);
+            box-shadow: 0.2rem 0.47rem 1rem rgba(53, 82, 74, 0.3);
+    cursor: pointer;
+    height: 3.5rem;
+    position: fixed;
+    right: 2.5rem;
+    top: 1.2rem;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    -o-transition: transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    width: 3.5rem;
+    z-index: 1000;
 }
 
 .navigation__nav {
-    position: fixed;
-    height: 100vh;
     background-color: rgba($color-medium-green, 0.95);
-    top: 0;
+    height: 100vh;
+    opacity: 0;                                         // hiding the navigation menu
+    position: fixed;
     right: 0;
-    z-index: 750;
-    opacity: 0;                                         // hiding the
-    width: 0;                                           // navigation menu
-    -webkit-transition: all 0.5s ease-in;
+    top: 0;
+    -webkit-transition: all 0.7s cubic-bezier(0.68, -0.55, 0, 1.5);
+    -o-transition: all 0.7s cubic-bezier(0.68, -0.55, 0, 1.5);
     transition: all 0.7s cubic-bezier(0.68, -0.55, 0, 1.5);
+    width: 0;
+    z-index: 750;
 }
 
 .navigation__list {
     @include center-screen;
     list-style: none;
+    opacity: 0;                                         // hiding the navigation list
     text-align: center;
-    opacity: 0;                                         // hiding the
-    visibility: hidden;                                 // navigation list
+    visibility: hidden;
 }
 
 .navigation__item-header {
     margin: 3rem;
 }
 
-// An adaptation of Jonas Schmedtmann's link background animation
+// An adaptation of Jonas Schmedtmann's link background animation (color transition from right to left)
 .navigation__link,
 .navigation__link:link,
 .navigation__link:visited {
-    display: inline-block;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, transparent), color-stop(50%, $color-white));
+    background-image: -o-linear-gradient(left, transparent 0%, transparent 50%, $color-white 50%);
+    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, $color-white 50%);
+    background-size: 220%;                                 
+    border-radius: 1.4rem;
     color: $color-white;
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    background-image: -webkit-linear-gradient(left, transparent 0%, transparent 50%, $color-white 50%);
-    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, $color-white 50%);
-    border-radius: 1.4rem;
-    background-size: 220%;                                 
     -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
     transition: all 0.25s;
 }
 
@@ -73,40 +82,50 @@
 .navigation__link-footer:link,
 .navigation__link-footer:visited {
     font-size: 1.3rem;
-    padding: 0.4rem 0.4rem;
     margin-left: -0.4rem;
+    padding: 0.4rem 0.4rem;
 }
 
 .navigation__link:hover {
-    color: $color-medium-green;
+    // Slight shift upward to provide further user feedback
     background-position: 100%;
-    -webkit-transform: translateY(-0.1rem);
-    transform: translateY(-0.1rem);                                 // Slight shift upward to provide further user feedback
-    box-shadow: 0 1rem 2rem rgba($color-dark-green, 0.5);
- 
-}
-.navigation__link:active {
+    -webkit-box-shadow: 0 1rem 2rem rgba($color-dark-green, 0.5);
+            box-shadow: 0 1rem 2rem rgba($color-dark-green, 0.5);
     color: $color-medium-green;
-    background-position: 100%;
     -webkit-transform: translateY(-0.1rem);
-    transform: translateY(-0.1rem);                                 // Slight shift upward 
-    box-shadow: 0 0.5rem 0.7rem rgba($color-dark-green, 0.9);       // and darken shadow to provide user 'button press' feedback
+    -ms-transform: translateY(-0.1rem);
+            transform: translateY(-0.1rem);
 }
 
-// Add a little site continuity by copying to the links in the footer
-.navigation__link-footer:hover {
-    color: $color-medium-green;
+.navigation__link:active {
+    // Slight shift upward and darken shadow to provide user 'button press' feedback
     background-position: 100%;
+    -webkit-box-shadow: 0 0.5rem 0.7rem rgba($color-dark-green, 0.9);
+            box-shadow: 0 0.5rem 0.7rem rgba($color-dark-green, 0.9);
+    color: $color-medium-green;
+    -webkit-transform: translateY(-0.1rem);
+    -ms-transform: translateY(-0.1rem);
+            transform: translateY(-0.1rem);
+}
+
+// Add a little site continuity by repeating the navigation effects in the footer
+.navigation__link-footer:hover {
+    background-position: 100%;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+            box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+    color: $color-medium-green;
     -webkit-transform: translateY(-0.3rem);
-    transform: translateY(-0.3rem);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+    -ms-transform: translateY(-0.3rem);
+            transform: translateY(-0.3rem);
 }
 .navigation__link-footer:active {
-    color: $color-medium-green;
     background-position: 100%;
+    -webkit-box-shadow: 0 0.3rem 0.7rem rgba($color-black, 0.9);
+            box-shadow: 0 0.3rem 0.7rem rgba($color-black, 0.9);
+    color: $color-medium-green;
     -webkit-transform: translateY(-0.1rem);
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.3rem 0.7rem rgba($color-black, 0.9);
+    -ms-transform: translateY(-0.1rem);
+            transform: translateY(-0.1rem);
 }
 .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
@@ -119,20 +138,20 @@
 }
 
 .navigation__icon {
+    @include center-screen;
+    left: 50%;
     position: relative;
     top: 24%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+
 }
 
 .navigation__icon,
 .navigation__icon::before,
 .navigation__icon::after {
-    display: inline-block;
-    width: 1.8rem;
-    height: 0.1rem;
     background-color: rgba($color-dark-green,0.8);
+    display: inline-block;
+    height: 0.1rem;
+    width: 1.8rem;
 }
 
 .navigation__icon::before,
@@ -140,9 +159,13 @@
     content: "";
     position: absolute;
     -webkit-transition: top 0.2s;
+    -o-transition: top 0.2s;
     transition: top 0.2s;
-    -webkit-transition: -webkit-transform  0.7s ease-in-out;
+    -webkit-transition: -webkit-transform  0.7s cubic-bezier(0.65, 0.9, 0.3, 1.25);
+    transition: -webkit-transform  0.7s cubic-bezier(0.65, 0.9, 0.3, 1.25);
+    -o-transition: transform  0.7s cubic-bezier(0.65, 0.9, 0.3, 1.25);
     transition: transform  0.7s cubic-bezier(0.65, 0.9, 0.3, 1.25);
+    transition: transform  0.7s cubic-bezier(0.65, 0.9, 0.3, 1.25), -webkit-transform  0.7s cubic-bezier(0.65, 0.9, 0.3, 1.25);
 }
 
 // Creating the hamburger
@@ -171,11 +194,13 @@
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
     top: 0;
     -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);  
+    -ms-transform: rotate(45deg);
+            transform: rotate(45deg);  
 }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
     top: 0;
     -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }

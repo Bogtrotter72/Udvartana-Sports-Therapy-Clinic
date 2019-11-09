@@ -72,6 +72,8 @@
         <!-- End of Header Section -->
 
         <!-- Start of Main Content Section -->
+
+        <!-- Once the form is submitted, target the popup section  -->
         <form method="GET" action="#popup">
             <section class="container-fluid bookings-page__container">
                 <h3 class="heading-secondary heading-secondary__bookings">Booking Form</h3>
@@ -158,7 +160,9 @@
         <!-- Start of Popup Section -->
         <div class="popup" id="popup">
             <div class="popup__content">
+                <!-- Provide the user with a close button, so that they can (potentially) make another booking -->
                 <a href="#booking-form" class="popup__close">&times;</a>
+                <!-- Provide the user with a button to return to the homepage -->
                 <a href="index.html" class="btn btn-booking btn-booking__popup" role="button">&larr; &nbsp;Homepage</a>
                 <span class=" heading-secondary heading-secondary__popup">Success!</span>
                 <span class=" heading-tertiary heading-tertiary__popup">Your booking is confirmed</span>

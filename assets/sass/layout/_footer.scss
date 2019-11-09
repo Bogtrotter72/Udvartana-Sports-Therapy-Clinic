@@ -4,12 +4,12 @@
     padding-top: 3rem;
 
     &__heading {
-      color: $color-white;
-      font-weight: 700;
-      font-size: 2.5rem;
-      padding-bottom: 0.5rem;
       border-bottom: 0.1rem solid rgba($color-light-gray, 0.5);
       border-width: thin;
+      color: $color-white;
+      font-size: 2.5rem;
+      font-weight: 700;
+      padding-bottom: 0.5rem;
 
         &--margin {
           margin-top: 3rem;
@@ -17,8 +17,8 @@
   }
 
   &__text {
-    font-weight: 400;
     font-size: 1.3rem;
+    font-weight: 400;
 
     &--centred {
       margin-left: 1rem;
@@ -29,18 +29,14 @@
     color: $color-white;
     text-decoration: none;
   }
-
 }
 
 .footer__location i {
   font-size: 1.3rem;
 }
 
-.navigation {
-
-  &__item-footer {
+.navigation__item-footer {
     list-style-type: none;
-  }
 }
 
 .copyright p {

@@ -1,21 +1,25 @@
 .therapies-page {
-    padding: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba($color-white, 0.2)), color-stop(50%, rgba($color-white, 0.5)),  to(rgba($color-white, 0.1))), 
+                      url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/therapies-bg-img_rspvuh.jpg");
+    background-image: -o-linear-gradient(left, rgba($color-white, 0.2) 0%, rgba($color-white, 0.5) 50%,  rgba($color-white, 0.1)), 
+                      url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/therapies-bg-img_rspvuh.jpg");
     background-image: linear-gradient(to right, rgba($color-white, 0.2) 0%, rgba($color-white, 0.5) 50%,  rgba($color-white, 0.1)), 
                       url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/therapies-bg-img_rspvuh.jpg");
-    background-size: 150%;
     background-position: top center;
+    background-size: 150%;
+    padding: 0;
     position: absolute;
 
     &__container {
-        width: 90%;
         margin: 0 5%;
         padding: 0;
+        width: 90%;
     }
 
     &__inner-container {
-        margin: 7rem auto;
         background-color: rgba($color-light-green, 0.7);
         border: 0.1rem solid $color-dark-green;
+        margin: 7rem auto;
         padding: 2rem 2rem;
     }
 
@@ -29,8 +33,8 @@
 
 .prices {
     font-size: $main-font-size;
-    text-align: center;
     margin-bottom: 5rem;
+    text-align: center;
 
     &-heading {
         font-weight: bold;

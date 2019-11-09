@@ -1,5 +1,9 @@
 .price-list-page {
     padding: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba($color-white, 0.8)), color-stop(25%, rgba($color-white, 0.2)), color-stop(75%, rgba($color-white, 0.2)), to(rgba($color-white, 0.8))), 
+                      url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/prices-bg-img_r56pp6.jpg");
+    background-image: -o-linear-gradient(left, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), 
+                      url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/prices-bg-img_r56pp6.jpg");
     background-image: linear-gradient(to right, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), 
                       url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/prices-bg-img_r56pp6.jpg");
     background-size: cover;

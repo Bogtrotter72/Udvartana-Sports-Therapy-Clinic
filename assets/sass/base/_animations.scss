@@ -1,33 +1,33 @@
 /* Homepage Hero Text */
 
+@-webkit-keyframes inAndOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 @keyframes inAndOut {
     0% {
         opacity: 0;
     }
-
-    // 49% {
-    //     transform: translateY(0rem);
-    // }
-
     50% {
         opacity: 0.75;
     }
-
     100% {
         opacity: 0;
-        // transform: translateY(-10rem);
     }
 }
-
-
-
 
 @-webkit-keyframes slideUp {
     0% {
         opacity: 0;
         -webkit-transform: translateY(100px);
     }
-
     100% {
         opacity: 1;
         -webkit-transform: translateY(0px);
@@ -39,7 +39,6 @@
         opacity: 0;
         transform: translateY(100px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0px);

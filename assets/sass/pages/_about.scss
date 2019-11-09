@@ -1,6 +1,10 @@
 .about-page {
     
     &__container {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba($color-white, 0.8)), color-stop(25%, rgba($color-white, 0.2)), color-stop(75%, rgba($color-white, 0.2)), to(rgba($color-white, 0.8))), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/about-bg-img_eagexh.jpg");
+        background-image: -o-linear-gradient(left, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), 
+                          url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/about-bg-img_eagexh.jpg");
         background-image: linear-gradient(to right, rgba($color-white, 0.8) 0%, rgba($color-white, 0.2) 25%, rgba($color-white, 0.2) 75%, rgba($color-white, 0.8)), 
                           url("https://res.cloudinary.com/bogtrotter72/image/upload/v1572978496/Milestone%201/about-bg-img_eagexh.jpg");
         background-position: top center;
@@ -12,7 +16,8 @@
     &__content {
         background-color: rgba($color-white, 0.7);
         border-radius: $image-border-radius-small;
-        box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
+        -webkit-box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
+                box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
         color: $color-contrast-blue;
         font-size: 1.5rem;
         font-weight: 400;
@@ -24,7 +29,8 @@
     &__card-container {
         background-color: rgba($color-light-green, 0.7);
         border-radius: $image-border-radius-large;
-        box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
+        -webkit-box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
+                box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
         margin: 10vh auto;
         padding: 10vh 0;
     }
@@ -32,7 +38,8 @@
     &__inner-container {
         background-color: rgba($color-light-green, 0.5);
         border-radius: $image-border-radius-small;
-        box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
+        -webkit-box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
+                box-shadow: 0.9rem 0.8rem 2rem rgba($color-contrast-blue, 0.5);
         margin: 8rem 0%;
         padding: 2rem;
         width: 100%;        
