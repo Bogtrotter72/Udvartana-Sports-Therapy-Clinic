@@ -562,11 +562,13 @@ body {
 .page-header {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 82, 74, 0.9)), to(rgba(53, 82, 74, 0.5)));
-  background-image: -o-linear-gradient(top, rgba(53, 82, 74, 0.9), rgba(53, 82, 74, 0.5));
-  background-image: linear-gradient(to bottom, rgba(53, 82, 74, 0.9), rgba(53, 82, 74, 0.5));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 82, 74, 0.9)), to(rgba(53, 82, 74, 0.5))), url("https://res.cloudinary.com/bogtrotter72/image/upload/o_50/v1573498970/Milestone%201/greenleaf_lrvtgj.jpg");
+  background-image: -o-linear-gradient(top, rgba(53, 82, 74, 0.9), rgba(53, 82, 74, 0.5)), url("https://res.cloudinary.com/bogtrotter72/image/upload/o_50/v1573498970/Milestone%201/greenleaf_lrvtgj.jpg");
+  background-image: linear-gradient(to bottom, rgba(53, 82, 74, 0.9), rgba(53, 82, 74, 0.2)), url("https://res.cloudinary.com/bogtrotter72/image/upload/o_50/v1573498970/Milestone%201/greenleaf_lrvtgj.jpg");
   background-position: center right;
   background-size: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   height: 11vh;
   position: relative; }
 
@@ -961,7 +963,7 @@ body {
     overflow: auto; }
 
 .prices {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-bottom: 5rem;
   text-align: center; }
   .prices-heading {
@@ -1447,11 +1449,15 @@ body {
 
 @media only screen and (orientation: landscape) {
   .page-header {
-    height: 20vh; } }
+    height: 20vh;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5); } }
 
 @media only screen and (min-width: 1200px) {
   .page-header {
-    height: 11vh; } }
+    height: 11vh;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    border-top: 3px solid rgba(255, 255, 255, 0.5); } }
 
 @media only screen and (min-width: 375px) {
   .page-title__heading {
@@ -1656,17 +1662,17 @@ body {
     padding: 2rem 5rem; } }
 
 @media only screen and (min-width: 768px) {
-  .therapies-page__content {
+  .therapies-page__content, .prices {
     font-size: 2rem; } }
 
 @media only screen and (orientation: landscape) and (min-width: 768px) {
-  .therapies-page__content {
+  .therapies-page__content, .prices {
     font-size: 1.5rem; } }
 
 @media only screen and (orientation: landscape) and (min-width: 992px) {
-  .therapies-page__content {
+  .therapies-page__content, .prices {
     font-size: 2rem; } }
 
 @media only screen and (min-width: 1500px) {
-  .therapies-page__content {
+  .therapies-page__content, .prices {
     font-size: 1.6rem; } }

@@ -14,12 +14,9 @@
         border: none;
     }
 
-    &-body {
-
-        &__about {
-            margin-left: -5%;
-            width: 110%;
-        }
+    &-body__about {
+        margin-left: -5%;
+        width: 110%;
     }
 
     &-img {

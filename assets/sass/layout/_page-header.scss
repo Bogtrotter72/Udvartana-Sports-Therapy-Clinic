@@ -1,11 +1,13 @@
 .page-header {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($color-dark-green, 0.9)), to(rgba($color-dark-green, 0.5)));
-    background-image: -o-linear-gradient(top, rgba($color-dark-green, 0.9), rgba($color-dark-green, 0.5));
-    background-image: linear-gradient(to bottom, rgba($color-dark-green, 0.9), rgba($color-dark-green, 0.5));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($color-dark-green, 0.9)), to(rgba($color-dark-green, 0.5))), url("https://res.cloudinary.com/bogtrotter72/image/upload/o_50/v1573498970/Milestone%201/greenleaf_lrvtgj.jpg");
+    background-image: -o-linear-gradient(top, rgba($color-dark-green, 0.9), rgba($color-dark-green, 0.5)), url("https://res.cloudinary.com/bogtrotter72/image/upload/o_50/v1573498970/Milestone%201/greenleaf_lrvtgj.jpg");
+    background-image: linear-gradient(to bottom, rgba($color-dark-green, 0.9), rgba($color-dark-green, 0.2)), url("https://res.cloudinary.com/bogtrotter72/image/upload/o_50/v1573498970/Milestone%201/greenleaf_lrvtgj.jpg");
     background-position: center right; 
     background-size: cover;
+    border-bottom: 1px solid rgba($color-white, 0.5);
+    border-top: 1px solid rgba($color-white, 0.5);
     height: 11vh;
     position: relative;
 }

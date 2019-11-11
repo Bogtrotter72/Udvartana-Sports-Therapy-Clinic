@@ -359,6 +359,12 @@
         width: 100%;
     }
 
+    // &-body {
+    //     @media only screen and (min-width: 768px) {
+    //         max-height: 100%;
+    //     }
+    // }
+
     &-img {
 
         @media only screen and (orientation: landscape) {
@@ -587,10 +593,14 @@
 .page-header {
     @media only screen and (orientation: landscape) {
         height: 20vh;
+        border-bottom: 2px solid rgba($color-white, 0.5);
+        border-top: 2px solid rgba($color-white, 0.5);
     }
 
     @media only screen and (min-width: 1200px) {
         height: 11vh;
+        border-bottom: 3px solid rgba($color-white, 0.5);
+        border-top: 3px solid rgba($color-white, 0.5);
     }
 }
 
@@ -840,24 +850,24 @@
             padding: 2rem 5rem;
         }
     }
+}
 
-    &__content {
+.therapies-page__content, .prices {
 
-        @media only screen and (min-width: 768px) {
-            font-size: 2rem;
-        }
+    @media only screen and (min-width: 768px) {
+        font-size: 2rem;
+    }
 
-        @media only screen and (orientation: landscape) and (min-width: 768px) {
-            font-size: 1.5rem;
-        }
+    @media only screen and (orientation: landscape) and (min-width: 768px) {
+        font-size: 1.5rem;
+    }
 
-        @media only screen and (orientation: landscape) and (min-width: 992px) {
-            font-size: 2rem;
-        }
+    @media only screen and (orientation: landscape) and (min-width: 992px) {
+        font-size: 2rem;
+    }
 
-        @media only screen and (min-width: 1500px) {
-            font-size: $main-font-size;
+    @media only screen and (min-width: 1500px) {
+        font-size: $main-font-size;
 
-        }
     }
 }

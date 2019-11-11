@@ -3,7 +3,7 @@
     &:link,
     &:visited {
         -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+        backface-visibility: hidden;  // to prevent any text wobble on transition
         bottom: 1rem;
         color: $color-medium-green;
         display: inline-block;

@@ -208,6 +208,7 @@
 }
 
 
+
 .day, .number {
     text-align: center;
 }
@@ -237,7 +238,7 @@
     -o-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
     visibility: hidden;
-    z-index: 5000;
+    z-index: 5000;  // A ridiculously high figure to make sure that it is at the front
 
     // On form submission, the popup section is targeted and made visible
     &:target {
